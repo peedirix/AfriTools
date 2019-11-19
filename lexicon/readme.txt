@@ -1,0 +1,1 @@
+This folder contains to lexicon files, one with the base lexicon which contains all the normalized forms and an additional normalization lexicon which has spelling variants and normalizes the lemmatization to the normalized lexicon entries. A combination of both lexica was used to train the TreeTagger model.

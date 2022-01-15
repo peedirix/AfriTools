@@ -5,7 +5,7 @@
 # does some normalization but is generally to be used as preprocessing for PoS tagging with TreeTagger
 #
 # created by Peter Dirix on 20.10.2012
-# last version 0.54 alpha from 17.04.2021
+# last version 0.55 alpha from 16.01.2022
 #
 # version 0.06: added option for --multiwords; expanded accompanying lexicon; added more multiwords
 # version 0.07: added more multiwords; fixed bug for t before period; expanded accompanying lexicon for decapitalization
@@ -17,8 +17,9 @@
 # version 0.52: added more multiwords
 # version 0.53: added more multiwords, detached -hulle
 # version 0.54: added more multiwords
+# version 0.55: added more multiwords
 #
-# (c) Peter Dirix, 2012-2021
+# (c) Peter Dirix, 2012-2022
 #
 # Note that the --multiwords option needs to be used if you want to use TreeTagger for morphosyntactic tagging and lemmatization in order to have a synchronized lexicon.
 
@@ -31,9 +32,9 @@ GetOptions("multiwords",
     
 # if option -v or --versions, exit the program and print version number    
 
-my $versionnr = "0.54";
+my $versionnr = "0.55";
 my $program = "af-za.tokenize";
-my $date = "2021-04-17";
+my $date = "2022-01-16";
 my $author = "Peter Dirix";
 
     
@@ -110,6 +111,8 @@ sub Tokenize {
     $input =~ s/[Cc]'est la vie/c¨est la vie/g;
     $input =~ s/L'Agulhas /L¨Agulhas /g;
     $input =~ s/D'Oliveira/D¨Oliveira/g;
+    $input =~ s/d'hôtel/d¨hôtel/g;
+    $input =~ s/Vin d'Or/Vin d¨Or/g;
     $input =~ s/N'waswit/N¨waswit/g;
     $input =~ s/N'watin/N¨watin/g;
     $input =~ s/Ge'ez/Ge¨ez/g;
@@ -154,6 +157,7 @@ sub Tokenize {
     $input =~ s/[Aa]lg\./alg#/g;                   # algemeen
     $input =~ s/[Aa]rt\./art#/g;                   # artikel
     $input =~ s/a\.w\./a#w#/g;                     # aangehaalde werk
+    $input =~ s/M\.B\.A\./M#B#A#/g;                # master in business administration
     $input =~ s/B\.A\\./B#A#/g;                    # baccalaureus artium
     $input =~ s/B\.Ing\./B#Ing#/g;                 # baccalaureus ingenieurswese
     $input =~ s/B\.Sc\\./B#Sc#/g;                  # baccalaureus scientiarum
@@ -184,9 +188,10 @@ sub Tokenize {
     $input =~ s/[Kk]pl\./kpl#/g;                   # korporaal
     $input =~ s/[L]t\./lt#/g;                      # luitenant
     $input =~ s/[L]t\.[Gg]enl\./lt#genl#/g;        # luitenant-generaal
-    $input =~ s/M\.A\\./M#A#/g;                    # magister artium
-    $input =~ s/M\.Ing\\./M#Ing#/g;                # magister ingenieurswese
-    $input =~ s/M\.Sc\\./M#Sc#/g;                  # magister scientiarum
+    $input =~ s/M\.A\./M#A#/g;                     # magister artium
+    $input =~ s/M\.Com\./M#Com#/g;                 # master in commerce
+    $input =~ s/M\.Ing\./M#Ing#/g;                 # magister ingenieurswese
+    $input =~ s/M\.Sc\./M#Sc#/g;                   # magister scientiarum
     $input =~ s/[Mm]aj\./maj#/g;                   # majoor
     $input =~ s/[Mm]e\./me#/g;                     # mevrou/mejuffrou
     $input =~ s/[Mm]ej\./mej#/g;                   # mejuffrou
@@ -260,6 +265,8 @@ sub Tokenize {
     $input =~ s/¨t/'t/g;
     $input =~ s/¨e/'e/g;
     $input =~ s/b¨r/b'r/g;
+    $input =~ s/d¨h/d'h/g;
+    $input =~ s/d¨Or/d'Or/g;
     $input =~ s/O¨/O'/g;
     $input =~ s/ta¨/ta'/g;
     $input =~ s/L¨Agulhas/L'Agulhas/g;
@@ -302,6 +309,7 @@ sub Tokenize {
     $input =~ s/alg#/alg./g;
     $input =~ s/art#/art./g;
     $input =~ s/a#w#/a.w./g;
+    $input =~ s/M#B#A#/M.B.A./g;
     $input =~ s/B#A#/B.A./g;
     $input =~ s/B#Ing#/B.Ing./g;
     $input =~ s/B#Sc#/B.Sc./g;
@@ -333,6 +341,7 @@ sub Tokenize {
     $input =~ s/lt#/lt./g;
     $input =~ s/lt#genl#/lt.genl./g;
     $input =~ s/M#A#/M.A./g;
+    $input =~ s/M#Com#/M.Com./g;
     $input =~ s/M#Ing#/M.Ing./g;
     $input =~ s/M#Sc#/M.Sc./g;
     $input =~ s/maj#/maj./g;
@@ -412,6 +421,7 @@ sub Tokenize {
         $input =~ s/acta synodi/acta_synodi/g;
         $input =~ s/Acta synodi/Acta_synodi/g;
         $input =~ s/Acton Homes/Acton_Homes/g;
+        $input =~ s/Actophilornis africanus/Actophilornis_africanus/g;
         $input =~ s/actuarii synodi/actuarii_synodi/g;
         $input =~ s/Actuarii synodi/Actuarii_synodi/g;
         $input =~ s/actuarius synodi/actuarius_synodi/g;
@@ -444,6 +454,7 @@ sub Tokenize {
         $input =~ s/ad rem/ad_rem/g;
         $input =~ s/Ad rem/Ad_rem/g;
         $input =~ s/Adansonia digitata/Adansonia_digitata/g;
+        $input =~ s/Adina microcephala/Adina_microcephala/g;
         $input =~ s/Adri Faasstraat/Adri_Faasstraat/g;
         $input =~ s/Adri Faas\-straat/Adri_Faas-straat/g;
         $input =~ s/ad valorem/ad_valorem/g;
@@ -462,6 +473,8 @@ sub Tokenize {
         $input =~ s/African Mineworkers' Union/African_Mineworkers'_Union/g;
         $input =~ s/African National Congress/African_National_Congress/g;
         $input =~ s/African News Agency/African_News_Agency/g;
+        $input =~ s/Afrika Kanker\-Instituut/Afrika_Kanker-Instituut/g;
+        $input =~ s/Afrika\-instituut vir Wiskundige Wetenskappe/Afrika-instituut_vir_Wiskundige_Wetenskappe/g;
         $input =~ s/Afrikaanse Christen\-Studentevereniging/Afrikaanse_Christen-Studentevereniging/g;
         $input =~ s/Afrikaanse Christelike Vrouevereniging/Afrikaanse_Christelike_Vrouevereniging/g;
         $input =~ s/Afrikaanse Filatelistevereniging/Afrikaanse_Filatelistevereniging/g;
@@ -496,6 +509,7 @@ sub Tokenize {
         $input =~ s/Afrikatalevereniging van Suider\-Afrika/Afrikatalevereniging_van_Suider-Afrika/g;
         $input =~ s/Afrocanthium mundianum/Afrocanthium_mundianum/g;
         $input =~ s/Afrocarpus falcatus/Afrocarpus_falcatus/g;
+        $input =~ s/Afzelia quanzensis/Afzelia_quanzensis/g;
         $input =~ s/Aga Khan/Aga_Khan/g;
         $input =~ s/Agama atra/Agama_atra/g;
         $input =~ s/Agaricus campestris/Agaricus_campestris/g;
@@ -543,6 +557,7 @@ sub Tokenize {
         $input =~ s/À la /À_la /g;
         $input =~ s/Alabama Studentegeselskap/Alabama_Studentegeselskap/g;
         $input =~ s/Alaena margaritacea/Alaena_margaritacea/g;
+        $input =~ s/Alauda arvensis/Alauda_arvensis/g;
         $input =~ s/Albert Falls/Albert_Falls/g;
         $input =~ s/Albert Hertzogtoring/Albert_Hertzogtoring/g;
         $input =~ s/Albert Hertzog\-toring/Albert_Hertzog-toring/g;
@@ -611,7 +626,8 @@ sub Tokenize {
 	$input =~ s/Aloe striata/Aloe_striata/g;
 	$input =~ s/Aloe variegata/Aloe_variegata/g;
 	$input =~ s/Aloidendron dichotomum/Aloidendron_dichotomum/g;
-        $input =~ s/Alpha Centauri/Alpha_Centauri/g;
+        $input =~ s/Aloidendron tongaense/Aloidendron_tongaense/g;
+	$input =~ s/Alpha Centauri/Alpha_Centauri/g;
         $input =~ s/Alopochen aegyptiacus/Alopochen_aegyptiacus/g;
         $input =~ s/Alsophila capensis/Alsophila_capensis/g;
         $input =~ s/alter ego/alter_ego/g;
@@ -631,6 +647,7 @@ sub Tokenize {
         $input =~ s/Amicus curiae/Amicus_curiae/g;
         $input =~ s/Amnestie Internasionaal/Amnestie_Internasionaal/g;
         $input =~ s/Ammocharis coranica/Ammocharis_coranica/g;
+        $input =~ s/Ammophila arenaria/Ammophila_arenaria/g;
         $input =~ s/Anabas testudineus/Anabas_testudineus/g;
         $input =~ s/Anacampseros papyracea/Anacampseros_papyracea/g;
         $input =~ s/Anacardium occidentale/Anacardium_occidentale/g;
@@ -640,6 +657,8 @@ sub Tokenize {
         $input =~ s/Andimba Toivo\-ya\-Toivostraat/Andimba_Toivo_ya_Toivostraat/g;
         $input =~ s/Andimba Toivo\-ya\-Toivo\-straat/Andimba_Toivo_ya_Toivo-straat/g;
         $input =~ s/Andrew Klopperstraat/Andrew_Klopperstraat/g;
+        $input =~ s/Andrew Murrayweg/Andrew_Murrayweg/g;
+        $input =~ s/Andries_du_Plessisstraat/Andries du Plessisstraat/g;
         $input =~ s/Andries Potgieterboulevard/Andries_Potgieterboulevard/g;
         $input =~ s/Andries Potgieter\-boulevard/Andries_Potgieter-boulevard/g;
         $input =~ s/Andries Pretoriusstraat/Andries_Pretoriusstraat/g;
@@ -682,6 +701,7 @@ sub Tokenize {
         $input =~ s/Anthropoides paradiseus/Anthropoides_paradiseus/g;
         $input =~ s/Anthus crenatus/Anthus crenatus/g;
         $input =~ s/Antigua en Barbuda/Antigua_en_Barbuda/g;
+        $input =~ s/Antirrhinum majus/Antirrhinum_majus/g;
         $input =~ s/Anton Lembedestraat/Anton_Lembedestraat/g;
         $input =~ s/Anton Lembede\-straat/Anton_Lembede-straat/g;
         $input =~ s/à pari/à_pari/g;
@@ -718,6 +738,7 @@ sub Tokenize {
         $input =~ s/Argyroderma testiculare/Argyroderma_testiculare/g;
         $input =~ s/Argyrosomus inodorus/Argyrosomus_inodorus/g;
         $input =~ s/Argyrozona argyrozona/Argyrozona_argyrozona/g;
+        $input =~ s/Aristea cyanea/Aristea_cyanea/g;
         $input =~ s/Aristida aequiglumis/Aristida_aequiglumis/g;
         $input =~ s/Arktiese Oseaan/Arktiese_Oseaan/g;
         $input =~ s/art deco/art_deco/g;
@@ -736,6 +757,7 @@ sub Tokenize {
         $input =~ s/As gevolg van/As_gevolg_van/g;
         $input =~ s/as sodanig/as_sodanig/g;
         $input =~ s/As sodanig/As_sodanig/g;
+        $input =~ s/Asclepias fruticosa/Asclepias_fruticosa/g;
         $input =~ s/assessor synodi/assessor_synodi/g;
         $input =~ s/Assessor synodi/Assessor_synodi/g;
         $input =~ s/Assessor Synodi/Assessor_Synodi/g;
@@ -828,6 +850,7 @@ sub Tokenize {
         $input =~ s/Bantu World/Bantu_World/g;
         $input =~ s/Banyana Banyana/Banyana_Banyana/g;
         $input =~ s/Baphia nitida/Baphia_nitida/g;
+        $input =~ s/Barbara Coetzerstraat/Barbara_Coetzerstraat/g;
         $input =~ s/Barbus anoplus/Barbus_anoplus/g;
         $input =~ s/Barbus pallidus/Barbus_pallidus/g;
         $input =~ s/Barclays Bank/Barclays_Bank/g;
@@ -836,6 +859,7 @@ sub Tokenize {
         $input =~ s/Baron van Rheedestraat/Baron_van_Rheedestraat/g;
         $input =~ s/Baron van Rheede\-straat/Baron_van_Rheede-straat/g;
         $input =~ s/Barry Hertzogstraat/Barry_Hertzogstraat/g;
+        $input =~ s/Bart Joubertstraat/Bart_Joubertstraat/g;
         $input =~ s/Bassariscus astutus/Bassariscus_astutus/g;
         $input =~ s/Bataafse Republiek/Bataafse_Republiek/g;
         $input =~ s/Baton Rouge/Baton_Rouge/g;
@@ -869,6 +893,7 @@ sub Tokenize {
         $input =~ s/Berlynse Sendinggenootskap/Berlynse_Sendinggenootskap/g;
         $input =~ s/Bernice Keerweg/Bernice_Keerweg/g;
         $input =~ s/Beryl Keerweg/Beryl_Keerweg/g;
+        $input =~ s/Beta vulgaris/Beta_vulgaris/g;
         $input =~ s/Betsie Verwoerdstraat/Betsie_Verwoerdstraat/g;
         $input =~ s/Betsie Verwoerd\-straat/Betsie_Verwoerd-straat/g;
         $input =~ s/bevel nisi/bevel_nisi/g;
@@ -915,6 +940,7 @@ sub Tokenize {
         $input =~ s/Bolandse Onderwyskollege/Bolandse_Onderwyskollege/g;
         $input =~ s/Bolandse Rugbyunie/Bolandse_Rugbyunie/g;
         $input =~ s/Bolla Tau/Bolla_Tau/g;
+        $input =~ s/Bolusanthus speciosus/Bolusanthus_speciosus/g;
         $input =~ s/bon vivant/bon_vivant/g;
         $input =~ s/Bon vivant/Bon_vivant/g;
         $input =~ s/bona fides/bona_fides/g;
@@ -940,7 +966,9 @@ sub Tokenize {
         $input =~ s/Bram Fischerrylaan/Bram_Fischerrylaan/g;
         $input =~ s/Bram Fischer\-rylaan/Bram_Fischer-rylaan/g;
         $input =~ s/Brave Warriors/Brave_Warriors/g;
+        $input =~ s/Breonadia microcephala/Breonadia_microcephala/g;
         $input =~ s/Bretton Woods/Bretton_Woods/g;
+        $input =~ s/Breytenbach Sentrum/Breytenbach_Sentrum/g;
         $input =~ s/British South Africa Company/British_South_Africa_Company/g;
         $input =~ s/British South Africa Police/British_South_Africa_Police/g;
         $input =~ s/Britse Eilande/Britse_Eilande/g;
@@ -953,6 +981,7 @@ sub Tokenize {
         $input =~ s/Britse Statebond/Britse_Statebond/g;
         $input =~ s/British Airways/British_Airways/g;
         $input =~ s/Broken Hill/Broken_Hill/g;
+        $input =~ s/Bruce Dallingstraat/Bruce_Dallingstraat/g;
         $input =~ s/Bubalus bubalis/Bubalus_bubalis/g;
         $input =~ s/Buenos Aire/Buenos_Aire/g;
         $input =~ s/Bugeranus carunculatus/Bugeranus_carunculatus/g;
@@ -971,6 +1000,7 @@ sub Tokenize {
         $input =~ s/Burkina Faso/Burkina_Faso/g;
         $input =~ s/Buro vir Heraldiek/Buro_vir_Heraldiek/g;
         $input =~ s/Buro vir Staatsveiligheid/Buro_vir_Staatsveiligheid/g;
+        $input =~ s/Bush Willowsingel/Bush_Willowsingel/g;
         $input =~ s/Business Day/Business_Day/g;
         $input =~ s/Butha Buthe/Butha_Buthe/g;
         $input =~ s/Bwabwata Nasionale Park/Bwabwata_Nasionale_Park/g;
@@ -1011,8 +1041,10 @@ sub Tokenize {
         $input =~ s/Café Roux/Café_Roux/g;
         $input =~ s/Cahora Bassadam/Cahora_Bassadam/g;
         $input =~ s/Cahora Bassa\-dam/Cahora_Bassa-dam/g;
+        $input =~ s/Cairina moschata/Cairina_moschata/g;
         $input =~ s/Calendula Keerweg/Calendula_Keerweg/g;
         $input =~ s/Calendula officinalis/Calendula_officinalis/g;
+        $input =~ s/Calendulauda albescens/Calendulauda_albescens/g;
         $input =~ s/Calidris canutus/Calidris_canutus/g;
         $input =~ s/Calidris pugnax/Calidris_pugnax/g;
         $input =~ s/Callosciurus notatus/Callosciurus_notatus/g;
@@ -1024,6 +1056,7 @@ sub Tokenize {
         $input =~ s/Camellia japonica/Camellia_japonica/g;
         $input =~ s/camera obscura/camera_obscura/g;
         $input =~ s/Camera obscura/Camera_obscura/g;
+        $input =~ s/Campanula medium/Campanula_medium/g;
         $input =~ s/Campuloclinium macrocephalum/Campuloclinium_macrocephalum/g;
         $input =~ s/Canis familiaris/Canis_familiaris/g;
         $input =~ s/Canis lupus/Canis_lupus/g;
@@ -1101,6 +1134,7 @@ sub Tokenize {
         $input =~ s/chaise longue/chaise_longue/g;
         $input =~ s/Chaise longue/Chaise_longue/g;
         $input =~ s/Chamber Air/Chamber_Air/g;
+        $input =~ s/Chanos chanos/Chanos_chanos/g;
         $input =~ s/Charadrius pecuarius/Charadrius_pecuarius/g;
         $input =~ s/chargé d'affaires/chargé_d'affaires/g;
         $input =~ s/Chargé d'affaires/Chargé_d'affaires/g;
@@ -1132,6 +1166,7 @@ sub Tokenize {
         $input =~ s/Chow mein/Chow_mein/g;
         $input =~ s/Chris Barnardstraat/Chris_Barnardstraat/g;
         $input =~ s/Chris Barnard\-straat/Chris_Barnard-straat/g;
+        $input =~ s/Chris Hanilaan/Chris_Hanilaan/g;
         $input =~ s/Chris Hanirylaan/Chris_Hanirylaan/g;
         $input =~ s/Chris Hani\-rylaan/Chris_Hani-rylaan/g;
         $input =~ s/Chris Hanistraat/Chris_Hanistraat/g;
@@ -1163,7 +1198,10 @@ sub Tokenize {
         $input =~ s/Cirsium vulgare/Cirsium_vulgare/g;
         $input =~ s/Cissus dasypleurus/Cissus_dasypleurus/g;
         $input =~ s/Citrullus lanatus/Citrullus_lanatus/g;
+        $input =~ s/Citrus aurantifolia/Citrus_aurantifolia/g;
         $input =~ s/Citrus japonica/Citrus_japonica/g;
+        $input =~ s/Citrus reticulata/Citrus_reticulata/g;
+        $input =~ s/Citrus sinensis/Citrus_sinensis/g;
         $input =~ s/City Press/City_Press/g;
         $input =~ s/Clariallabes platyprosopos/Clariallabes_platyprosopos/g;
         $input =~ s/Clarias cavernicola/Clarias_cavernicola/g;
@@ -1277,8 +1315,14 @@ sub Tokenize {
         $input =~ s/Coûte que coûte/Coûte_que_coûte/g;
         $input =~ s/coute que coute/coute_que_coute/g;
         $input =~ s/Coute que coute/Coute_que_coute/g;
+        $input =~ s/CR Swartrylaan/CR_Swartrylaan/g;
+        $input =~ s/CR Swart\-rylaan/CR_Swart-rylaan/g;
+        $input =~ s/C\.R\. Swartrylaan/C.R._Swartrylaan/g;
+        $input =~ s/C\.R\. Swart\-rylaan/C.R._Swart-rylaan/g;
         $input =~ s/Crangon vulgaris/Crangon_vulgaris/g;
         $input =~ s/Crassula columnaris/Crassula_columnaris/g;
+        $input =~ s/Crataegus monogyna/Crataegus_monogyna/g;
+        $input =~ s/Creatophora cinerea/Creatophora_cinerea/g;
         $input =~ s/crème brûlée/crème_brûlée/g;
         $input =~ s/Crème brûlée/Crème_brûlée/g;
         $input =~ s/creme brulee/creme_brulee/g;
@@ -1306,6 +1350,7 @@ sub Tokenize {
         $input =~ s/Cuculus clamosus/Cuculus_clamosus/g;
         $input =~ s/Cuculus gularis/Cuculus_gularis/g;
         $input =~ s/Cuculus solitarius/Cuculus_solitarius/g;
+        $input =~ s/Cucumis myriocarpus/Cucumis_myriocarpus/g;
         $input =~ s/Cucumis sativus/Cucumis_sativus/g;
         $input =~ s/Cucurbita maxima/Cucurbita_maxima/g;
         $input =~ s/cui bono/cui_bono/g;
@@ -1342,8 +1387,10 @@ sub Tokenize {
 	$input =~ s/Cydonia oblonga/Cydonia_oblonga/g;
 	$input =~ s/Cygnus olor/Cygnus_olor/g;
 	$input =~ s/Cylas formicarius/Cylas_formicarius/g;
+	$input =~ s/Cynanchum viminale/Cynanchum_viminale/g;
 	$input =~ s/Cynodon dactylon/Cynodon_dactylon/g;
 	$input =~ s/Cynodon hirsutus/Cynodon_hirsutus/g;
+	$input =~ s/Cyperus textilis/Cyperus_textilis/g;
 	$input =~ s/Cyphostemma currorii/Cyphostemma_currorii/g;
 	$input =~ s/Cyphostemma dasypleurum/Cyphostemma_dasypleurum/g;
 	$input =~ s/Cyrtanthus clavatus/Cyrtanthus_clavatus/g;
@@ -1364,6 +1411,7 @@ sub Tokenize {
         $input =~ s/Daan Kotze\-straat/Daan_Kotze-straat/g;
         $input =~ s/Daan Viljoendam/Daan_Viljoendam/g;
         $input =~ s/Daan Viljoen\-dam/Daan_Viljoen-dam/g;
+        $input =~ s/Dagbreek Trust/Dagbreek_Trust/g;
         $input =~ s/dag\-tot\-dag administrasie/dag-tot-dag_administrasie/g;
         $input =~ s/dagin en daguit/dagin_en_daguit/g;
         $input =~ s/Dagin en daguit/Dagin_en_daguit/g;
@@ -1375,6 +1423,7 @@ sub Tokenize {
         $input =~ s/Daily Maverick/Daily_Maverick/g;
         $input =~ s/Daily News/Daily_News/g;
         $input =~ s/Daily Sun/Daily_Sun/g;
+        $input =~ s/DAK Netwerk/DAK_Netwerk/g;
         $input =~ s/dalai lama/dalai_lama/g;
         $input =~ s/Dalai lama/Dalai_lama/g;
         $input =~ s/Dalene Keerweg/Dalenekeerweg/g;
@@ -1386,6 +1435,7 @@ sub Tokenize {
         $input =~ s/Dan Pienaar/Dan_Pienaar/g; 
         $input =~ s/Danie Malanskool/Danie_Malanskool/g;
         $input =~ s/Danie Malan\-skool/Danie_Malan-skool/g;
+        $input =~ s/Danie Smitstraat/Danie_Smitstraat/g;
         $input =~ s/Daniel Munamastraat/Daniel_Munamastraat/g;
         $input =~ s/Daniel Munama\-straat/Daniel_Munama-straat/g;
         $input =~ s/Daniel Tjongarerostraat/Daniel_Tjongarerostraat/g;
@@ -1435,18 +1485,12 @@ sub Tokenize {
         $input =~ s/De Jager\-straat/De_Jager-straat/g;
         $input =~ s/De Klerkregering/De_Klerkregering/g;
         $input =~ s/De Klerk\-regering/De_Klerk-regering/g;
-        $input =~ s/de Kockstraat/de_Kockstraat/g;
-        $input =~ s/de Kock\-straat/de_Kock-straat/g;
-        $input =~ s/De Kockstraat/De_Kockstraat/g;
-        $input =~ s/De Kock\-straat/De_Kock-straat/g;
         $input =~ s/de Kock/de_Kock/g;
         $input =~ s/De Kock/De_Kock/g;
         $input =~ s/de Koker/de_Koker/g;
         $input =~ s/De Koker/De_Koker/g;
         $input =~ s/de Kok/de_Kok/g;
         $input =~ s/De Kok/De_Kok/g;
-        $input =~ s/de la Reystraat/de_la_Reystraat/g;
-        $input =~ s/De la Reystraat/De_la_Reystraat/g;
         $input =~ s/de la Rey/de_la_Rey/g;
         $input =~ s/De la Rey/De_la_Rey/g;
         $input =~ s/de Lange/de_Lange/g;
@@ -1482,6 +1526,7 @@ sub Tokenize {
         $input =~ s/de Necker/de_Necker/g;
         $input =~ s/De Necker/De_Necker/g;
         $input =~ s/Dendroaspis angusticeps/Dendroaspis_angusticeps/g;
+        $input =~ s/Dendroaspis polylepis/Dendroaspis_polylepis/g;
         $input =~ s/Dendrocygna bicolor/Dendrocygna_bicolor/g;
         $input =~ s/Dendrohyrax brucei/Dendrohyrax_brucei/g;
         $input =~ s/Denise Keerweg/Denise_Keerweg/g;
@@ -1515,6 +1560,8 @@ sub Tokenize {
         $input =~ s/de Savigny/de_Savigny/g;
         $input =~ s/De Savigny/De_Savigny/g;
         $input =~ s/Desiree Keerweg/Desiree_Keerweg/g;
+        $input =~ s/de Stadler/de_Stadler/g;
+        $input =~ s/De Stadler/De_Stadler/g;
         $input =~ s/de Staël/de_Staël/g;
         $input =~ s/De Staël/De_Staël/g;
         $input =~ s/des Presstraat/des_Presstraat/g;
@@ -1572,6 +1619,10 @@ sub Tokenize {
         $input =~ s/Derde Wêreld/Derde_Wêreld/g;
         $input =~ s/dese en gene/dese_en_gene/g;
         $input =~ s/Dese en gene/Dese_en_gene/g;
+        $input =~ s/D\.F\. Malanlaan/D.F._Malanlaan/g;
+        $input =~ s/D\.F\. Malan\-laan/D.F._Malan-laan/g;
+        $input =~ s/DF Malanlaan/DF_Malanlaan/g;
+        $input =~ s/DF Malan\-laan/DF_Malan-laan/g;
         $input =~ s/D\.F\. Malanrylaan/D.F._Malanrylaan/g;
         $input =~ s/D\.F\. Malan\-rylaan/D.F._Malan-rylaan/g;
         $input =~ s/DF Malanrylaan/DF_Malanrylaan/g;
@@ -1618,6 +1669,7 @@ sub Tokenize {
         $input =~ s/Die Son /Die_Son /g;
         $input =~ s/Die Stem van Suid\-Afrika/Die_Stem_van_Suid-Afrika/g;
         $input =~ s/Die Stem/Die_Stem/g;
+        $input =~ s/Die Suid\-Afrikaanse Tydskrif vir Kommunikasieafwykings/Die_Suid-Afrikaanse_Tydskrif_vir_Kommunikasieafwykings/g;
         $input =~ s/Die Suiderstem/Die_Suiderstem/g;
         $input =~ s/Die Suidwes\-Afrikaner/Die_Suidwes-Afrikaner/g;
         $input =~ s/Die Transvaler/Die_Transvaler/g;
@@ -1628,6 +1680,7 @@ sub Tokenize {
         $input =~ s/Die Wapad/Die_Wapad/g;
         $input =~ s/Dierama ensifolium/Dierama_ensifolium/g;
         $input =~ s/Dierama pendulum/Dierama_pendulum/g;
+        $input =~ s/Digitaria sanguinalis/Digitaria_sanguinalis/g;
         $input =~ s/Dignity SA/Dignity_SA/g;
         $input =~ s/dim sum/dim_sum/g;
         $input =~ s/Dim sum/Dim_sum/g;
@@ -1644,6 +1697,7 @@ sub Tokenize {
         $input =~ s/dis om't ewe/dis_om't_ewe/g;
         $input =~ s/Dis om't ewe/Dis_om't_ewe/g;
         $input =~ s/Discovery Health/Discovery_Health/g;
+        $input =~ s/Discovery Life/Discovery_Life/g;
         $input =~ s/Dispholidus typus/Dispholidus_typus/g;
         $input =~ s/Distillers Korporasie/Distillers_Korporasie/g;
         $input =~ s/Distrik Ses/Distrik_Ses/g;
@@ -1738,6 +1792,7 @@ sub Tokenize {
         $input =~ s/du Plessis\-straat/du_Plessis-straat/g;
         $input =~ s/Du Plessisstraat/Du_Plessisstraat/g;
         $input =~ s/Du Plessis\-straat/Du_Plessis-straat/g;
+        $input =~ s/Willie du Plessisweg/Willie_du_Plessisweg/g;
         $input =~ s/du Plessisweg/du_Plessisweg/g;
         $input =~ s/du Plessis\-weg/du_Plessis-weg/g;
         $input =~ s/Du Plessisweg/Du_Plessisweg/g;
@@ -1847,6 +1902,7 @@ sub Tokenize {
         $input =~ s/En sourdine/En_sourdine/g;
         $input =~ s/en suite/en_suite/g;
         $input =~ s/En suite/En_suite/g;
+        $input =~ s/Encephalartos ferox/Encephalartos_ferox/g;
         $input =~ s/enfant terrible/enfant_terrible/g;
         $input =~ s/Enfant terrible/Enfant_terrible/g;
         $input =~ s/enfants terribles/enfants_terribles/g;
@@ -1867,10 +1923,13 @@ sub Tokenize {
         $input =~ s/Eo ipso/Eo_ipso/g;
         $input =~ s/Eoliese Eilande/Eoliese_Eilande/g;
         $input =~ s/Episkopale Kerk/Episkopale_Kerk/g;
+        $input =~ s/EP Malanweg/EP_Malanweg/g;
+        $input =~ s/E\.P\. Malanweg/E.P._Malanweg/g;
         $input =~ s/Equus quagga quagga/Equus_quagga_quagga/g;
         $input =~ s/Equus quagga/Equus_quagga/g;
         $input =~ s/Eragrostis sclerantha/Eragrostis_sclerantha/g;
         $input =~ s/Eretmochelys imbricata/Eretmochelys_imbricata/g;
+        $input =~ s/Erica blenna/Erica_blenna/g;
         $input =~ s/Erica imbricata/Erica_imbricata/g;
         $input =~ s/Erica peltata/Erica_peltata/g;
         $input =~ s/Erica plukenetii/Erica_plukenetii/g;
@@ -1878,6 +1937,7 @@ sub Tokenize {
         $input =~ s/Erica spumosa/Erica_spumosa/g;
         $input =~ s/Erica tristis/Erica_tristis/g;
         $input =~ s/Erica viscaria/Erica_viscaria/g;
+        $input =~ s/Eriobotrya japonica/Eriobotrya_japonica/g;
         $input =~ s/Eriocephalus racemosus/Eriocephalus_racemosus/g;
         $input =~ s/Eschscholzia californica/Eschscholzia_californica/g;
         $input =~ s/Eskia Mphahlelerylaan/Eskia_Mphahlelerylaan/g;
@@ -1898,6 +1958,9 @@ sub Tokenize {
         $input =~ s/Eugenia jambos/Eugenia_jambos/g;
         $input =~ s/Euonymus europaeus/Euonymus_europaeus/g;
         $input =~ s/Euphorbia avasmontana/Euphorbia_avasmontana/g;
+        $input =~ s/Euphorbia gorgonis/Euphorbia_gorgonis/g;
+        $input =~ s/Euphorbia helioscopia/Euphorbia_helioscopia/g;
+        $input =~ s/Euphorbia lathyris/Euphorbia_lathyris/g;
         $input =~ s/Eupodotis caerulescens/Eupodotis_caerulescens/g;
         $input =~ s/Eupodotis vigorsii/Eupodotis_vigorsii/g;
         $input =~ s/Europese Atoomenergiegemeenskap/Europese_Atoomenergiegemeenskap/g;
@@ -1923,6 +1986,7 @@ sub Tokenize {
         $input =~ s/Eve Carolissenkeerweg/Eve_Carolissenkeerweg/g;
         $input =~ s/Eve Carolissen\-keerweg/Eve_Carolissen-keerweg/g;
         $input =~ s/Eve Carolissen_Keerweg/Eve_Carolissen_Keerweg/g;
+        $input =~ s/Everest Wealth/Everest_Wealth/g;
         $input =~ s/ex bonus/ex_bonus/g;
         $input =~ s/Ex bonus/Ex_bonus/g;
         $input =~ s/ex cathedra/ex_cathedra/g;
@@ -1951,6 +2015,7 @@ sub Tokenize {
         $input =~ s/Facebook Lite/Facebook_Lite/g;
         $input =~ s/fait accompli/fait_accompli/g;
         $input =~ s/Fait accompli/Fait_accompli/g;
+        $input =~ s/Fasciola hepatica/Fasciola_hepatica/g;
         $input =~ s/fata morgana/fata_morgana/g;
         $input =~ s/Fata morgana/Fata_morgana/g;
         $input =~ s/Fatima Bhayatstraat/Fatima_Bhayatstraat/g;
@@ -1980,6 +2045,7 @@ sub Tokenize {
         $input =~ s/Fennecus zerda/Fennecus_zerda/g;
         $input =~ s/fer de lance/fer_de_lance/g;
         $input =~ s/Fer de lance/Fer_de_lance/g;
+        $input =~ s/Ficus cordata/Ficus_cordata/g;
         $input =~ s/Fidel Castrostraat/Fidel_Castrostraat/g;
         $input =~ s/Fidel Castro\-straat/Fidel_Castro-straat/g;
         $input =~ s/Fietsry SA/Fietsry_SA/g;
@@ -2025,6 +2091,7 @@ sub Tokenize {
         $input =~ s/Fort Armstrong/Fort_Armstrong/g;
         $input =~ s/Fort Beaufort/Fort_Beaufort/g;
         $input =~ s/Fort Brown/Fort_Brown/g;
+        $input =~ s/Fort Durnford/Fort_Durnford/g;
         $input =~ s/Fort Frederick/Fort_Frederick/g;
         $input =~ s/Fort Klapperkop/Fort_Klapperkop/g;
         $input =~ s/Fort Lauderdale/Fort_Lauderdale/g;
@@ -2032,6 +2099,8 @@ sub Tokenize {
         $input =~ s/4th Power Investments/4th_Power_Investments/g;
         $input =~ s/4th Street/4th_Street/g;
         $input =~ s/Frances Baard/Frances_Baard/g;
+        $input =~ s/Francie van Zylrylaan/Francie_van_Zylrylaan/g;
+        $input =~ s/Francie van Zyl\-rylaan/Francie_van_Zyl-rylaan/g;
         $input =~ s/Francis Baardstraat/Francis_Baardstraat/g;
         $input =~ s/Francis Baard\-straat/Francis_Baard-straat/g;
         $input =~ s/Francis Serverstraat/Francis_Serverstraat/g;
@@ -2057,8 +2126,10 @@ sub Tokenize {
         $input =~ s/Franse Rewolusie/Franse_Rewolusie/g;
         $input =~ s/Fransie Pienaarmuseum/Fransie_Pienaarmuseum/g;
         $input =~ s/Fransie Pienaar\-museum/Fransie_Pienaar-museum/g;
+        $input =~ s/Fred Messengerlaan/Fred_Messengerlaan/g;
         $input =~ s/Fred Nicholsonrylaan/Fred_Nicholsonrylaan/g;
         $input =~ s/Fred Nicholson\-rylaan/Fred_Nicholson-rylaan/g;
+        $input =~ s/Frederik Burgerstraat/Frederik_Burgerstraat/g;
         $input =~ s/Freesia elimensis/Freesia_elimensis/g;
         $input =~ s/Freesia middlemosti/Freesia_middlemosti/g;
         $input =~ s/Freesia refrecta/Freesia_refracta/g;
@@ -2068,6 +2139,7 @@ sub Tokenize {
         $input =~ s/fromage frais/fromage_frais/g;
         $input =~ s/Fromage frais/Fromage_frais/g;
         $input =~ s/Front Nasionaal/Front_Nasionaal/g;
+        $input =~ s/Fulica atra/Fulica_atra/g;
         $input =~ s/Fulica cristata/Fulica_cristata/g;
         $input =~ s/F\.W\. de Klerkboulevard/F.W._de_Klerkboulevard/g;
         $input =~ s/F\.W\. de Klerk\-boulevard/F.W._de_Klerk-boulevard/g;
@@ -2090,6 +2162,7 @@ sub Tokenize {
         $input =~ s/Gamay Keerweg/Gamay_Keerweg/g;
         $input =~ s/garam masala/garam_masala/g;
         $input =~ s/Garam masala/Garam_masala/g;
+        $input =~ s/Garcinia mangostana/Garcinia_mangostana/g;
         $input =~ s/Gardenia jasminoides/Gardenia_jasminoides/g;
         $input =~ s/Gasvryheidsvereniging van Namibië/Gasvryheidsvereniging_van_Namibië/g;
         $input =~ s/Gautengse Drankraad/Gautengse_Drankraad/g;
@@ -2101,7 +2174,7 @@ sub Tokenize {
         $input =~ s/Gemeenskap van Portugese Lande/Gemeenskap_van_Portugese_Lande/g;
         $input =~ s/Gemeenskaplike Matrikulasieraad/Gemeenskaplike_Matrikulasieraad/g;
         $input =~ s/Gemeenskapsmark van Oos\- en Suider\-Afrika/Gemeenskapsmark_van_Oos-_en_Suider-Afrika/g;
-        $input =~ s/Gemenebes van Onafhankelike State/Gemenebes_van_Onafhankelike_State/g;
+        $input =~ s/Gemenebes van Onafhanklike State/Gemenebes_van_Onafhanklike_State/g;
         $input =~ s/Genealogiese Genootskap van Suid\-Afrika/Genealogiese_Genootskap_van_Suid-Afrika/g;
         $input =~ s/Genealogiese Instituut van Suid\-Afrika/Genealogiese_Instituut_van_Suid-Afrika/g;
         $input =~ s/Genealogiese Vereniging van Suid\-Afrika/Genealogiese_Vereniging_van_Suid-Afrika/g;
@@ -2177,6 +2250,7 @@ sub Tokenize {
         $input =~ s/Golf van Mexiko/Golf_van_Mexiko/g;
         $input =~ s/Golf van Oman/Golf_van_Oman/g;
         $input =~ s/Gomphocarpus cancellatus/Gomphocarpus_cancellatus/g;
+        $input =~ s/Gomphocarpus fruticosus/Gomphocarpus_fruticosus/g;
         $input =~ s/Gonialoe variegata/Gonialoe_variegata/g;
 	$input =~ s/Gonioma kamassi/Gonioma_kamassi/g;
         $input =~ s/Google Maps/Google_Maps/g;
@@ -2185,6 +2259,7 @@ sub Tokenize {
         $input =~ s/Goudini Spa/Goudini_Spa/g;
         $input =~ s/Goue Akker/Goue_Akker/g;
         $input =~ s/Goue Eeu/Goue_Eeu/g;
+        $input =~ s/Goue Horde/Goue_Horde/g;
         $input =~ s/Goue Vlies/Goue_Vlies/g;
         $input =~ s/Goudstadse Onderwyskollege/Goudstadse_Onderwyskollege/g;
         $input =~ s/Govan Mbekirylaan/Govan_Mbekirylaan/g;
@@ -2222,7 +2297,7 @@ sub Tokenize {
         $input =~ s/Grand cru/Grand_cru/g;
         $input =~ s/grande dame/grande_dame/g;
         $input =~ s/grandes dames/grandes_dames/g;
-        $input =~ s/Grand Prix's/Grand_Prix's/g;
+        $input =~ s/Grand Mousseuxlaan/Grand_Mousseuxlaan/g;
         $input =~ s/Grand Prix/Grand_Prix/g;
         $input =~ s/Grands Prix/Grands_Prix/g;
         $input =~ s/Grand Slam/Grand_Slam/g;
@@ -2248,6 +2323,7 @@ sub Tokenize {
         $input =~ s/Groot Karoo/Groot-Karoo/g;
         $input =~ s/Groot Knal/Groot_Knal/g;
         $input =~ s/Groot Koraalrif/Groot_Koraalrif/g;
+        $input =~ s/Groot Leeu/Groot_Leeu/g;
         $input =~ s/Groot Magellaanse Wolk/Groot_Magellaanse_Wolk/g;
         $input =~ s/Groot Marico/Groot_Marico/g;
         $input =~ s/Groot Mere/Groot_Mere/g;
@@ -2297,8 +2373,10 @@ sub Tokenize {
         $input =~ s/Handves van Regte/Handves_van_Regte/g;
         $input =~ s/Hannes Ontongstraat/Hannes_Ontongstraat/g;
         $input =~ s/Hannes Ontong\-straat/Hannes_Ontong-straat/g;
+        $input =~ s/Hans Merenskistraat/Hans_Merenskistraat/g;
         $input =~ s/Hans Pirowstraat/Hans_Pirowstraat/g;
         $input =~ s/Hans Pirow\-straat/Hans_Pirow-straat/g;
+        $input =~ s/Hans Schoemanstraat/Hans_Schoemanstraat/g;
         $input =~ s/Hans Strijdomlaan/Hans_Strijdomlaan/g;
         $input =~ s/Hans Strijdom\-laan/Hans_Strijdom-laan/g;
         $input =~ s/Hans Strijdomrylaan/Hans_Strijdomrylaan/g;
@@ -2309,6 +2387,7 @@ sub Tokenize {
         $input =~ s/Hans Dietrich Genscher\-straat/Hans_Dietrich_Genscher-straat/g;
         $input =~ s/Happy Valley/Happy_Valley/g;
         $input =~ s/Harpagophytum procumbens/Harpagophytum_procumbens/g;
+        $input =~ s/Harry Sneechweg/Harry_Sneechweg/g;
         $input =~ s/Harry Smithstraat/Harry_Smithstraat/g;
         $input =~ s/Harveya capensis/Harveya_capensis/g;
         $input =~ s/Harveya speciosa/Harveya_speciosa/g;
@@ -2324,6 +2403,7 @@ sub Tokenize {
         $input =~ s/Hedera helix/Hedera_helix/g;
         $input =~ s/Heeria insignis/Heeria_insignis/g;
         $input =~ s/Heeria paniculosa/Heeria_paniculosa/g;
+        $input =~ s/Heidelberg Times/Heidelberg_Times/g;
         $input =~ s/Heilige Gees/Heilige_Gees/g;
         $input =~ s/Heilige Land/Heilige_Land/g;
         $input =~ s/Heilige Nag/Heilige_Nag/g;
@@ -2342,6 +2422,7 @@ sub Tokenize {
         $input =~ s/Hendrik Berghlaan/Hendrik_Berghlaan/g;
         $input =~ s/Hendrik Bergh\-laan/Hendrik_Bergh-laan/g;
         $input =~ s/Hendrik die Seevaarder/Hendrik_die_Seevaarder/g;
+        $input =~ s/Hendrik Pistoriuslaan/Hendrik_Pistoriuslaan/g;
         $input =~ s/Hendrik Potgieterstraat/Hendrik_Potgieterstraat/g;
         $input =~ s/Hendrik Potgieter\-straat/Hendrik_Potgieter-straat/g;
         $input =~ s/Hendrik Potgieterweg/Hendrik_Potgieterweg/g;
@@ -2358,8 +2439,11 @@ sub Tokenize {
         $input =~ s/Hendrik Verwoerd\-straat/Hendrik_Verwoerd-straat/g;
         $input =~ s/Hendrik Witbooirylaan/Hendrik_Witbooirylaan/g;
         $input =~ s/Hendrik Witbooi\-rylaan/Hendrik_Witbooi-rylaan/g;
+        $input =~ s/Hendrik Witbooistraat/Hendrik_Witbooistraat/g;
+        $input =~ s/Hendrik Witbooi\-straat/Hendrik_Witbooi-straat/g;
         $input =~ s/Hennie Britzstraat/Hennie_Britzstraat/g;
         $input =~ s/Hennie Britz\-straat/Hennie_Britz-straat/g;
+        $input =~ s/Henry Coertstraat/Henry_Coertstraat/g;
         $input =~ s/hepatitis ([ABCE])/hepatitis_$1/g;
         $input =~ s/Hepatitis ([ABCE])/Hepatitis_$1/g;
         $input =~ s/her en der/her_en_der/g;
@@ -2373,6 +2457,7 @@ sub Tokenize {
         $input =~ s/Het Kruis/Het_Kruis/g;
         $input =~ s/Het Volk/Het_Volk/g;
         $input =~ s/Heterobranchus longifilis/Heterobranchus_longifilis/g;
+        $input =~ s/Heteromirafra ruddi/Heteromirafra_ruddi/g;
         $input =~ s/HF Verwoerdstraat/HF_Verwoerdstraat/g;
         $input =~ s/H\.F\. Verwoerdstraat/H.F._Verwoerdstraat/g;
         $input =~ s/HF Verwoerd\-straat/HF_Verwoerd-straat/g;
@@ -2417,6 +2502,7 @@ sub Tokenize {
 	$input =~ s/Hoërskool Bastion/Hoërskool_Bastion/g;
 	$input =~ s/Hoërskool Bellville/Hoërskool_Bellville/g;
 	$input =~ s/Hoërskool Ben Viljoen/Hoërskool_Ben_Viljoen/g;
+        $input =~ s/Hoërskool Ben Vorster/Hoërskool_Ben_Vorster/g;
         $input =~ s/Hoërskool Bergrivier/Hoërskool_Bergrivier/g;
         $input =~ s/Hoërskool Bethelsdorp/Hoërskool_Bethelsdorp/g;
         $input =~ s/Hoërskool Boesmanland/Hoërskool_Boesmanland/g;
@@ -2434,12 +2520,14 @@ sub Tokenize {
         $input =~ s/Hoërskool D\.F\. Malherbe/Hoërskool_D.F._Malherbe/g;
         $input =~ s/Hoërskool De Kuilen/Hoërskool_De_Kuilen/g;
         $input =~ s/Hoërskool Diamantveld/Hoërskool_Diamantveld/g;
+        $input =~ s/Hoërskool Drie Riviere/Hoërskool_Drie_Riviere/g;
         $input =~ s/Hoërskool Driehoek/Hoërskool_Driehoek/g;
         $input =~ s/Hoërskool Duinesig/Hoërskool_Duinesig/g;
         $input =~ s/Hoërskool Durbanville/Hoërskool_Durbanville/g;
         $input =~ s/Hoërskool Eben Donges/Hoërskool_Eben_Donges/g;
         $input =~ s/Hoërskool Eben Dönges/Hoërskool_Eben_Dönges/g;
         $input =~ s/Hoërskool Eldoraigne/Hoërskool_Eldoraigne/g;
+        $input =~ s/Hoërskool Ellisras/Hoërskool_Ellisras/g;
 	$input =~ s/Hoërskool Emil Weder/Hoërskool_Emil_Weder/g;
         $input =~ s/Hoërskool Esselenpark/Hoërskool_Esselenpark/g;
         $input =~ s/Hoërskool Etosha/Hoërskool_Etosha/g;
@@ -2457,10 +2545,13 @@ sub Tokenize {
         $input =~ s/Hoërskool Hendrik Verwoerd/Hoërskool_Hendrik_Verwoerd/g;
 	$input =~ s/Hoërskool Hottentots\-Holland/Hoërskool_Hottentots-Holland/g;
         $input =~ s/Hoërskool Jan de Klerk/Hoërskool_Jan_de_Klerk/g;
+        $input =~ s/Hoërskool Jan Möhr/Hoërskool_Jan_Möhr/g;
         $input =~ s/Hoërskool Jan van Riebeeck/Hoërskool_Jan_van_Riebeeck/g;
         $input =~ s/Hoërskool JG Meiring/Hoërskool_JG_Meiring/g;
         $input =~ s/Hoërskool J\.G\. Meiring/Hoërskool_J.G._Meiring/g;
         $input =~ s/Hoërskool John Vorster/Hoërskool_John_Vorster/g;
+        $input =~ s/Hoërskool JW Luckhoff/Hoërskool_JW_Luckhoff/g;
+        $input =~ s/Hoërskool J\.W\. Luckhoff/Hoërskool_J.W._Luckhoff/g;
         $input =~ s/Hoërskool Lansdowne/Hoërskool_Lansdowne/g;
 	$input =~ s/Hoërskool Luckhoff/Hoërskool_Luckhoff/g;
         $input =~ s/Hoërskool Lückhoff/Hoërskool_Lückhoff/g;
@@ -2489,6 +2580,7 @@ sub Tokenize {
         $input =~ s/Hoërskool Piketberg/Hoërskool_Piketberg/g;
         $input =~ s/Hoërskool PJ Olivier/Hoërskool_PJ_Olivier/g;
         $input =~ s/Hoërskool P\.J\. Olivier/Hoërskool_P.J._Olivier/g;
+        $input =~ s/Hoërskool Reitz/Hoërskool_Reitz/g;
         $input =~ s/Hoërskool Roodepoort/Hoërskool_Roodepoort/g;
         $input =~ s/Hoërskool Rustenburg/Hoërskool_Rustenburg/g;
 	$input =~ s/Hoërskool Sao Bras/Hoërskool_Sao_Bras/g;
@@ -2512,6 +2604,7 @@ sub Tokenize {
         $input =~ s/Hoërskool Wesbank/Hoërskool_Wesbank/g;
         $input =~ s/Hoërskool Westerford/Hoërskool_Westerford/g;
         $input =~ s/Hoërskool Weston/Hoërskool_Weston/g;
+        $input =~ s/Hoërskool Windhoek\-Wes/Hoërskool_Windhoek-Wes/g;
         $input =~ s/Hoërskool Windsor/Hoërskool_Windsor/g;
         $input =~ s/Hoërskool Wonderboom/Hoërskool_Wonderboom/g;
         $input =~ s/Hoërskool Zwaanswyk/Hoërskool_Zwaanswyk/g;
@@ -2590,11 +2683,13 @@ sub Tokenize {
         $input =~ s/Idées fixes/Idées_fixes/g;
         $input =~ s/idees fixes/idees_fixes/g;
         $input =~ s/Idees fixes/Idees_fixes/g;
+        $input =~ s/Ierse See/Ierse_See/g;
         $input =~ s/ignoratio elenchi/ignoratio_elenchi/g;
         $input =~ s/Ignoratio elenchi/Ignoratio_elenchi/g;
         $input =~ s/IK toets/IK_toets/g;
         $input =~ s/Il trovatore/Il_trovatore/g;
         $input =~ s/Il Trovatore/Il_Trovatore/g;
+        $input =~ s/Ilex paraguariensis/Ilex_paraguariensis/g;
         $input =~ s/Imam Haronweg/Imam_Haronweg/g;
         $input =~ s/Imam Haron\-weg/Imam_Haron-weg/g;
         $input =~ s/Imperial Light Horse/Imperial_Light_Horse/g;
@@ -2682,6 +2777,8 @@ sub Tokenize {
         $input =~ s/In loco parentis/In_loco_parentis/g;
         $input =~ s/in loco/in_loco/g;
         $input =~ s/In loco/In_loco/g;
+        $input =~ s/in margine/in_margine/g;
+        $input =~ s/In margine/In_margine/g;
         $input =~ s/in medias res/in_medias_res/g;
         $input =~ s/In medias res/In_medias_res/g;
         $input =~ s/in memoriam/in_memoriam/g;
@@ -2796,6 +2893,7 @@ sub Tokenize {
         $input =~ s/Instituut van Eiendomsagente/Instituut_van_Eiendomsagente/g;
         $input =~ s/Instituut vir 'n Demokratiese Alternatief vir Suid\-Afrika/Instituut_vir_'n_Demokratiese_Alternatief_vir_Suid-Afrika/g;
         $input =~ s/Instituut vir Christelike Onderwys/Instituut_vir_Christelike_Onderwys/g;
+        $input =~ s/Instituut vir Lasernavorsing/Instituut_vir_Lasernavorsing/g;
         $input =~ s/Instituut vir Openbare Beleidsnavorsing/Instituut_vir_Openbare_Beleidsnavorsing/g;
         $input =~ s/Instituut vir Patologie/Instituut_vir_Patologie/g;
         $input =~ s/Instituut vir Sekerheidstudie/Instituut_vir_Sekerheidstudie/g;
@@ -2862,12 +2960,14 @@ sub Tokenize {
 	$input =~ s/Ivan Arendse\-straat/Ivan_Arendse-straat/g;
 	$input =~ s/Ixia flexuosa/Ixia_flexuosa/g;
 	$input =~ s/Ixia viridiflora/Ixia_viridiflora/g;
+	$input =~ s/Jaap Mareestraat/Jaap_Mareestraat/g;
 	$input =~ s/jaarin en jaaruit/jaarin_en_jaaruit/g;
 	$input =~ s/Jaarin en jaaruit/Jaarin_en_jaaruit/g;
 	$input =~ s/jaar in en jaar uit/jaar_in_en_jaar_uit/g;
 	$input =~ s/Jaar in en jaar uit/Jaar_in_en_jaar_uit/g;
 	$input =~ s/Jacaranda FM/Jacaranda_FM/g;
 	$input =~ s/Jacaranda mimosifolia/Jacaranda_mimosifolia/g;
+	$input =~ s/Jagg Hoggstraat/Jack_Hoggstraat/g;
 	$input =~ s/jack russell/jack_russell/g;
 	$input =~ s/Jack Russell/Jack_Russell/g;
 	$input =~ s/Jacob Maréstraat/Jacob_Maréstraat/g;
@@ -2882,6 +2982,7 @@ sub Tokenize {
 	$input =~ s/Jan Brand\-straat/Jan_Brand-straat/g;
 	$input =~ s/Jan Burger/Jan_Burger/g;
 	$input =~ s/Jan Disselsvleirivier/Jan_Disselsvleirivier/g;
+	$input =~ s/Jan Enslinlaan/Jan_Enslinlaan/g;
 	$input =~ s/Jan Groentjiestraat/Jan_Groentjiestraat/g;
 	$input =~ s/Jan Groentjie\-straat/Jan_Groentjie-straat/g;
 	$input =~ s/Jan Hofmeyerplein/Jan_Hofmeyerplein/g;
@@ -2898,6 +2999,7 @@ sub Tokenize {
 	$input =~ s/Jan Laventel/Jan_Laventel/g;
 	$input =~ s/Jan Lui/Jan_Lui/g;
 	$input =~ s/Jan Mayen/Jan_Mayen/g;
+	$input =~ s/Jan Niemandpark/Jan_Niemandpark/g;
 	$input =~ s/Jan Pampoen/Jan_Pampoen/g;
 	$input =~ s/Jan Phillipsbergpad/Jan_Phillipsbergpad/g;
 	$input =~ s/Jan Phillips\-bergpad/Jan_Phillips-bergpad/g;
@@ -2990,6 +3092,7 @@ sub Tokenize {
 	$input =~ s/John X\. Merriman\-straat/John_X._Merriman-straat/g;
 	$input =~ s/John X Merrimanstraat/John_X_Merrimanstraat/g;
 	$input =~ s/John X Merriman\-straat/John_X_Merriman-straat/g;
+	$input =~ s/Johnson & Johnson/Johnson_&_Johnson/g;
 	$input =~ s/joie de vivre/joie_de_vivre/g;
 	$input =~ s/Joie de vivre/Joie_de_vivre/g;
 	$input =~ s/Jom Kippoeroorlog/Jom_Kippoeroorlog/g;
@@ -3041,6 +3144,7 @@ sub Tokenize {
         $input =~ s/Kaap St\. Lucia/Kaap_St._Lucia/g;
         $input =~ s/Kaap Trafalgar/Kaap_Trafalgar/g;
 	$input =~ s/Kaap Verde/Kaap_Verde/g;
+	$input =~ s/Kaap Vidal/Kaap_Vidal/g;
 	$input =~ s/Kaaplandse Onderwysdepartement/Kaaplandse_Onderwysdepartement/g;
 	$input =~ s/Kaaplandse Professionele Onderwysersunie/Kaaplandse_Professionele_Onderwysersunie/g;
 	$input =~ s/Kaaplandse Raad vir die Uitvoerende Kunste/Kaaplandse_Raad_vir_die_Uitvoerende_Kunste/g;
@@ -3060,6 +3164,7 @@ sub Tokenize {
 	$input =~ s/Kaapstadse Afrikaanse Toneelvereniging/Kaapstadse_Afrikaanse_Toneelvereniging/g;
 	$input =~ s/Kaapstadse Filharmoniese Jeugorkes/Kaapstadse_Filharmoniese_Jeugorkes/g;
 	$input =~ s/Kaapstadse Filharmoniese Orkes/Kaapstadse_Filharmoniese_Orkes/g;
+	$input =~ s/Kaapstadse Internasionale Konferensiesentrum/Kaapstadse_Internasionale_Konferensiesentrum/g;
 	$input =~ s/Kaatjie Kekkelbek/Kaatjie_Kekkelbek/g;
 	$input =~ s/Kabega Park/Kabega_Park/g;
 	$input =~ s/Kai \!Garib/Kai_!Garib/g;
@@ -3106,6 +3211,7 @@ sub Tokenize {
 	$input =~ s/kind des doods/kind_des_doods/g;
 	$input =~ s/Kind des doods/Kind_des_doods/g;
 	$input =~ s/King William's Town/King_William's_Town/g;
+        $input =~ s/King Willowsingel/King_Willowsingel/g;
 	$input =~ s/Klaas Smitsrivier/Klaas_Smitsrivier/g;
 	$input =~ s/Klaas Vaak/Klaas_Vaak/g;
 	$input =~ s/Klaas Vakie/Klaas_Vakie/g;
@@ -3127,6 +3233,7 @@ sub Tokenize {
         $input =~ s/Klein Duimpie/Klein_Duimpie/g;
         $input =~ s/Klein Hartsrivier/Klein_Hartsrivier/g;
         $input =~ s/Klein Leeukop/Klein_Leeukop/g;
+        $input =~ s/Klein Leeu/Klein_Leeu/g;
         $input =~ s/Klein Karoo Nasionale Kunstefees/Klein_Karoo_Nasionale_Kunstefees/g;
         $input =~ s/Klein\-Karoo Nasionale Kunstefees/Klein-Karoo_Nasionale_Kunstefees/g;
         $input =~ s/Klein Karoo/Klein_Karoo/g;
@@ -3172,10 +3279,12 @@ sub Tokenize {
         $input =~ s/Kongres van Suid\-Afrikaanse Studente/Kongres_van_Suid-Afrikaanse_Studente/g;
         $input =~ s/Kongres van Suid\-Afrikaanse Vakbonde/Kongres_van_Suid-Afrikaanse_Vakbonde/g;
         $input =~ s/Kongres van Tradisionale Leiers van Suid\-Afrika/Kongres_van_Tradisionale_Leiers_van_Suid-Afrika/g;
+        $input =~ s/Koning Edwardweg/Koning_Edwardweg/g;
         $input =~ s/Koning Zwelithinistadion/Koning_Zwelithinistadion/g;
         $input =~ s/Koning Zwelithini\-stadion/Koning_Zwelithini-stadion/g;
         $input =~ s/Koningin Maudland/Koningin_Maudland/g;
         $input =~ s/Koningin Maud\-land/Koningin_Maud-land/g;
+        $input =~ s/Koningin Victoriastraat/Koningin_Victoriastraat/g;
         $input =~ s/Koningin Wilhelminarylaan/Koningin_Wilhelminarylaan/g;
         $input =~ s/Koningin Wilhelmina\-rylaan/Koningin_Wilhelmina-rylaan/g;
         $input =~ s/Koningin Wilhelminaweg/Koningin_Wilhelminaweg/g;
@@ -3199,6 +3308,7 @@ sub Tokenize {
 	$input =~ s/Ku Klux Klan/Ku_Klux_Klan/g;
 	$input =~ s/Kwa Langa/Kwa_Langa/g;
 	$input =~ s/KwaZulu\-Natalse Landbou\-unie/KwaZulu-Natalse_Landbou-unie/g;
+	$input =~ s/Kya Sand/Kya_Sand/g;
 	$input =~ s/la Grange/la_Grange/g;
 	$input =~ s/La Grange/La_Grange/g;
 	$input =~ s/La Modernestraat/La_Modernestraat/g;
@@ -3207,6 +3317,7 @@ sub Tokenize {
         $input =~ s/La Mode\-straat/La_Mode-straat/g;
         $input =~ s/La Nina/La_Nina/g;
         $input =~ s/La Niña/La_Niña/g;
+        $input =~ s/La Paz/La_Paz/g;
         $input =~ s/La Provenceweg/La_Provenceweg/g;
         $input =~ s/La Provence\-weg/La_Provence-weg/g;
         $input =~ s/La Rochestraat/La_Rochestraat/g;
@@ -3214,6 +3325,7 @@ sub Tokenize {
         $input =~ s/La traviata/La_traviata/g;
         $input =~ s/La Traviata/La_Traviata/g;
         $input =~ s/Laat Bronstyd/Laat_Bronstyd/g;
+        $input =~ s/Laat Egipties/Laat_Egipties/g;
         $input =~ s/Laat Latyn/Laat_Latyn/g;
         $input =~ s/Laat Romantiek/Laat_Romantiek/g;
         $input =~ s/Laat Steentyd/Laat_Steentyd/g;
@@ -3231,28 +3343,38 @@ sub Tokenize {
         $input =~ s/Lady Pohambahospitaal/Lady_Pohambahospitaal/g;
         $input =~ s/Lady Pohamba\-hospitaal/Lady_Pohamba-hospitaal/g;
         $input =~ s/Lady Selborne/Lady_Selborne/g;
+        $input =~ s/lae lak/lae_lak/g;
+	$input =~ s/Lae lak/Lae_lak/g;
 	$input =~ s/Lae Lande/Lae_Lande/g;
 	$input =~ s/Laer Kruispad/Laer_Kruispad/g;
 	$input =~ s/Laer Parlementstraat/Laer_Parlementstraat/g;
 	$input =~ s/Laer Valleiweg/Laer_Valleiweg/g;
+	$input =~ s/Laerskool Boerefort/Laerskool_Boerefort/g;
 	$input =~ s/Laerskool De Hoop/Laerskool_De_Hoop/g;
 	$input =~ s/Laerskool Eikestad/Laerskool_Eikestad/g;
 	$input =~ s/Laerskool Esselenpark/Laerskool_Esselenpark/g;
 	$input =~ s/Laerskool Goodwoodpark/Laerskool_Goodwoodpark/g;
 	$input =~ s/Laerskool Groote Schuur/Laerskool_Groote_Schuur/g;
 	$input =~ s/Laerskool Jan van Riebeeck/Laerskool_Jan_van_Riebeeck/g;
+	$input =~ s/Laerskool Kameelfontein/Laerskool_Kameelfontein/g;
+	$input =~ s/Laerskool Kwaggasrand/Laerskool_Kwaggasrand/g;
 	$input =~ s/Laerskool Meyerspark/Laerskool_Meyerspark/g;
 	$input =~ s/Laerskool Mikro/Laerskool_Mikro/g;
+	$input =~ s/Laerskool Muldersdrif/Laerskool_Muldersdrif/g;
 	$input =~ s/Laerskool Nelspruit/Laerskool_Nelspruit/g;
         $input =~ s/Laerskool Paul Greyling/Laerskool_Paul_Greyling/g;
         $input =~ s/Laerskool Paul Roos/Laerskool_Paul_Roos/g;
+        $input =~ s/Laerskool Pietersburg\-Oos/Laerskool_Pietersburg-Oos/g;
+        $input =~ s/Laerskool Pietersburg\-Suid/Laerskool_Pietersburg-Suid/g;
         $input =~ s/Laerskool Protea/Laerskool_Protea/g;
         $input =~ s/Laerskool Rondbosch\-Oos/Laerskool_Rondbosch-Oos/g;
+        $input =~ s/Laerskool Saamspan/Laerskool_Saamspan/g;
         $input =~ s/Laerskool Saamtrek/Laerskool_Saamtrek/g;
         $input =~ s/Laerskool Schweizer\-Reneke/Laerskool_Schweizer-Reneke/g;
         $input =~ s/Laerskool Simon van der Stel/Laerskool_Simon_van_der_Stel/g;
 	$input =~ s/Laerskool Stellenbosch/Laerskool_Stellenbosch/g;
         $input =~ s/Laerskool Tafelberg/Laerskool_Tafelberg/g;
+        $input =~ s/Laerskool Unika/Laerskool_Unika/g;
         $input =~ s/Laerskool Zwaanswyk/Laerskool_Zwaanswyk/g;
         $input =~ s/Lagenaria siceraria/Lagenaria_siceraria/g;
         $input =~ s/Lagenaria vulgaris/Lagenaria_vulgaris/g;
@@ -3264,6 +3386,8 @@ sub Tokenize {
         $input =~ s/Laisser faire/Laisser_faire/g;
         $input =~ s/laissez faire/laissez_faire/g;
         $input =~ s/Laissez faire/Laissez_faire/g;
+        $input =~ s/Lama glama/Lama_glama/g;
+        $input =~ s/Lampetra fluviatilis/Lampetra_fluviatilis/g;
         $input =~ s/Lamprotornis nitens/Lamprotornis_nitens/g;
         $input =~ s/Lanaria lanata/Lanaria_lanata/g;
         $input =~ s/land van Cocagne/land_van_Cocagne/g;
@@ -3272,8 +3396,12 @@ sub Tokenize {
         $input =~ s/Land van Waveren/Land_van_Waveren/g;
         $input =~ s/Land Rover/Land_Rover/g;
         $input =~ s/Langenhoven Gimnasium/Langenhoven_Gimnasium/g;
+        $input =~ s/Laniarius atrococcineus/Laniarius_atrococcineus/g;
+        $input =~ s/Lanius collaris/Lanius_collaris/g;
         $input =~ s/lapis lazuli/lapis_lazuli/g;
         $input =~ s/Lapis lazuli/Lapis_lazuli/g;
+        $input =~ s/lapsang souchong/lapsang_souchong/g;
+        $input =~ s/Lapsang souchong/Lapsang_souchong/g;
         $input =~ s/lapsus calami/lapsus_calami/g;
         $input =~ s/Lapsus calami/Lapsus_calami/g;
         $input =~ s/lapsus linguae/lapsus_linguae/g;
@@ -3281,6 +3409,7 @@ sub Tokenize {
         $input =~ s/lapsus memoriae/lapsus_memoriae/g;
         $input =~ s/Lapsus memoriae/Lapsus_memoriae/g;
         $input =~ s/Larus cirrocephalus/Larus_cirrocephalus/g;
+        $input =~ s/Las Palmas/Las_Palmas/g;
         $input =~ s/Las Vegas/Las_Vegas/g;
         $input =~ s/La Tène/La_Tène/g;
         $input =~ s/Latrodectus mactans/Latrodectus_mactans/g;
@@ -3324,6 +3453,7 @@ sub Tokenize {
         $input =~ s/Lectori salutem/Lectori_salutem/g;
         $input =~ s/Leeu Gamka/Leeu_Gamka/g;
         $input =~ s/Legioen van Eer/Legioen_van_Eer/g;
+        $input =~ s/Lemmus lemmus/Lemmus_lemmus/g;
         $input =~ s/Leonotis ocymifolia/Leonotis_ocymifolia/g;
         $input =~ s/lepel vol/lepel_vol/g;
         $input =~ s/Lepel vol/Lepel_vol/g;
@@ -3331,6 +3461,7 @@ sub Tokenize {
         $input =~ s/Lepels vol/Lepels_vol/g;
         $input =~ s/Lepidium sativum/Lepidium_sativum/g;
         $input =~ s/Lepidochrysops lotana/Lepidochrysops_lotana/g;
+        $input =~ s/Leptoptilos crumenifer/Leptoptilos_crumenifer/g;
         $input =~ s/Lepus capensis/Lepus_capensis/g;
         $input =~ s/Lepus europaeus/Lepus_europaeus/g;
         $input =~ s/Lepus monticularis/Lepus_monticularis/g;
@@ -3343,6 +3474,9 @@ sub Tokenize {
         $input =~ s/Leucadendron eucalyptifolium/Leucadendron_eucalyptifolium/g;
         $input =~ s/Leucadendron procerum/Leucadendron_procerum/g;
         $input =~ s/Leucospermum conocarpodendron/Leucospermum_conocarpodendron/g;
+        $input =~ s/Leucospermum cuneiforme/Leucospermum_cuneiforme/g;
+        $input =~ s/lex_Aquilia/lex_Aquilia/g;
+        $input =~ s/Lex_Aquilia/Lex_Aquilia/g;
         $input =~ s/lex talionis/lex_talionis/g;
         $input =~ s/Lex talionis/Lex_talionis/g;
         $input =~ s/Leysera gnaphalodes/Leysera_gnaphalodes/g;
@@ -3350,11 +3484,14 @@ sub Tokenize {
         $input =~ s/Libertina Amathila\-straat/Libertina_Amathila-straat/g;
         $input =~ s/Liberty Life/Liberty_Life/g;
         $input =~ s/Liewe Kersfeesvader/Liewe_Kersfeesvader/g;
+        $input =~ s/Ligustrum vulgare/Ligustrum_vulgare/g;
         $input =~ s/Lillian Ngoyistraat/Lillian_Ngoyistraat/g;
         $input =~ s/Lillian Ngoyi\-straat/Lillian_Ngoyi-straat/g;
         $input =~ s/Lilium auratum/Lilium_auratum/g;
+        $input =~ s/Lilium candidum/Lilium_candidum/g;
         $input =~ s/Lime Acres/Lime_Acres/g;
         $input =~ s/Limothrips cerealium/Limothrips_cerealium/g;
+        $input =~ s/Linbro Park/Linbro_Park/g;
         $input =~ s/Linêer A/Linêer_A/g;
         $input =~ s/Linêer B/Linêer_B/g;
         $input =~ s/lingua franca/lingua_franca/g;
@@ -3362,6 +3499,8 @@ sub Tokenize {
         $input =~ s/linguae francae/linguae_francae/g;
         $input =~ s/Linguae francae/Linguae_francae/g;
         $input =~ s/Linguistevereniging van Suider\-Afrika/Linguistevereniging_van_Suider-Afrika/g;
+        $input =~ s/Linmed Hospitaal/Linmed_Hospitaal/g;
+        $input =~ s/Litchi chinensis/Litchi_chinensis/g;
         $input =~ s/Lithops bromfieldii/Lithops_bromfieldii/g;
         $input =~ s/Litocranius walleri/Litocranius_walleri/g;
         $input =~ s/Little Richard/Little_Richard/g;
@@ -3392,14 +3531,21 @@ sub Tokenize {
         $input =~ s/Lourenço Marques/Lourenço_Marques/g;
         $input =~ s/Lucas Mangopestraat/Lucas_Mangopestraat/g;
         $input =~ s/Lucas Mangope\-straat/Lucas_Mangope-straat/g;
+        $input =~ s/Lugvervoerraad van Suidelike Afrika/Lugvervoerraad_van_Suidelike_Afrika/g;
         $input =~ s/Lui maar op ?, Belinda/Lui_maar_op,_Belinda/g;
         $input =~ s/Luketz Swartbooirylaan/Luketz_Swartbooirylaan/g;
         $input =~ s/Luketz Swartbooi\-rylaan/Luketz_Swartbooi-rylaan/g;
+        $input =~ s/Luscinia luscinia/Luscinia_luscinia/g;
         $input =~ s/Lutherse Wêreldfederasie/Lutherse_Wêreldfederasie/g;
         $input =~ s/Lux Verbi/Lux_Verbi/g;
+        $input =~ s/Lycium kraussii/Lycium_kraussii/g;
         $input =~ s/Lycopersicon esculentum/Lycopersicon_esculentum/g;
         $input =~ s/Lytta vesicatoria/Lytta_vesicatoria/g;
+        $input =~ s/Maatskappy vir Europese Immigrasie/Maatskappy_vir_Europese_Immigrasie/g;
         $input =~ s/Macaca nemestrina/Macaca_nemestrina/g;
+        $input =~ s/Macaca sylvanus/Macaca_sylvanus/g;
+        $input =~ s/Macadamia integrifolia/Macadamia_integrifolia/g;
+        $input =~ s/Macadamia ternifolia/Macadamia_ternifolia/g;
         $input =~ s/Machu Picchu/Machu_Picchu/g;
         $input =~ s/Macronyx ameliae/Macronyx_ameliae/g;
         $input =~ s/Macronyx capensis/Macronyx_capensis/g;
@@ -3408,6 +3554,8 @@ sub Tokenize {
         $input =~ s/Magellaanse Stroom/Magellaanse_Stroom/g;
         $input =~ s/Magellaanse Wolke/Magellaanse_Wolke/g;
         $input =~ s/Magna Carta/Magna_Carta/g;
+        $input =~ s/magna opera/magna_opera/g;
+        $input =~ s/Magna opera/Magna_opera/g;
         $input =~ s/magnum opus/magnum_opus/g;
         $input =~ s/Magnum opus/Magnum_opus/g;
         $input =~ s/Mahatma Ghandistraat/Mahatma_Ghandistraat/g;
@@ -3415,6 +3563,12 @@ sub Tokenize {
         $input =~ s/Mahatma Ghandiweg/Mahatma_Ghandiweg/g;
         $input =~ s/Mahatma Ghandi\-weg/Mahatma_Ghandi-weg/g;
         $input =~ s/Main Reefweg/Main_Reefweg/g;
+        $input =~ s/maître d'hôtel/maître_d'hôtel/g;
+        $input =~ s/maîtres d'hôtel/maîtres_d'hôtel/g;
+        $input =~ s/Maître d'hôtel/Maître_d'hôtel/g;
+        $input =~ s/Maîtres d'hôtel/Maîtres_d'hôtel/g;
+        $input =~ s/Major Mitchellkaketoe/Major_Mitchellkaketoe/g;
+        $input =~ s/Major Mitchell-kaketoe/Major_Mitchell-kaketoe/g;
         $input =~ s/mala fide/mala_fide/g;
         $input =~ s/Mala fide/Mala_fide/g;
         $input =~ s/mala mogodu/mala_mogodu/g;
@@ -3423,11 +3577,16 @@ sub Tokenize {
         $input =~ s/Malcolm Spencestraat/Malcolm_Spencestraat/g;
         $input =~ s/Malcolm Spence\-straat/Malcolm_Spence-straat/g;
         $input =~ s/Malcolm X/Malcolm_X/g;
+        $input =~ s/Maleisiese Skiereiland/Maleisiese_Skiereiland/g;
         $input =~ s/Malephora mollis/Malephora_mollis/g;
         $input =~ s/Malus baccata/Malus_baccata/g;
         $input =~ s/Malva parviflora/Malva_parviflora/g;
+        $input =~ s/Mammea americana/Mammea_americana/g;
+        $input =~ s/Mammuthus primigenius/Mammuthus_primigenius/g;
         $input =~ s/Manchester City/Manchester_City/g;
         $input =~ s/Manchester United/Manchester_United/g;
+        $input =~ s/Mandragora officinarum/Mandragora_officinarum/g;
+        $input =~ s/Mandrillus sphinx/Mandrillus_sphinx/g;
         $input =~ s/Mandume Ndemufayolaan/Mandume_Ndemufayolaan/g;
         $input =~ s/Mandume Ndemufayo\-laan/Mandume_Ndemufayo-laan/g;
         $input =~ s/Mandume Ndemufayorylaan/Mandume_Ndemufayorylaan/g;
@@ -3435,6 +3594,7 @@ sub Tokenize {
         $input =~ s/Mandume Ndemufayostraat/Mandume_Ndemufayostraat/g;
         $input =~ s/Mandume Ndemufayo\-straat/Mandume_Ndemufayo-straat/g;
         $input =~ s/Mandume yaNdemufayo/Mandume_yaNdemufayory/g;
+        $input =~ s/Mangifera indica/Mangifera_indica/g;
         $input =~ s/Mangosuthu Technikon/Mangosuthu_Technikon/g;
         $input =~ s/Mangosuthu Universiteit vir Tegnologie/Mangosuthu_Universiteit_vir_Tegnologie/g;
         $input =~ s/Mangosuthu-universiteit vir Tegnologie/Mangosuthu-universiteit_vir_Tegnologie/g;
@@ -3448,14 +3608,19 @@ sub Tokenize {
         $input =~ s/Marcus Aurelius/Marcus_Aurelius/g;
         $input =~ s/Mardi Gras/Mardi_Gras/g;
         $input =~ s/Marie Conradiebrug/Marie_Conradiebrug/g;
+        $input =~ s/Marinus Rabiestraat/Marinus_Rabiestraat/g;
         $input =~ s/Market Watch/Market_Watch/g;
         $input =~ s/Marks & Spencer/Marks_&_Spencer/g;
         $input =~ s/Markus Antonius/Markus_Antonius/g;
         $input =~ s/Markus Aurelius/Markus_Aurelius/g;
+        $input =~ s/Marmota marmota/Marmota_marmota/g;
         $input =~ s/Maroela Media/Maroela_Media/g;
         $input =~ s/Matricaria chamomilla/Matricaria_chamomilla/g;
+        $input =~ s/Maurolicus muelleri/Maurolicus_muelleri/g;
         $input =~ s/Max Eichabstraat/Max_Eichabstraat/g;
         $input =~ s/Maynard Mall/Maynard_Mall/g;
+        $input =~ s/mazel tov/mazel_tov/g;
+        $input =~ s/Mazel tov/Mazel_tov/g;
         $input =~ s/McDougall's Bay/McDougall's_Bay/g;
         $input =~ s/Mc Farlanestraat/Mc_Farlanestraat/g;
         $input =~ s/Mc Farlane\-straat/Mc_Farlane-straat/g;
@@ -3466,8 +3631,10 @@ sub Tokenize {
         $input =~ s/Mc Lachlan\-plein/McLachlan-plein/g;
         $input =~ s/mea culpa/mea_culpa/g;
         $input =~ s/Mea culpa/Mea_culpa/g;
+        $input =~ s/Medicago sativa/Medicago_sativa/g;
         $input =~ s/Mediese Navorsingsraad/Mediese_Navorsingsraad/g;
         $input =~ s/Mediese Raad/Mediese_Raad/g;
+        $input =~ s/Mediese Universiteit van Suid\-Afrika/Mediese_Universiteit_van_Suid-Afrika/g;
         $input =~ s/Mediese Vereniging van Namibië/Mediese_Vereniging_van_Namibië/g;
         $input =~ s/Meer van Genève/Meer_van_Genève/g;
         $input =~ s/Mei Warriesstraat/Mei_Warriesstraat/g;
@@ -3488,6 +3655,7 @@ sub Tokenize {
         $input =~ s/Melica racemosa/Melica_racemosa/g;
         $input =~ s/Melolobium calycinum/Melolobium_calycinum/g;
         $input =~ s/Melolobium exudans/Melolobium_exudans/g;
+        $input =~ s/Melophagus ovinus/Melophagus_ovinus/g;
         $input =~ s/Melopsittacus undulatus/Melopsittacus_undulatus/g;
         $input =~ s/memento mori/memento_mori/g;
         $input =~ s/Memento mori/Memento_mori/g;
@@ -3528,11 +3696,14 @@ sub Tokenize {
         $input =~ s/Michelle McLeanstraat/Michelle_McLeanstraat/g;
         $input =~ s/Michelle McLean\-straat/Michelle_McLean-straat/g;
         $input =~ s/Microloma tenuifolium/Microloma_tenuifolium/g;
+        $input =~ s/Microparra capensis/Microparra_capensis/g;
         $input =~ s/Micropterus dolomieu/Micropterus_dolomieu/g;
         $input =~ s/Microsoft Access/Microsoft_Access/g;
         $input =~ s/Microsoft Excel/Microsoft_Excel/g;
         $input =~ s/Microsoft Office/Microsoft_Office/g;
         $input =~ s/Microsoft Word/Microsoft_Word/g;
+        $input =~ s/Middelburg Observer/Middelburg_Observer/g;
+        $input =~ s/Mimusops zeyheri/Mimusops_zeyheri/g;
         $input =~ s/Minnie Hofmeyrkollege/Minnie_Hofmeyrkollege/g;
         $input =~ s/Minnie Hofmeyr\-kollege/Minnie_Hofmeyr-kollege/g;
         $input =~ s/Minnie Hofmeyr\-Kollege/Minnie_Hofmeyr-Kollege/g;
@@ -3540,7 +3711,12 @@ sub Tokenize {
         $input =~ s/Minority Front/Minority_Front/g;
         $input =~ s/min of meer/min_of_meer/g;
         $input =~ s/Min of meer/Min_of_meer/g;
+        $input =~ s/Mirafra africana/Mirafra_africana/g;
         $input =~ s/Mirafra apiata/Mirafra_apiata/g;
+        $input =~ s/Mirafra cheniana/Mirafra_cheniana/g;
+        $input =~ s/Mirafra fasciolata/Mirafra_fasciolata/g;
+        $input =~ s/Mirafra passerina/Mirafra_passerina/g;
+        $input =~ s/Mirafra rufocinnamomea/Mirafra_rufocinnamomea/g;
         $input =~ s/Mitchells Plain/Mitchells_Plain/g;
         $input =~ s/mits dese/mits_dese/g;
         $input =~ s/Mits dese/Mits_dese/g;
@@ -3582,14 +3758,17 @@ sub Tokenize {
         $input =~ s/Monte Riolaan/Monte_Riolaan/g;
         $input =~ s/Monte Vista/Monte_Vista/g;
         $input =~ s/Monticola rupestris/Monticola_rupestris/g;
+        $input =~ s/Monty Python/Monty_Python/g;
         $input =~ s/Morawiese Sendinggenootskap/Morawiese_Sendinggenootskap/g;
         $input =~ s/Morawiese Sendingsmuseum/Morawiese_Sendingsmuseum/g;
+        $input =~ s/Morus capensis/Morus_capensis/g;
         $input =~ s/Moses Mabhidastadion/Moses_Mabhidastadion/g;
         $input =~ s/Moses Mabhida\-stadion/Moses_Mabhida-stadion/g;
         $input =~ s/Moses Tjitinderostraat/Moses_Tjitinderostraat/g;
         $input =~ s/Moses Tjitindero\-straat/Moses_Tjitindero-straat/g;
         $input =~ s/Moslem Juridiese Raad/Moslem_Juridiese_Raad/g;
         $input =~ s/Moslem\- Juridiese Raad/Moslem-_Juridiese_Raad/g;
+        $input =~ s/Mostert se Meul/Mostert_se_Meul/g;
         $input =~ s/Motacilla capensis/Motacilla_capensis/g;
         $input =~ s/Mount Alida/Mount_Alida/g;
         $input =~ s/Mount Ayliff/Mount_Ayliff/g;
@@ -3600,6 +3779,7 @@ sub Tokenize {
         $input =~ s/Mount Pleasant/Mount_Pleasant/g;
         $input =~ s/Muraltia rubeacea/Muraltia_rubeacea/g;
         $input =~ s/Musa paradisiaca/Musa_paradisiaca/g;
+        $input =~ s/Musa textilis/Musa_textilis/g;
         $input =~ s/Musca domestica/Musca_domestica/g;
         $input =~ s/Museumvereniging van Namibië/Museumvereniging_van_Namibië/g;
         $input =~ s/mutatis mutandis/mutatis_mutandis/g;
@@ -3608,6 +3788,7 @@ sub Tokenize {
         $input =~ s/Myn en dyn/Myn_en_dyn/g;
         $input =~ s/myns insiens/myns_insiens/g;
         $input =~ s/Myns insiens/Myns_insiens/g;
+        $input =~ s/Myrica quercifolia/Myrica_quercifolia/g;
         $input =~ s/Myxus capensis/Myxus_capensis/g;
         $input =~ s/Mynwerkersunie van Namibië/Mynwerkersunie_van_Namibië/g;
         $input =~ s/Naaim de Vosstraat/Naaim_de_Vosstraat/g;
@@ -3655,6 +3836,7 @@ sub Tokenize {
         $input =~ s/Namibiese Kamer van die Omgewing/Namibiese_Kamer_van_die_Omgewing/g;
         $input =~ s/Namibiese Kamer van Handel en Nywerheid/Namibiese_Kamer_van_Handel_en_Nywerheid/g;
         $input =~ s/Namibiese Kankervereniging/Namibiese_Kankervereniging/g;
+        $input =~ s/Namibiese Kanofederasie/Namibiese_Kanofederasie/g;
         $input =~ s/Namibiese Kollege vir Afstandsonderrig/Namibiese_Kollege_vir_Afstandsonderrig/g;
         $input =~ s/Namibiese Kollege vir Ope en Afstandsonderrig/Namibiese_Kollege_vir_Ope_en_Afstandsonderrig/g;
         $input =~ s/Namibiese Kollege vir Ope\- en Afstandsonderrig/Namibiese_Kollege_vir_Ope-_en_Afstandsonderrig/g;
@@ -3667,6 +3849,7 @@ sub Tokenize {
         $input =~ s/Namibiese Motorsportfederasie/Namibiese_Motorsportfederasie/g;
         $input =~ s/Namibiese Nasionale Olimpiese Komitee/Namibiese_Nasionale_Olimpiese_Komitee/g;
         $input =~ s/Namibiese Nasionale Paralimpiese Komitee/Namibiese_Nasionale_Paralimpiese_Komitee/g;
+        $input =~ s/Namibiese Nasionale Simfonieorkes/Namibiese_Nasionale_Simfonieorkes/g;
         $input =~ s/Namibiese Onafhanklike Sekuriteitsunie/Namibiese_Onafhanklike_Sekuriteitsunie/g;
         $input =~ s/Namibiese Onderwysersunie/Namibiese_Onderwysersunie/g;
         $input =~ s/Namibiese Oorlogveteranetrust/Namibiese_Oorlogveteranetrust/g;
@@ -3695,6 +3878,7 @@ sub Tokenize {
         $input =~ s/Nana Sita\-straat/Nana_Sita-straat/g;
         $input =~ s/Napoleontiese Oorloë/Napoleontiese_Oorloë/g;
         $input =~ s/Nasionale Afrikaanse Letterkundige Museum en Navorsingsentrum/Nasionale_Afrikaanse_Letterkundige_Museum_en_Navorsingsentrum/g;
+        $input =~ s/Nasionale Afrikaanse Teater-inisiatief/Nasionale_Afrikaanse_Teater-inisiatief/g;
         $input =~ s/Nasionale Argief van Suid\-Afrika/Nasionale_Argief_van_Suid-Afrika/g;
         $input =~ s/Nasionale Bank/Nasionale_Bank/g;
         $input =~ s/Nasionale Behuisings\- en Beplanningskommissie/Nasionale_Behuisings-_en_Beplanningskommissie/g;
@@ -3708,22 +3892,26 @@ sub Tokenize {
         $input =~ s/Nasionale Dierebeskermingsvereniging/Nasionale_Dierebeskermingsvereniging/g;
         $input =~ s/Nasionale Distrikshospitaal/Nasionale_Distrikshospitaal/g;
         $input =~ s/Nasionale Eksamen\-, Assessering\- en Sertifiseringsraad/Nasionale_Eksamen-,_Assessering-_en_Sertifiseringsraad/g;
+        $input =~ s/Nasionale Energiefonds/Nasionale_Energiefonds/g;
         $input =~ s/Nasionale Energieregulator van Suid\-Afrika/Nasionale_Energieregulator_van_Suid-Afrika/g;
         $input =~ s/Nasionale Erfenisraad/Nasionale_Erfenisraad/g;
         $input =~ s/Nasionale Fisikanavorsingslaboratorium/Nasionale_Fisikanavorsingslaboratorium/g;
         $input =~ s/Nasionale Forum vir Wetenskap en Tegnologie/Nasionale_Forum_vir_Wetenskap_en_Tegnologie/g;
         $input =~ s/Nasionale Forumkomitee/Nasionale_Forumkomitee/g;
-        $input =~ s/Nasionale Gesondheidslaboratoriumdienste/Nasionale_Gesondheidslaboratoriumdienste/g;
+        $input =~ s/Nasionale Gesondheidslaboratoriumdiens/Nasionale_Gesondheidslaboratoriumdiens/g;
         $input =~ s/Nasionale Gesondheidsversekering/Nasionale_Gesondheidsversekering/g;
+        $input =~ s/Nasionale Gesondheidswet/Nasionale_Gesondheidswet/g;
         $input =~ s/Nasionale Instituut vir Dowes/Nasionale_Instituut_vir_Dowes/g;
         $input =~ s/Nasionale Instituut vir Oordraagbare Siektes/Nasionale_Instituut_vir_Oordraagbare_Siektes/g;
         $input =~ s/Nasionale Instituut vir Opvoedkundige Ontwikkeling/Nasionale_Instituut_vir_Opvoedkundige_Ontwikkeling/g;
+        $input =~ s/Nasionale Instituut vir Teoretiese Fisika/Nasionale_Instituut_vir_Teoretiese_Fisika/g;
         $input =~ s/Nasionale Intelligensiediens/Nasionale_Intelligensiediens/g;
         $input =~ s/Nasionale Knysnameergebied/Nasionale_Knysnameergebied/g;
         $input =~ s/Nasionale Kommissie vir Hoër Onderwys/Nasionale_Kommissie_vir_Hoër_Onderwys/g;
         $input =~ s/Nasionale Konserwatiewe Party/Nasionale_Konserwatiewe_Party/g;
         $input =~ s/Nasionale Konvensie/Nasionale_Konvensie/g;
         $input =~ s/Nasionale Kredietreguleerder/Nasionale_Kredietreguleerder/g;
+        $input =~ s/Nasionale Kredietwet/Nasionale_Kredietwet/g;
         $input =~ s/Nasionale Krisantevereniging/Nasionale_Krisantevereniging/g;
         $input =~ s/Nasionale Kunsgalery/Nasionale_Kunsgalery/g;
         $input =~ s/Nasionale Kunsmuseum/Nasionale_Kunsmuseum/g;
@@ -3740,6 +3928,7 @@ sub Tokenize {
         $input =~ s/Nasionale Pers/Nasionale_Pers/g;
         $input =~ s/Nasionale Raad/Nasionale_Raad/g;
         $input =~ s/Nasionale Raad van Provinsies/Nasionale_Raad_van_Provinsies/g;
+        $input =~ s/Nasionale Raad vir Drankhandel/Nasionale_Raad_vir_Drankhandel/g;
         $input =~ s/Nasionale Raad vir Navorsing, Wetenskap en Tegnologie/Nasionale_Raad_vir_Navorsing,_Wetenskap_en_Tegnologie/g;
         $input =~ s/Nasionale Redakteursforum/Nasionale_Redakteursforum/g;
         $input =~ s/Nasionale Reserwemag/Nasionale_Reserwemag/g;
@@ -3765,6 +3954,8 @@ sub Tokenize {
         $input =~ s/Natal Bank/Natal_Bank/g;
         $input =~ s/Natal Indian Congress/Natal_Indian_Congress/g;
         $input =~ s/Natal Native Congress/Natal_Native_Congress/g;
+        $input =~ s/Natalina wesseliana/Natalina_wesseliana/g;
+        $input =~ s/Natalse Middelande/Natalse_Middelande/g;
         $input =~ s/Natalse Ope/Natalse_Ope/g;
         $input =~ s/Natalse Parkeraad/Natalse_Parkeraad/g;
         $input =~ s/Natalse Regeringspoorweë/Natalse_Regeringspoorweë/g;
@@ -3775,6 +3966,7 @@ sub Tokenize {
         $input =~ s/National Union of Mineworkers/National_Union_of_Mineworkers/g;
         $input =~ s/National Union/National_Union/g;
         $input =~ s/Nature's Valley/Nature's_Valley/g;
+        $input =~ s/Naucrates ductor/Naucrates_ductor/g;
         $input =~ s/Naval Hill/Naval_Hill/g;
         $input =~ s/Navorsingsinstituut vir Veeartsenykunde/Navorsingsinstituut_vir_Veeartsenykunde/g;
         $input =~ s/Navorsings\-instituut vir Veeartsenykunde/Navorsings-instituut_vir_Veeartsenykunde/g;
@@ -3795,9 +3987,11 @@ sub Tokenize {
         $input =~ s/Nederlandse Taalunie/Nederlandse_Taalunie/g;
         $input =~ s/Need's Camp/Need's_Camp/g;
         $input =~ s/Neënde Grensoorlog/Neënde_Grensoorlog/g;
+        $input =~ s/Neëntiende Straat/Neëntiende_Straat/g;
         $input =~ s/9de Laan/9de_Laan/g;
         $input =~ s/Negende Grensoorlog/Negende_Grensoorlog/g;
         $input =~ s/Negende Laan/Negende_Laan/g;
+        $input =~ s/Negentiende Straat/Negentiende_Straat/g;
         $input =~ s/Neil Mosesstraat/Neil_Mosesstraat/g;
         $input =~ s/Nelson Mandelabaai/Nelson_Mandelabaai/g;
         $input =~ s/Nelson Mandela\-baai/Nelson_Mandela-baai/g;
@@ -3812,6 +4006,7 @@ sub Tokenize {
         $input =~ s/Nelson Mandelastigting/Nelson_Mandelastigting/g;
         $input =~ s/Nelson Mandela\-stigting/Nelson_Mandela-stigting/g;
         $input =~ s/Nelson Mandela Stigting/Nelson_Mandela_Stigting/g;
+        $input =~ s/Nelumbo nucifera/Nelumbo_nucifera/g;
         $input =~ s/Neolitiese Revolusie/Neolitiese_Revolusie/g;
         $input =~ s/Neolitiese Rewolusie/Neolitiese_Rewolusie/g;
         $input =~ s/Nepenthes lowii/Nepenthes_lowii/g;
@@ -3851,6 +4046,7 @@ sub Tokenize {
         $input =~ s/Kaapse Kamer van Koophandel en Nywerheid/Kaapse_Kamer_van_Koophandel_en_Nywerheid/g;
         $input =~ s/Noordelike Halfrond/Noordelike_Halfrond/g;
         $input =~ s/Noordelike Nederlande/Noordelike_Nederlande/g;
+        $input =~ s/Noordelike Mariana\-eilande/Noordelike_Mariana-eilande/g;
         $input =~ s/Noordelike Yssee/Noordelike_Yssee/g;
         $input =~ s/Noorder\-Paarl Hoërskool/Noorder-Paarl_Hoërskool/g;
         $input =~ s/Noordwestelike Gebiede/Noordwestelike_Gebiede/g;
@@ -3864,12 +4060,14 @@ sub Tokenize {
         $input =~ s/Nottingham Road/Nottingham_Road/g;
         $input =~ s/Nova Scotia/Nova_Scotia/g;
         $input =~ s/Nowaja Zemlja/Nowaja_Zemlja/g;
+        $input =~ s/NRC Handelsblad/NRC_Handelsblad/g;
         $input =~ s/Nuwe Apostoliese Kerk/Nuwe_Apostoliese_Kerk/g;
         $input =~ s/Nuwe Arbeidersparty/Nuwe_Arbeidersparty/g;
         $input =~ s/Nuwe Bergstraat/Nuwe_Bergstraat/g;
         $input =~ s/Nuwe Bredastraat/Nuwe_Bredastraat/g;
         $input =~ s/Nuwe Eskdalestraat/Nuwe_Eskdalestraat/g;
         $input =~ s/Nuwe Hantam/Nuwe_Hantam/g;
+        $input =~ s/Nuwe Laan/Nuwe_Laan/g;
         $input =~ s/Nuwe Orde/Nuwe_Orde/g;
         $input =~ s/Nuwe Republiek/Nuwe_Republiek/g;
         $input =~ s/Nuwe Steentyd/Nuwe_Steentyd/g;
@@ -3879,6 +4077,7 @@ sub Tokenize {
         $input =~ s/Nuwe Wêreld/Nuwe_Wêreld/g;
         $input =~ s/Nymania capensis/Nymania_capensis/g;
         $input =~ s/Nymphaea capensis/Nymphaea_capensis/g;
+        $input =~ s/Nymphaea lotus/Nymphaea_lotus/g;
         $input =~ s/Nymphicus hollandicus/Nymphicus_hollandicus/g;
         $input =~ s/obiit sine prole/obiit_sine_prole/g;
         $input =~ s/Obiit sine prole/Obiit_sine_prole/g;
@@ -3897,6 +4096,7 @@ sub Tokenize {
         $input =~ s/Olimpiese Spele/Olimpiese_Spele/g;
         $input =~ s/Olimpiese Winterspele/Olimpiese_Winterspele/g;
         $input =~ s/Olinia cymosa/Olinia_cymosa/g;
+        $input =~ s/Olive Grinterrylaan/Olive_Grinterrylaan/g;
         $input =~ s/Olof Palmestraat/Olof_Palmestraat/g;
         $input =~ s/Olof Palme\-straat/Olof_Palme-straat/g;
         $input =~ s/Olyfkrans Kollege/Olyfkrans_Kollege/g;
@@ -3976,11 +4176,13 @@ sub Tokenize {
         $input =~ s/op vredesvoet/op_vredesvoet/g;
         $input =~ s/Op vredesvoet/Op_vredesvoet/g;
         $input =~ s/Openbare Beleggingskorporasie/Openbare_Beleggingskorporasie/g;
+        $input =~ s/Openbare Rekenmeesters\- en Ouditeursraad/Openbare_Rekenmeesters-_en_Ouditeursraad/g;
         $input =~ s/opere citato/opere_citato/g;
         $input =~ s/Opere citato/Opere_citato/g;
         $input =~ s/OP Kings/OP_Kings/g;
         $input =~ s/Opel Astra/Opel_Astra/g;
         $input =~ s/Oppi Kus/Oppi_Kus/g;
+        $input =~ s/Opuntia aurantiaca/Opuntia_aurantiaca/g;
         $input =~ s/O\.R\. Tambostraat/O.R._Tambostraat/g;
         $input =~ s/O\.R\. Tambo\-straat/O.R._Tambo-straat/g;
         $input =~ s/OR Tambostraat/OR_Tambostraat/g;
@@ -4006,6 +4208,7 @@ sub Tokenize {
         $input =~ s/Organisasie vir Islamitiese Samewerking/Organisasie_vir_Islamitiese_Samewerking/g;
         $input =~ s/Organisasie vir Veiligheid en Samewerking in Europa/Organisasie_vir_Veiligheid_en_Samewerking_in_Europa/g;
         $input =~ s/Origanum maru/Origanum_maru/g;
+        $input =~ s/Origanum vulgare/Origanum_vulgare/g;
         $input =~ s/Ornithoglossum viride/Ornithoglossum_viride/g;
         $input =~ s/Orrorin tugenensis/Orrorin_tugenensis/g;
         $input =~ s/Oryctolagus cuniculus/Oryctolagus_cuniculus/g;
@@ -4017,6 +4220,7 @@ sub Tokenize {
         $input =~ s/Ou Apostoliese Kerk/Ou_Apostoliese_Kerk/g;
         $input =~ s/Ou Dorpshuis/Ou_Dorpshuis/g;
         $input =~ s/Ou Duits/Ou_Duits/g;
+        $input =~ s/Ou Egipties/Ou_Egipties/g;
         $input =~ s/Ou Germaans/Ou_Germaans/g;
         $input =~ s/Ou Grieks/Ou_Grieks/g;
         $input =~ s/Ou Hoofweg/Ou_Hoofweg/g;
@@ -4028,6 +4232,7 @@ sub Tokenize {
         $input =~ s/Ou Paarlpad/Ou_Paarlpad/g;
         $input =~ s/Ou Paarl\-pad/Ou_Paarl-pad/g;
         $input =~ s/Ou Parlementsgebou/Ou_Parlementsgebou/g;
+        $input =~ s/Ou Persies/Ou_Persies/g;
         $input =~ s/Ou Pretoriahoofweg/Ou_Pretoriahoofweg/g;
         $input =~ s/Ou Raadsaal/Ou_Raadsaal/g;
         $input =~ s/Ou Steentyd/Ou_Steentyd/g;
@@ -4046,6 +4251,7 @@ sub Tokenize {
         $input =~ s/Ovis orientalis/Ovis_orientalis/g;
         $input =~ s/Oxalis acetosella/Oxalis_acetosella/g;
         $input =~ s/Ozoroa paniculosa/Ozoroa_paniculosa/g;
+        $input =~ s/Paarl FM/Paarl_FM/g;
         $input =~ s/Paarl Gimnasium/Paarl_Gimnasium/g;
         $input =~ s/Paarlse Wynroete/Paarlse_Wynroete/g;
         $input =~ s/Pachymetopon blochii/Pachymetopon_blochii/g;
@@ -4061,12 +4267,14 @@ sub Tokenize {
         $input =~ s/Pan\-Afrikaanse Parlement/Pan-Afrikaanse_Parlement/g;
         $input =~ s/Pan\-Suid\-Afrikaanse Taalraad/Pan-Suid-Afrikaanse_Taalraad/g;
         $input =~ s/Panicum miliaceum/Panicum_miliaceum/g;
+        $input =~ s/Panthera pardus/Panthera_pardus/g;
         $input =~ s/Papaver aculeatum/Papaver_aculeatum/g;
         $input =~ s/papier mâché/papier_mâché/g;
         $input =~ s/Papier mâché/Papier_mâché/g;
         $input =~ s/papier maché/papier_maché/g;
         $input =~ s/Papier maché/Papier_maché/g;
         $input =~ s/Papio cynocephalus/Papio_cynocephalus/g;
+        $input =~ s/Papio hamadryas/Papio_hamadryas/g;
         $input =~ s/Papio porcarius/Papio_porcarius/g;
         $input =~ s/Papio ursinus/Papio_ursinus/g;
         $input =~ s/Pappea capensis/Pappea_capensis/g;
@@ -4083,6 +4291,7 @@ sub Tokenize {
         $input =~ s/Passasierspooragentskap van Suid\-Afrika/Passasierspooragentskap_van_Suid-Afrika/g;
         $input =~ s/pater familias/pater_familias/g;
         $input =~ s/Pater familias/Pater_familias/g;
+        $input =~ s/Patriotic Alliance/Patriotic_Alliance/g;
         $input =~ s/Paul Krugerstraat/Paul_Krugerstraat/g;
         $input =~ s/Paul Kruger\-straat/Paul_Kruger-straat/g;
         $input =~ s/Paul Roos Gimnasium/Paul_Roos_Gimnasium/g;
@@ -4096,6 +4305,7 @@ sub Tokenize {
         $input =~ s/Paul Van Hartes\-weg/Paul_Van_Hartes-weg/g;
         $input =~ s/Pearly Beach/Pearly_Beach/g;
         $input =~ s/Pebble Beach/Pebble_Beach/g;
+        $input =~ s/Pediculus humanus/Pediculus_humanus/g;
         $input =~ s/Pelargonium peltatum/Pelargonium_peltatum/g;
         $input =~ s/Pelargonium spinosum/Pelargonium_spinosum/g;
         $input =~ s/Peltophorum africanum/Peltophorum_africanum/g;
@@ -4141,6 +4351,9 @@ sub Tokenize {
         $input =~ s/Peter Nanyemba\-straat/Peter_Nanyemba-straat/g;
         $input =~ s/petitio principii/petitio_principii/g;
         $input =~ s/Petitio principii/Petitio_principii/g;
+        $input =~ s/Petromyzon fluviatilis/Petromyzon_fluviatilis/g;
+        $input =~ s/Petromyzon marinus/Petromyzon_marinus/g;
+        $input =~ s/Petrus Myburghstraat/Petrus_Myburghstraat/g;
         $input =~ s/Petrus Steyn/Petrus_Steyn/g;
         $input =~ s/Petzia amara/Petzia_amara/g;
         $input =~ s/Peucedanum cynorhiza/Peucedanum_cynorhiza/g;
@@ -4148,6 +4361,8 @@ sub Tokenize {
         $input =~ s/Phalaropus fulicarius/Phalaropus_fulicarius/g;
         $input =~ s/Phascolarctos cinereus/Phascolarctos_cinereus/g;
         $input =~ s/Philetairus socius/Philetairus_socius/g;
+        $input =~ s/Philip Kgosanarylaan/Philip_Kgosanarylaan/g;
+        $input =~ s/Philip Kgosana-rylaan/Philip_Kgosana-rylaan/g;
         $input =~ s/Philip Morris/Philip_Morris/g;
         $input =~ s/Philomachus pugnax/Philomachus_pugnax/g;
         $input =~ s/Phlyctinus callosus/Phlyctinus_callosus/g;
@@ -4163,6 +4378,7 @@ sub Tokenize {
         $input =~ s/Phytolacca octandra/Phytolacca_octandra/g;
         $input =~ s/pièce de résistance/pièce_de_résistance/g;
         $input =~ s/Pièce de résistance/Pièce_de_résistance/g;
+        $input =~ s/Pierre van Ryneveldweg/Pierre_van_Ryneveldweg/g;
         $input =~ s/Piet Bosmanstraat/Piet_Bosmanstraat/g;
         $input =~ s/Piet Bosman\-straat/Piet_Bosman-straat/g;
         $input =~ s/Piet Hugostraat/Piet_Hugostraat/g;
@@ -4183,6 +4399,7 @@ sub Tokenize {
         $input =~ s/Piper methysticum/Piper_methysticum/g;
         $input =~ s/Pippie Langkous/Pippie_Langkous/g;
         $input =~ s/Pirie Mission/Pirie_Mission/g;
+        $input =~ s/Pistacia lentiscus/Pistacia_lentiscus/g;
         $input =~ s/Pistacia vera/Pistacia_vera/g;
         $input =~ s/Pixley ka Seme/Pixley_ka_Seme/g;
         $input =~ s/P\.K\. le Rouxdam/P.K._le_Rouxdam/g;
@@ -4196,6 +4413,7 @@ sub Tokenize {
         $input =~ s/Plaaslike Groep/Plaaslike_Groep/g;
         $input =~ s/Plaaslike Superswerm/Plaaslike_Superswerm/g;
         $input =~ s/Plastiek SA/Plastiek_SA/g;
+        $input =~ s/Platalea alba/Platalea_alba/g;
         $input =~ s/Pleiospilos bolusii/Pleiospilos_bolusii/g;
         $input =~ s/pleks van/pleks_van/g;
         $input =~ s/Pleks van/Pleks_van/g;
@@ -4215,6 +4433,7 @@ sub Tokenize {
         $input =~ s/Pomadasys bennetti/Pomadasys_bennetti/g;
         $input =~ s/pond sterling/pond_sterling/g;
         $input =~ s/Pontynse Moerasse/Pontynse_Moerasse/g;
+        $input =~ s/Poroderma africanum/Poroderma_africanum/g;
         $input =~ s/Porphyrio alleni/Porphyrio_alleni/g;
         $input =~ s/Porphyrio madagascariensis/Porphyrio_madagascariensis/g;
         $input =~ s/Porphyrio martinicus/Porphyrio_martinicus/g;
@@ -4242,6 +4461,7 @@ sub Tokenize {
         $input =~ s/Poste restante/Poste_restante/g;
         $input =~ s/Potamochoerus larvatus/Potamochoerus_larvatus/g;
         $input =~ s/Potchefstroom Gimnasium/Potchefstroom_Gimnasium/g;
+        $input =~ s/Potchefstroom Herald/Potchefstroom_Herald/g;
         $input =~ s/Potchefstroomse Landboukollege/Potchefstroomse_Landboukollege/g;
         $input =~ s/Potchefstroomse Universiteit vir CHO/Potchefstroomse_Universiteit_vir_CHO/g;
         $input =~ s/Potchefstroomse Universiteit vir Christelik Hoër Onderwys/Potchefstroomse_Universiteit_vir_Christelik_Hoër_Onderwys/g;
@@ -4252,6 +4472,8 @@ sub Tokenize {
         $input =~ s/Power FM/Power_FM/g;
         $input =~ s/Pragma Holdings/Pragma_Holdings/g;
         $input =~ s/President Brandstraat/President_Brandstraat/g;
+        $input =~ s/President Fouchérylaan/President_Fouchérylaan/g;
+        $input =~ s/President Foucherylaan/President_Foucherylaan/g;
         $input =~ s/Pretoria FM/Pretoria_FM/g;
         $input =~ s/Pretoria News/Pretoria_News/g;
         $input =~ s/Pretoriase Kinderkoor/Pretoriase_Kinderkoor/g;
@@ -4295,10 +4517,12 @@ sub Tokenize {
         $input =~ s/Progressiewe Federale Party/Progressiewe_Federale_Party/g;
         $input =~ s/Progressiewe Party/Progressiewe_Party/g;
         $input =~ s/Progressiewe Reformisteparty/Progressiewe_Reformisteparty/g;
+        $input =~ s/Prokureursorde van Suid\-Afrika/Prokureursorde_van_Suid-Afrika/g;
         $input =~ s/Pronolagus rupestris/Pronolagus_rupestris/g;
         $input =~ s/Protea Boekhuis/Protea_Boekhuis/g;
         $input =~ s/Protea rosacea/Protea_rosacea/g;
         $input =~ s/Proteles cristatus/Proteles_cristatus/g;
+        $input =~ s/Protopterus annectens/Protopterus_annectens/g;
         $input =~ s/Provinsiale Biblioteekdiens/Provinsiale_Biblioteekdiens/g;
         $input =~ s/Provinsiale Koerant/Provinsiale_Koerant/g;
         $input =~ s/Psammophis crucifer/Psammophis_crucifer/g;
@@ -4309,6 +4533,7 @@ sub Tokenize {
         $input =~ s/Pterocelastrus tricuspidatus/Pterocelastrus_tricuspidatus/g;
         $input =~ s/Pterocles namaqua/Pterocles_namaqua/g;
         $input =~ s/Pteropus vampyrus/Pteropus_vampyrus/g;
+        $input =~ s/Pterygodium catholicum/Pterygodium_catholicum/g;
         $input =~ s/Puerto Rico/Puerto_Rico/g;
         $input =~ s/Punda Maria/Punda_Maria/g;
         $input =~ s/Punica granatum/Punica_granatum/g;
@@ -4341,6 +4566,7 @@ sub Tokenize {
         $input =~ s/Radio 786/Radio_786/g;
         $input =~ s/Radio Laeveld/Radio_Laeveld/g;
         $input =~ s/Radio Namakwaland/Radio_Namakwaland/g;
+        $input =~ s/Radio Overberg/Radio_Overberg/g;
         $input =~ s/Radio Rosestad/Radio_Rosestad/g;
         $input =~ s/Rainbows Endstraat/Rainbows_Endstraat/g;
         $input =~ s/raison d'état/raison_d'état/g;
@@ -4383,6 +4609,7 @@ sub Tokenize {
         $input =~ s/Rembrandt Tabakmaatskappy/Rembrandt_Tabakmaatskappy/g;
         $input =~ s/Renault Kwid/Renault_Kwid/g;
         $input =~ s/Republiek van Suid\-Afrika/Republiek_van_Suid-Afrika/g;
+        $input =~ s/Responsa Meridiana/Responsa_Meridiana/g;
         $input =~ s/Restless Children/Restless_Children/g;
         $input =~ s/Rev Michael Scottstraat/Rev_Michael_Scottstraat/g;
         $input =~ s/Rev\. Michael Scottstraat/Rev._Michael_Scottstraat/g;
@@ -4403,8 +4630,10 @@ sub Tokenize {
         $input =~ s/Ricinus communis/Ricinus_communis/g;
         $input =~ s/rigor mortis/rigor_mortis/g;
         $input =~ s/Rigor mortis/Rigor_mortis/g;
+        $input =~ s/Ring van Vuur/Ring_van_Vuur/g;
         $input =~ s/Rio de Janeiro/Rio_de_Janeiro/g;
         $input =~ s/Rio Grande/Rio_Grande/g;
+        $input =~ s/Rio Tinto/Rio_Tinto/g;
         $input =~ s/Rob Ferreirahospitaal/Rob_Ferreirahospitaal/g;
         $input =~ s/Rob Ferreira\-hospitaal/Rob_Ferreira-hospitaal/g;
         $input =~ s/Robert Kochstraat/Robert_Kochstraat/g;
@@ -4422,6 +4651,7 @@ sub Tokenize {
         $input =~ s/roman à clef/roman_à_clef/g;
         $input =~ s/Roman à clef/Roman_à_clef/g;
         $input =~ s/Romeinse Ryk/Romeinse_Ryk/g;
+        $input =~ s/Rooi Duiwels/Rooi_Duiwels/g;
         $input =~ s/Rooi Elslaan/Rooi_Elslaan/g;
         $input =~ s/Rooi Kranslaan/Rooi_Kranslaan/g;
         $input =~ s/Rooi Kruis/Rooi_Kruis/g;
@@ -4442,8 +4672,10 @@ sub Tokenize {
         $input =~ s/Rubus idaeus/Rubus_idaeus/g;
         $input =~ s/Rubus occidentalis/Rubus_occidentalis/g;
         $input =~ s/Rubus strigosus/Rubus_strigosus/g;
+        $input =~ s/Rubus ursinus/Rubus_ursinus/g;
         $input =~ s/Rupicapra rupicapra/Rupicapra rupicapra/g;
         $input =~ s/Russiese Federasie/Russiese_Federasie/g;
+        $input =~ s/RW Wilcocksgebou/RW_Wilcocksgebou/g;
         $input =~ s/Rynse Sendinggenootskap/Rynse_Sendinggenootskap/g;
         $input =~ s/Saartjie Baartmansentrum/Saartjie_Baartmansentrum/g;
         $input =~ s/Saartjie Baartman\-sentrum/Saartjie_Baartman-sentrum/g;
@@ -4489,17 +4721,20 @@ sub Tokenize {
         $input =~ s/Sao Tomé/Sao_Tomé/g;
         $input =~ s/São Tomé/São_Tomé/g;
         $input =~ s/Sarcocaulon rigidum/Sarcocaulon_rigidum/g;
+        $input =~ s/Sarcostemma viminale/Sarcostemma_viminale/g;
         $input =~ s/Sarpa salpa/Sarpa_salpa/g;
         $input =~ s/sauvignon blanc/sauvignon_blanc/g;
         $input =~ s/Sauvignon blanc/Sauvignon_blanc/g;
         $input =~ s/Save South Africa/Save_South_Africa/g;
         $input =~ s/Sceletium tortuosum/Sceletium_tortuosum/g;
+        $input =~ s/Schinziophyton rautanenii/Schinziophyton_rautanenii/g;
         $input =~ s/Schistocerca gregaria/Schistocerca_gregaria/g;
         $input =~ s/Schotia brachypetala/Schotia_brachypetala/g;
         $input =~ s/Schotia speciosa/Schotia_speciosa/g;
         $input =~ s/Schotsche Kloof/Schotsche_Kloof/g;
         $input =~ s/Sclerocarya birrea/Sclerocarya_birrea/g;
         $input =~ s/Scolopia mundii/Scolopia_mundii/g;
+        $input =~ s/Scomber scombrus/Scomber_scombrus/g;
         $input =~ s/Scomberomorus commerson/Scomberomorus_commerson/g;
         $input =~ s/Scopus umbretta/Scopus_umbretta/g;
         $input =~ s/Scotland Yard/Scotland_Yard/g;
@@ -4513,6 +4748,7 @@ sub Tokenize {
         $input =~ s/Sebastichthys capensis/Sebastichthys_capensis/g;
         $input =~ s/Securidaca longipedunculata/Securidaca_longipedunculata/g;
         $input =~ s/Seereddingsinstituut van Namibië/Seereddingsinstituut_van_Namibië/g;
+        $input =~ s/See van Azof/See_van_Azof/g;
         $input =~ s/See van Galilea/See_van_Galilea/g;
         $input =~ s/See van Japan/See_van_Japan/g;
         $input =~ s/See van Marmara/See_van_Marmara/g;
@@ -4531,12 +4767,17 @@ sub Tokenize {
         $input =~ s/Sentrale Behuisingsraad/Sentrale_Behuisingsraad/g;
         $input =~ s/Sentrale Universiteit vir Tegnologie/Sentrale_Universiteit_vir_Tegnologie/g;
         $input =~ s/Sentrale Veeartsenylaboratorium/Sentrale_Veeartsenylaboratorium/g;
+        $input =~ s/Sentrum vir Bioinformatika en Berekeningsbiologie/Sentrum_vir_Bioinformatika_en_Berekeningsbiologie/g;
+        $input =~ s/Sentrum vir Eksperimentele Wiskunde/Sentrum_vir_Eksperimentele_Wiskunde/g;
+        $input =~ s/​​​Sentrum vir Gestremdheids\- en Rehabilitasiestudies​/​​​Sentrum_vir_Gestremdheids-_en_Rehabilitasiestudies​/g;
         $input =~ s/Sentrum vir Tekstegnologie/Sentrum_vir_Tekstegnologie/g;
+        $input =~ s/Sequoia sempervirens/Sequoia_sempervirens/g;
         $input =~ s/Serinus flaviventris/Serinus_flaviventris/g;
         $input =~ s/Seriola lalandii/Seriola_lalandii/g;
         $input =~ s/Sesde Grensoorlog/Sesde_Grensoorlog/g;
         $input =~ s/6de Laan/6de_Laan/g;
         $input =~ s/Sesde Laan/Sesde_Laan/g;
+        $input =~ s/Setaria sphacelata/Setaria_sphacelata/g;
         $input =~ s/Setaria verticillata/Setaria_verticillata/g;
         $input =~ s/Seven Miles/Seven_Miles/g;
         $input =~ s/7de Laan/7de_Laan/g;
@@ -4631,10 +4872,12 @@ sub Tokenize {
         $input =~ s/Somerset Mall/Somerset_Mall/g;
         $input =~ s/Son op Sondag/Son_op_Sondag/g;
         $input =~ s/Sons of England/Sons_of_England/g;
+        $input =~ s/Sonchus oleraceus/Sonchus_oleraceus/g;
         $input =~ s/Sophie de Bruynstraat/Sophie_de_Bruynstraat/g;
         $input =~ s/Sophie de Bruyn\-straat/Sophie_de_Bruyn-straat/g;
         $input =~ s/Sophie De Bruynstraat/Sophie_De_Bruynstraat/g;
         $input =~ s/Sophie De Bruyn\-straat/Sophie_De_Bruyn-straat/g;
+        $input =~ s/Sorex nanus/Sorex_nanus/g;
         $input =~ s/Sorghum bicolor/Sorghum_bicolor/g;
         $input =~ s/Sorghum verticilliflorum/Sorghum_verticilliflorum/g;
         $input =~ s/Sosiale en Ekonomiese Planneraad/Sosiale_en_Ekonomiese_Planneraad/g;
@@ -4680,15 +4923,6 @@ sub Tokenize {
         $input =~ s/Spreckelia formosissima/Spreckelia_formosissima/g;
         $input =~ s/Sprekelia formosissima/Sprekelia_formosissima/g;
         $input =~ s/Sri Lanka/Sri_Lanka/g;
-        $input =~ s/Staatsinligting\- en Tegnologieagentskap/Staatsinligting-_en_Tegnologieagentskap/g;
-        $input =~ s/Stalwart Simelanestraat/Stalwart_Simelanestraat/g;
-        $input =~ s/Stalwart Simelane\-straat/Stalwart_Simelane-straat/g;
-        $input =~ s/Standard Bank Namibia/Standard_Bank_Namibia/g;
-        $input =~ s/Standard & Poor/Standard_&_Poor/g;
-        $input =~ s/Stanza Bopapestraat/Stanza_Bopapestraat/g;
-        $input =~ s/Stanza Bopape\-straat/Stanza_Bopape-straat/g;
-        $input =~ s/Star Wars/Star_Wars/g;
-        $input =~ s/Statistiek Suid\-Afrika/Statistiek_Suid-Afrika/g;
         $input =~ s/St Albansgevangenis/St_Albansgevangenis/g;
         $input =~ s/St\. Albansgevangenis/St._Albansgevangenis/g;
         $input =~ s/St Albans\-gevangenis/St_Albans-gevangenis/g;
@@ -4753,6 +4987,8 @@ sub Tokenize {
         $input =~ s/St\. Helena\-baai/St._Helena-baai/g;
         $input =~ s/St James/St_James/g;
         $input =~ s/St\. James/St._James/g;
+        $input =~ s/St\. Jameslaan/St._Jameslaan/g;
+        $input =~ s/St Jameslaan/St_Jameslaan/g;
         $input =~ s/St\. John's College/St._John's_College/g;
         $input =~ s/St John's College/St_John's_College/g;
         $input =~ s/St Johnstraat/St._Johnstraat/g;
@@ -4801,11 +5037,20 @@ sub Tokenize {
         $input =~ s/St\. Saviourstraat/St._Saviourstraat/g;
         $input =~ s/St Vincent/St_Vincent/g;
         $input =~ s/St\. Vincent/St._Vincent/g;
+        $input =~ s/Staatsinligting\- en Tegnologieagentskap/Staatsinligting-_en_Tegnologieagentskap/g;
         $input =~ s/stabat mater/stabat_mater/g;
         $input =~ s/Stabat mater/Stabat_mater/g;
         $input =~ s/Stabat Mater/Stabat_Mater/g;
+        $input =~ s/Stalwart Simelanestraat/Stalwart_Simelanestraat/g;
+        $input =~ s/Stalwart Simelane\-straat/Stalwart_Simelane-straat/g;
+        $input =~ s/Standard Bank Namibia/Standard_Bank_Namibia/g;
         $input =~ s/Standard Bank/Standard_Bank/g;
+        $input =~ s/Standard & Poor/Standard_&_Poor/g;
+        $input =~ s/Stanza Bopapestraat/Stanza_Bopapestraat/g;
+        $input =~ s/Stanza Bopape\-straat/Stanza_Bopape-straat/g;
         $input =~ s/Stapelia grandiflora/Stapelia_grandiflora/g;
+        $input =~ s/Star Wars/Star_Wars/g;
+        $input =~ s/Statistiek Suid\-Afrika/Statistiek_Suid-Afrika/g;
         $input =~ s/status confessionis/status_confessionis/g;
         $input =~ s/Status confessionis/Status_confessionis/g;
         $input =~ s/status quo/status_quo/g;
@@ -4815,6 +5060,7 @@ sub Tokenize {
         $input =~ s/Steen des aanstoots/Steen_des_aanstoots/g;
         $input =~ s/Steinhoff Africa Retail/Steinhoff_Africa_Retail/g;
         $input =~ s/Stellenbosse Instituut vir Gevorderde Navorsing/Stellenbosse_Instituut_vir_Gevorderde_Navorsing/g;
+        $input =~ s/Stenotaphrum secundatum/Stenotaphrum_secundatum/g;
         $input =~ s/Stephanoaetus coronatus/Stephanoaetus_coronatus/g;
         $input =~ s/Steve Bikobrug/Steve_Bikobrug/g;
         $input =~ s/Steve Biko\-brug/Steve_Biko-brug/g;
@@ -4826,6 +5072,7 @@ sub Tokenize {
         $input =~ s/Steve Biko\-rylaan/Steve_Biko-rylaan/g;
         $input =~ s/Steve Bikostraat/Steve_Bikostraat/g;
         $input =~ s/Steve Biko\-straat/Steve_Biko-straat/g;
+        $input =~ s/Steve Tshwete/Steve_Tshwete/g;
         $input =~ s/Stigting vir Bemagtiging deur Afrikaans/Stigting_vir_Bemagtiging_deur_Afrikaans/g;
         $input =~ s/Stille Oseaan/Stille_Oseaan/g;
         $input =~ s/Straat van Denemarke/Straat_van_Denemarke/g;
@@ -4835,6 +5082,7 @@ sub Tokenize {
         $input =~ s/Straat van Messina/Straat_van_Messina/g;
         $input =~ s/Straat van Mosambiek/Straat_van_Mosambiek/g;
         $input =~ s/Streeksraad vir die Uitvoerende Kunste van die Oranje\-Vrystaat/Streeksraad_vir_die_Uitvoerende_Kunste_van_die_Oranje-Vrystaat/g;
+        $input =~ s/Streptopelia senegalensis/Streptopelia_senegalensis/g;
         $input =~ s/Strychnos henningsii/Strychnos_henningsii/g;
         $input =~ s/Sturm und Drang/Sturm_und_Drang/g;
         $input =~ s/sub judice/sub_judice/g;
@@ -4866,9 +5114,11 @@ sub Tokenize {
         $input =~ s/Suid\-Afrikaanse Geneeskundige en Tandheelkundige Raad/Suid-Afrikaanse_Geneeskundige_en_Tandheelkundige_Raad/g;
         $input =~ s/Suid\-Afrikaanse Genootskap vir Bevordering van die Wetenskap/Suid-Afrikaanse_Genootskap_vir_Bevordering_van_die_Wetenskap/g;
         $input =~ s/Suid\-Afrikaanse Genootskap vir Psigiese Navorsing/Suid-Afrikaanse_Genootskap_vir_Psigiese_Navorsing/g;
+        $input =~ s/Suid\-Afrikaanse Geomatikaraad/Suid-Afrikaanse_Geomatikaraad/g;
         $input =~ s/Suid\-Afrikaanse Gesondheidsproduktereguleringsowerheid/Suid-Afrikaanse_Gesondheidsproduktereguleringsowerheid/g;
         $input =~ s/Suid\-Afrikaanse Indiërraad/Suid-Afrikaanse_Indiërraad/g;
         $input =~ s/Suid\-Afrikaanse Inkomstediens/Suid-Afrikaanse_Inkomstediens/g;
+        $input =~ s/Suid\-Afrikaanse Instituut vir Argitekte/Suid-Afrikaanse_Instituut_vir_Argitekte/g;
         $input =~ s/Suid\-Afrikaanse Instituut van Geoktrooieerde Rekenmeesters/Suid-Afrikaanse_Instituut_van_Geoktrooieerde_Rekenmeesters/g;
         $input =~ s/Suid\-Afrikaanse Instituut van Professionele Rekenmeesters/Suid-Afrikaanse_Instituut_van_Professionele_Rekenmeesters/g;
         $input =~ s/Suid\-Afrikaanse Instituut vir Fisika/Suid-Afrikaanse_Instituut_vir_Fisika/g;
@@ -4894,12 +5144,14 @@ sub Tokenize {
         $input =~ s/Suid\-Afrikaanse Lugmagmuseum/Suid-Afrikaanse_Lugmagmuseum/g;
         $input =~ s/Suid\-Afrikaanse Lugmag/Suid-Afrikaanse_Lugmag/g;
         $input =~ s/Suid\-Afrikaanse Maritieme Veiligheidsowerheid/Suid-Afrikaanse_Maritieme_Veiligheidsowerheid/g;
+        $input =~ s/Suid\-Afrikaanse Mediese Navorsingsraad/Suid-Afrikaanse_Mediese_Navorsingsraad/g;
         $input =~ s/Suid\-Afrikaanse Mediese Vereniging/Suid-Afrikaanse_Mediese_Vereniging/g;
         $input =~ s/Suid\-Afrikaanse Menseregtekommissie/Suid-Afrikaanse_Menseregtekommissie/g;
         $input =~ s/Suid\-Afrikaanse Militêre Kollege/Suid-Afrikaanse_Militêre_Kollege/g;
         $input =~ s/Suid\-Afrikaanse Militêre Verpleegstersdiens/Suid-Afrikaanse_Militêre_Verpleegstersdiens/g;
         $input =~ s/Suid\-Afrikaanse Museum/Suid-Afrikaanse_Museum/g;
         $input =~ s/Suid\-Afrikaanse Musiekkollege/Suid-Afrikaanse_Musiekkollege/g;
+        $input =~ s/Suid\-Afrikaanse Musiekregteorganisasie/Suid-Afrikaanse_Musiekregteorganisasie/g;
         $input =~ s/Suid\-Afrikaanse Nasionale Biodiversiteitsinstituut/Suid-Afrikaanse_Nasionale_Biodiversiteitsinstituut/g;
         $input =~ s/Suid\-Afrikaanse Nasionale Bloeddiens/Suid-Afrikaanse_Nasionale_Bloeddiens/g;
         $input =~ s/Suid\-Afrikaanse Nasionale Instituut vir Biodiversiteit/Suid-Afrikaanse_Nasionale_Instituut_vir_Biodiversiteit/g;
@@ -4911,8 +5163,11 @@ sub Tokenize {
         $input =~ s/Suid\-Afrikaanse Nasionale Raad insake Alkoholisme/Suid-Afrikaanse_Nasionale_Raad_insake_Alkoholisme/g;
         $input =~ s/Suid\-Afrikaanse Nasionale Redakteursforum/Suid-Afrikaanse_Nasionale_Redakteursforum/g;
         $input =~ s/Suid\-Afrikaanse Nasionale Ruimteagentskap/Suid-Afrikaanse_Nasionale_Ruimteagentskap/g;
+        $input =~ s/Suid\-Afrikaanse Nasionale Studentekongres/Suid-Afrikaanse_Nasionale_Studentekongres/g;
+        $input =~ s/Suid\-Afrikaanse Nasionale Studente\-kongres/Suid-Afrikaanse_Nasionale_Studente-kongres/g;
         $input =~ s/Suid\-Afrikaanse Nasionale Trust\- en Lewensassuransiemaatskappy/Suid-Afrikaanse_Nasionale_Trust-_en_Lewensassuransiemaatskappy/g;
         $input =~ s/Suid\-Afrikaanse Nasionale Weermag/Suid-Afrikaanse_Nasionale_Weermag/g;
+        $input =~ s/Suid\-Afrikaanse Niervereniging/Suid-Afrikaanse_Niervereniging/g;
         $input =~ s/Suid\-Afrikaanse Onderwysontwikkelingstrust/Suid-Afrikaanse_Onderwysontwikkelingstrust/g;
         $input =~ s/Suid\-Afrikaanse Onderwysnavorsingsvereniging/Suid-Afrikaanse_Onderwysnavorsingsvereniging/g;
         $input =~ s/Suid\-Afrikaanse Onderwysersunie/Suid-Afrikaanse_Onderwysersunie/g;
@@ -4925,6 +5180,7 @@ sub Tokenize {
         $input =~ s/Suid\-Afrikaanse Raad op Verpleging/Suid-Afrikaanse_Raad_op_Verpleging/g;
         $input =~ s/Suid\-Afrikaanse Raad van Kerke/Suid-Afrikaanse_Raad_van_Kerke/g;
         $input =~ s/Suid\-Afrikaanse Raad van Opvoeders/Suid-Afrikaanse_Raad_van_Opvoeders/g;
+        $input =~ s/Suid\-Afrikaanse Raad vir Argitekte/Suid-Afrikaanse_Raad_vir_Argitekte/g;
         $input =~ s/Suid\-Afrikaanse Raad vir Natuurwetenskaplikes/Suid-Afrikaanse_Raad_vir_Natuurwetenskaplikes/g;
         $input =~ s/Suid\-Afrikaanse Raad vir Oorlogsgrafte/Suid-Afrikaanse_Raad_vir_Oorlogsgrafte/g;
         $input =~ s/Suid\-Afrikaanse Reserwebank/Suid-Afrikaanse_Reserwebank/g;
@@ -4932,6 +5188,7 @@ sub Tokenize {
         $input =~ s/Suid\-Afrikaanse Rugbyunie/Suid-Afrikaanse_Rugbyunie/g;
         $input =~ s/Suid\-Afrikaanse Rugbywerkgewersorganisasie/Suid-Afrikaanse_Rugbywerkgewersorganisasie/g;
         $input =~ s/Suid\-Afrikaanse Sendinggenootskap/Suid-Afrikaanse_Sendinggenootskap/g;
+        $input =~ s/Suid\-Afrikaanse Sentrum vir Epidemiologiese Modellering en Analise/Suid-Afrikaanse_Sentrum_vir_Epidemiologiese_Modellering_en_Analise/g;
         $input =~ s/Suid\-Afrikaanse Sentrum vir Nederland en Vlaandere/Suid-Afrikaanse_Sentrum_vir_Nederland_en_Vlaandere/g;
         $input =~ s/Suid\-Afrikaanse Sertifiseringsraad/Suid-Afrikaanse_Sertifiseringsraad/g;
         $input =~ s/Suid\-Afrikaanse Skermvereniging/Suid-Afrikaanse_Skermvereniging/g;
@@ -4969,6 +5226,7 @@ sub Tokenize {
         $input =~ s/Suid\-Afrikaanse Weerdiens/Suid-Afrikaanse_Weerdiens/g;
         $input =~ s/Suid\-Afrikaanse Weermagkollege/Suid-Afrikaanse_Weermagkollege/g;
         $input =~ s/Suid\-Afrikaanse Weermag/Suid-Afrikaanse_Weermag/g;
+        $input =~ s/Suid\-Afrikaanse Wingerd- en Wynnavorsingsinstituut/Suid-Afrikaanse_Wingerd-_en_Wynnavorsingsinstituut/g;
         $input =~ s/Suid\-Afrikaanse Yster\- en Staalbedryfsvereniging/Suid-Afrikaanse_Yster-_en_Staalbedryfsvereniging/g;
         $input =~ s/Suid\-Chinese See/Suid-Chinese_See/g;
         $input =~ s/Suid\-Sjinese See/Suid-Sjinese_See/g;
@@ -5007,6 +5265,7 @@ sub Tokenize {
         $input =~ s/Sweet Peakeerweg/Sweet_Peakeerweg/g;
         $input =~ s/Sweet Pea\-keerweg/Sweet_Pea-keerweg/g;
         $input =~ s/Sweet Pea Keerweg/Sweet_Pea_Keerweg/g;
+        $input =~ s/Swietenia mahagoni/Swietenia_mahagoni/g;
         $input =~ s/Sydney on Vaal/Sydney_on_Vaal/g;
         $input =~ s/Sylvicapra grimmia/Sylvicapra_grimmia/g;
         $input =~ s/syns insiens/syns_insiens/g;
@@ -5024,6 +5283,7 @@ sub Tokenize {
         $input =~ s/Tabula rasa/Tabula_rasa/g;
         $input =~ s/Tachybaptus ruficollis/Tachybaptus_ruficollis/g;
         $input =~ s/Tadorna cana/Tadorna_cana/g;
+        $input =~ s/Taenia saginata/Taenia_saginata/g;
         $input =~ s/Tagetes erecta/Tagetes_erecta/g;
         $input =~ s/Tagetes maxima/Tagetes_maxima/g;
         $input =~ s/Tagetes minuta/Tagetes_minuta/g;
@@ -5096,6 +5356,8 @@ sub Tokenize {
         $input =~ s/Te lene/Te_lene/g;
         $input =~ s/te loor/te_loor/g;
         $input =~ s/Te loor/Te_loor/g;
+        $input =~ s/te make/te_make/g;
+        $input =~ s/Te make/Te_make/g;
         $input =~ s/te midde van/te_midde_van/g;
         $input =~ s/Te midde van/Te_midde_van/g;
         $input =~ s/te moede/te_moede/g;
@@ -5315,6 +5577,7 @@ sub Tokenize {
         $input =~ s/The Witness/The_Witness/g;
         $input =~ s/The Workers' Herald/The_Workers'_Herald/g;
         $input =~ s/Theobroma cacao/Theobroma_cacao/g;
+        $input =~ s/Thesium spicatum/Thesium_spicatum/g;
         $input =~ s/Thomas Aquinas/Thomas_Aquinas/g;
         $input =~ s/Thomas Cook/Thomas_Cook/g;
         $input =~ s/Threskiornis aethiopicus/Threskiornis_aethiopicus/g;
@@ -5323,6 +5586,7 @@ sub Tokenize {
         $input =~ s/Tien Gebooie/Tien_Gebooie/g;
         $input =~ s/10e Laan/10e_Laan/g;
         $input =~ s/Tiende Laan/Tiende_Laan/g;
+        $input =~ s/Tiger Brands/Tiger_Brands/g;
         $input =~ s/Tilda Viljoendam/Tilda_Viljoendam/g;
         $input =~ s/Time Media/Time_Media/g;
         $input =~ s/Tineola bisselliella/Tineola_bisselliella/g;
@@ -5379,6 +5643,7 @@ sub Tokenize {
         $input =~ s/Toyota Hilux/Toyota_Hilux/g;
         $input =~ s/Toyota RunX/Toyota_RunX/g;
         $input =~ s/Toyota Tazz/Toyota_Tazz/g;
+        $input =~ s/Trachurus trachurus/Trachurus_trachurus/g;
         $input =~ s/Trade Union Council of South Africa/Trade_Union_Council_of_South_Africa/g;
         $input =~ s/Tragelaphus angasi/Tragelaphus_angasi/g;
         $input =~ s/Tragelaphus scriptus/Tragelaphus_scriptus/g;
@@ -5475,6 +5740,7 @@ sub Tokenize {
         $input =~ s/Universiteit Leiden/Universiteit_Leiden/g;
         $input =~ s/Universiteit Stellenbosch/Universiteit_Stellenbosch/g;
         $input =~ s/Universiteit van Amsterdam/Universiteit_van_Amsterdam/g;
+        $input =~ s/Universiteit van Baskeland/Universiteit_van_Baskeland/g;
         $input =~ s/Universiteit van Botswana/Universiteit_van_Botswana/g;
         $input =~ s/Universiteit van die Noorde/Universiteit_van_die_Noorde/g;
         $input =~ s/Universiteit van die Oranje\-Vrystaat/Universiteit_van_die_Oranje-Vrystaat/g;
@@ -5552,6 +5818,7 @@ sub Tokenize {
         $input =~ s/Van buiteaf/Van_buiteaf/g;
         $input =~ s/van Coke/van_Coke/g;
         $input =~ s/Van Coke/Van_Coke/g;
+        $input =~ s/Van Collerstraat/Van_Collerstraat/g;
         $input =~ s/van Coller/van_Coller/g;
         $input =~ s/Van Coller/Van_Coller/g;
         $input =~ s/van Dalen/van_Dalen/g;
@@ -5570,6 +5837,10 @@ sub Tokenize {
         $input =~ s/Van den Heuvel/Van_den_Heuvel/g;
         $input =~ s/van der Berg/van_der_Berg/g;
         $input =~ s/Van der Berg/Van_der_Berg/g;
+        $input =~ s/van der Bijllaan/van_der_Bijllaan/g;
+        $input =~ s/Van der Bijllaan/Van_der_Bijllaan/g;
+        $input =~ s/van der Bijlstraat/van_der_Bijlstraat/g;
+        $input =~ s/Van der Bijlstraat/Van_der_Bijlstraat/g;
         $input =~ s/van der Bijl/van_der_Bijl/g;
         $input =~ s/Van der Bijl/Van_der_Bijl/g;
         $input =~ s/van der Burgh/van_der_Burgh/g;
@@ -5624,6 +5895,7 @@ sub Tokenize {
         $input =~ s/van Dyck/van_Dyck/g;
         $input =~ s/Van Dyck/Van_Dyck/g;
         $input =~ s/Van Dyksbaai/Van_Dyksbaai/g;
+        $input =~ s/Van Dykstraat/Van_Dykstraat/g;
         $input =~ s/van Eck/van_Eck/g;
         $input =~ s/Van Eck/Van_Eck/g;
         $input =~ s/van Eeden/van_Eeden/g;
@@ -5646,11 +5918,14 @@ sub Tokenize {
         $input =~ s/Van Heerden/Van_Heerden/g;
         $input =~ s/van heinde en ver/van_heinde_en_ver/g;
         $input =~ s/Van heinde en ver/Van_heinde_en_ver/g;
+        $input =~ s/van Helden/van_Helden/g;
+        $input =~ s/Van Helden/Van_Helden/g;
         $input =~ s/van Helsdingen/van_Helsdingen/g;
         $input =~ s/Van Helsdingen/Van_Helsdingen/g;
         $input =~ s/van hoër hand/van_hoër_hand/g;
         $input =~ s/van Huffel/van_Huffel/g;
         $input =~ s/Van Huffel/Van_Huffel/g;
+        $input =~ s/Van Iddekingelaan/Van_Iddekingelaan/g;
 	$input =~ s/van Jaarsveld/van_Jaarsveld/g;
 	$input =~ s/Van Jaarsveld/Van_Jaarsveld/g;
 	$input =~ s/van jongs af/van_jongs_af/g;
@@ -5673,6 +5948,7 @@ sub Tokenize {
         $input =~ s/Van kleins af/Van_kleins_af/g;
         $input =~ s/van landsweë/van_landsweë/g;
         $input =~ s/Van landsweë/Van_landsweë/g;
+        $input =~ s/Van Leenhofstraat/Van_Leenhofstraat/g;
         $input =~ s/van Lennep/van_Lennep/g;
         $input =~ s/Van Lennep/Van_Lennep/g;
         $input =~ s/van liewerlee/van_liewerlee/g;
@@ -5681,12 +5957,15 @@ sub Tokenize {
         $input =~ s/Van Lill/Van_Lill/g;
         $input =~ s/van Loggerenberg/van_Loggerenberg/g;
         $input =~ s/Van Loggerenberg/Van_Loggerenberg/g;
+        $input =~ s/Van Mellestraat/Van_Mellestraat/g;
         $input =~ s/van Neel/van_Neel/g;
         $input =~ s/Van Neel/Van_Neel/g;
         $input =~ s/van Nel/van_Nel/g;
         $input =~ s/Van Nel/Van_Nel/g;
         $input =~ s/van Niekerk/van_Niekerk/g;
         $input =~ s/Van Niekerk/Van_Niekerk/g;
+        $input =~ s/van Nierop/van_Nierop/g;
+        $input =~ s/Van Nierop/Van_Nierop/g;
         $input =~ s/van node/van_node/g;
         $input =~ s/Van node/Van_node/g;
         $input =~ s/van Onselen/van_Onselen/g;
@@ -5745,6 +6024,8 @@ sub Tokenize {
         $input =~ s/Van Staden/Van_Staden/g;
         $input =~ s/van Straten/van_Straten/g;
         $input =~ s/Van Straten/Van_Straten/g;
+        $input =~ s/van Tiddens/van_Tiddens/g;
+        $input =~ s/Van Tiddens/Van_Tiddens/g;
         $input =~ s/van Tonder/van_Tonder/g;
         $input =~ s/Van Tonder/Van_Tonder/g;
         $input =~ s/van Tulleken/van_Tulleken/g;
@@ -5759,8 +6040,12 @@ sub Tokenize {
         $input =~ s/Van Vuuren/Van_Vuuren/g;
         $input =~ s/van weerskante/van_weerskante/g;
         $input =~ s/Van weerskante/Van_weerskante/g;
+        $input =~ s/van Wouw/van_Wouw/g;
+        $input =~ s/Van Wouw/Van_Wouw/g;
         $input =~ s/van Wyk/van_Wyk/g;
         $input =~ s/Van Wyk/Van_Wyk/g;
+        $input =~ s/van Wyngaardt/van_Wyngaardt/g;
+        $input =~ s/Van Wyngaardt/Van_Wyngaardt/g;
         $input =~ s/van Zyl/van_Zyl/g;
         $input =~ s/Van Zyl/Van_Zyl/g;
         $input =~ s/Vanellus coronatus/Vanellus_coronatus/g;
@@ -5814,6 +6099,7 @@ sub Tokenize {
         $input =~ s/via dolorosa/via_dolorosa/g;
         $input =~ s/Via dolorosa/Via_dolorosa/g;
         $input =~ s/Via Dolorosa/Via_Dolorosa/g;
+        $input =~ s/Vic Toweelstraat/Vic_Toweelstraat/g;
         $input =~ s/vice versa/vice_versa/g;
         $input =~ s/Vice versa/Vice_versa/g;
         $input =~ s/victor ludorum/victor_ludorum/g;
@@ -5826,7 +6112,8 @@ sub Tokenize {
         $input =~ s/Vidua macroura/Vidua_macroura/g;
         $input =~ s/Vierde Grensoorlog/Vierde_Grensoorlog/g;
         $input =~ s/Vierde Laan/Vierde_Laan/g;
-        $inpug =~ s/Vigna unguiculata/Vigna_unguiculata/g;
+        $input =~ s/Vigna unguiculata/Vigna_unguiculata/g;
+        $input =~ s/Vin d'Orlaan/Vin_d'Orlaan/g;
         $input =~ s/viola d'amore/viola_d'amore/g;
         $input =~ s/Viola d'amore/Viola_d'amore/g;
         $input =~ s/viola da gamba/viola_da_gamba/g;
@@ -5902,6 +6189,7 @@ sub Tokenize {
         $input =~ s/Vrystaatse en Transvaalse Aankoopkoöperasie/Vrystaatse_en_Transvaalse_Aankoopkoöperasie/g;
         $input =~ s/Vrystaatse Provinsiale Erfenishulpbronagentskap/Vrystaatse_Provinsiale_Erfenishulpbronagentskap/g;
         $input =~ s/Vrystaatse Rugbyunie/Vrystaatse_Rugbyunie/g;
+        $input =~ s/Vrystaatse Sentrum vir Menseregte/Vrystaatse_Sentrum_vir_Menseregte/g;
         $input =~ s/Vrystaatse Simfonieorkes/Vrystaatse_Symfonieorkes/g;
         $input =~ s/Vrystaatse Technikon/Vrystaatse_Technikon/g;
         $input =~ s/Vultur gryphus/Vultur_gryphus/g;
@@ -5918,6 +6206,7 @@ sub Tokenize {
         $input =~ s/Walter Sisululaan/Walter_Sisululaan/g;
         $input =~ s/Walter Sisulu\-laan/Walter_Sisulu-laan/g;
         $input =~ s/Walter Sisulu Laan/Walter_Sisulu_Laan/g;
+        $input =~ s/Walter Sisulurylaan/Walter_Sisulurylaan/g;
         $input =~ s/Walter Sisuluweg/Walter_Sisuluweg/g;
         $input =~ s/Walter Sisulu\-weg/Walter_Sisulu-weg/g;
         $input =~ s/Walter Sisulu Weg/Walter_Sisulu_Weg/g;
@@ -5980,6 +6269,7 @@ sub Tokenize {
         $input =~ s/Wet op die Bevordering van Bantoeselfbestuur/Wet_op_die_Bevordering_van_Bantoeselfbestuur/g;
         $input =~ s/Wet op die Bevordering van Bantoe\-selfbestuur/Wet_op_die_Bevordering_van_Bantoe-selfbestuur/g;
         $input =~ s/Wet op die Onderdrukking van Kommunisme/Wet_op_die_Onderdrukking_van_Kommunisme/g;
+        $input =~ s/Wet op Diensbillikheid/Wet_op_Diensbillikheid/g;
         $input =~ s/Wet op Doeanetariewe/Wet_op_Doeanetariewe/g;
         $input =~ s/Wet op Gelyke Indiensneming/Wet_op_Gelyke_Indiensneming/g;
         $input =~ s/Wet op Gemengde Huwelike/Wet_op_Gemengde_Huwelike/g;
@@ -6001,6 +6291,7 @@ sub Tokenize {
         $input =~ s/Wet op Omgewingsbewaring/Wet_op_Omgewingsbewaring/g;
         $input =~ s/Wet op Onwettige Organisasies/Wet_op_Onwettige_Organisasies/g;
         $input =~ s/Wet op Openbare Veiligheid/Wet_op_Openbare_Veiligheid/g;
+        $input =~ s/Wet op Outeursreg/Wet_op_Outeursreg/g;
         $input =~ s/Wet op Prokureurs/Wet_op_Prokureurs/g;
         $input =~ s/Wet op Stedelike Gebiede/Wet_op_Stedelike_Gebiede/g;
         $input =~ s/Wet op Swart Sake/Wet_op_Swart_Sake/g;
@@ -6017,11 +6308,14 @@ sub Tokenize {
         $input =~ s/WF Nkomo\-straat/WF_Nkomo-straat/g;
         $input =~ s/W.\F.\ Nkomo\-straat/W.F._Nkomo_Straat/g;
         $input =~ s/WF Nkomo\-straat/WF_Nkomo_Straat/g;
+        $input =~ s/Wieg van die Mensdom/Wieg_van_die_Mensdom/g;
         $input =~ s/Wiener schnitzel/Wiener_schnitzel/g;
         $input =~ s/wiener schnitzel/wiener_schnitzel/g;
+        $input =~ s/Wilde Amandelstraat/Wilde_Amandelstraat/g;
         $input =~ s/Wilde Weste/Wilde_Weste/g;
         $input =~ s/Wilgerspruit Singel/Wilgerspruit_Singel/g;
         $input =~ s/Willa Filliesstraat/Willa_Filliesstraat/g;
+        $input =~ s/Willem Erasmusstraat/Willem_Erasmusstraat/g;
         $input =~ s/willens en wetens/willens_en_wetens/g;
         $input =~ s/Willens en wetens/Willens_en_wetens/g;
         $input =~ s/willens of onwillens/willens_of_onwillens/g;
@@ -6029,6 +6323,7 @@ sub Tokenize {
         $input =~ s/Willi Giessstraat/Willi_Giessstraat/g;
         $input =~ s/Willi Giess\-straat/Willi_Giess-straat/g;
         $input =~ s/Willi Giess Straat/Willi_Giess_Straat/g;
+        $input =~ s/William Nicolrylaan/William_Nicolrylaan/g;
         $input =~ s/Willibald Kapuenenestraat/Willibald_Kapuenenestraat/g;
         $input =~ s/Willibald Kapuenene\-straat/Willibald_Kapuenene-straat/g;
         $input =~ s/Willibald Kapuenene Straat/Willibald_Kapuenene_Straat/g;
@@ -6038,11 +6333,11 @@ sub Tokenize {
         $input =~ s/Willie Van Schoorrylaan/Willie_Van_Schoorrylaan/g;
         $input =~ s/Willie van Schoor Rylaan/Willie_van_Schoor_Rylaan/g;
         $input =~ s/Willie Van Schoor Rylaan/Willie_Van_Schoor_Rylaan/g;
-        $input =~ s/Withuis/Wit_Huis/g;
         $input =~ s/Windhoek Afrikaanse Privaatskool/Windhoek_Afrikaanse_Privaatskool/g;
         $input =~ s/Windhoek Express/Windhoek_Express/g;
         $input =~ s/Windhoek Gimnasium/Windhoek_Gimnasium/g;
         $input =~ s/Windhoekse Onderwyskollege/Windhoekse_Onderwyskollege/g;
+        $input =~ s/Winnie Mandelastraat/Winnie_Mandelastraat/g;
         $input =~ s/Wit Elslaan/Wit_Elslaan/g;
         $input =~ s/Witvlei Meat/Witvlei_Meat/g;
         $input =~ s/Woodlands Mall/Woodlands_Mall/g;
@@ -6070,6 +6365,7 @@ sub Tokenize {
         $input =~ s/Zosterops senegalensis/Zosterops_senegalensis/g;
         $input =~ s/Zuid\-Afrikaansche Republiek/Zuid-Afrikaansche_Republiek/g;
         $input =~ s/Zuid\-Afrikaansche Taalbond/Zuid-Afrikaansche_Taalbond/g;
+        $input =~ s/Zygocactus truncatus/Zygocactus_truncatus/g;
 
         $input =~ s/eksamen uitsla/eksamenuitsla/g;
 

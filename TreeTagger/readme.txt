@@ -1,6 +1,6 @@
 === AfriTools: POS tagging and lemmatization ===
 
-This folder contains a TreeTagger model (parameter file) trained on the Taalkommissie corpus (about 56M tokens), while for lexicalized words limiting the tags to a manually checked lexicon of about 250K tokens.
+This folder contains a TreeTagger model (parameter file) trained on the Taalkommissie corpus (about 56M tokens), while for lexicalized words limiting the tags to a manually checked lexicon of about 283K tokens.
 
 It will need TreeTagger (Schmid, 1994) to do the actual tagging. TreeTagger can be found on:
 https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/

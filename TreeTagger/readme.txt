@@ -13,6 +13,7 @@ A reference to cite this work will be added.
 
 References:
 
+Peter Dirix (2023). "The need for a larger Afrikaans treebank." In: Ian Bekker and Theresa Biberauer (eds.), "Ex Africa semper aliquid novi: Linguistic shorts in honour of Andries Coetzee on his 50th birthday", Stellenbosch Papers in Linguistics Plus (2023, to appear).
 Suléne Pilon (2005). "Outomatiese Afrikaanse woordsoortetikettering." Master's thesis, North-West University, Potchefstroom.
 Helmut Schmid (1994), "Probabilistic Part-of-Speech Tagging Using Decision Trees." In: Proceedings of International Conference on New Methods in Language Processing, Manchester, UK.
 

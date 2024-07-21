@@ -267,6 +267,8 @@ Afrika-gebaseerd	ASP Afrikagebaseerd
 Afrika-gebaseerde	ASA Afrikagebaseer(d)
 Afrika-gebied	NSE Afrikagebied
 Afrika-gebiede	NSM Afrikagebied
+Afrika-gemeenskap	NSE Afrikagemeenskap
+Afrika-gemeenskappe	NSM Afrikagemeenskap
 Afrika-gewoontereg	NSE Afrikagewoontereg
 Afrika-godsdiens	NSE Afrikagodsdiens
 Afrika-godsdienste	NSM Afrikagodsdiens
@@ -315,6 +317,9 @@ Afrikaner-geledere	NSM Afrikanergeledere
 Afrikaner-monument	NSE Afrikanermonument
 Afrikaner-monumente	NSM Afrikanermonument
 Afrikaner-nasionalisme	NSE Afrikanernasionalisme
+Afrikaner-nedersetting	NSE Afrikanernedersetting
+Afrikaner-nedersettinge	NSM Afrikanernedersetting
+Afrikaner-nedersettings	NSM Afrikanernedersetting
 Afrikaner-organisasie	NSE Afrikanerorganisasie
 Afrikaner-organisasies	NSM Afrikanerorganisasie
 Afrikaner-selfbeskikking	NSE Afrikanerselfbeskikking
@@ -380,6 +385,8 @@ aftree-oord	NSE aftreeoord
 aftree-oorde	NSM aftreeoord
 aftrek-kieslys	NSE aftrekkieslys
 aftrek-kieslyste	NSM aftrekkieslys
+a-funksioneel	ASP afunksioneel
+a-funksionele	ASA afunksioneel
 agave	NSE agawe
 agaveplant	NSE agaweplant
 agaveplante	NSM agaweplant
@@ -412,6 +419,8 @@ AK47	NSE AK-47
 AK47-aanvalsgeweer	NSE AK-47-aanvalsgeweer
 AK47-aanvalsgewere	NSM AK-47-aanvalsgeweer
 AK47's	NSM AK-47
+Akademia-student	NSE Akademiastudent
+Akademia-studente	NSM Akademiastudent
 akhni	NSE akni
 akkerwani	NSE akkerwanie
 akkommodasie-besprekingswebblaaie	NSM akkommodasiebesprekingswebblad
@@ -503,6 +512,8 @@ alweolêr	ASP alveolêr
 alweolêre	ASA alveolêr
 alweool	NSE alveool
 Alwyn_Taljaard-laan	NEE Alwyn_Taljaardlaan
+Alzheimer-lyer	NSE alzheimerlyer
+Alzheimer-lyers	NSM alzheimerlyer
 Amabokoboko	NEE Amabokhobokho
 Amahlubi	NEM amaHlubi
 amaleita	NSE amalaita
@@ -613,6 +624,8 @@ anti-christelike	ASA antichristelik
 anti-Christelike	ASA antichristelik
 anti-demokraties	ASP antidemokraties
 anti-demokratiese	ASA antidemokraties
+anti-diureties	ASP antidiureties
+anti-diuretiese	ASA antidiureties
 Antifa-ondersteuner	NSE Antifaondersteuner
 Antifa-ondersteuners	NSM Antifaondersteuner
 anti-gnostisisme	NSE antignostisisme
@@ -670,6 +683,8 @@ anti-semitisme	NSE antisemitisme
 anti-Semitisme	NSE antisemitisme
 anti-siklonaal	ASP antisiklonaal
 anti-siklonale	ASA antisiklonaal
+anti-spasmodies	ASP antispasmodies	BS antispasmodies
+anti-spasmodiese	ASA antispasmodies
 anti-stolmiddel	NSE antistolmiddel
 anti-stolmiddele	NSM antistolmiddel
 anti-stolmiddels	NSM antistolmiddel
@@ -716,6 +731,7 @@ argeologie-professore	NSM argeologieprofessor
 argeologie-professors	NSM argeologieprofessor
 Argimedes	NEE Archimedes
 Argumentum_ad_hominem	NSE argumentum_ad_hominem
+Argumentum_ex_silentio	NSE argumentum_ex_silentio
 Aristarchos	NEE Aristargos
 Aristarchus	NEE Aristargus
 Aristophanes	NEE Aristofanes
@@ -1238,6 +1254,8 @@ bloedbreinskans	NSE bloed-breinskans
 bloed-brein-skans	NSE bloed-breinskans
 bloed-uit	BS bloeduit
 Bloemfontein-konvensie	NEE Bloemfonteinkonvensie
+blog-opskrif	NSE blogopskrif
+blog-opskrifte	NSM blogopskrif
 blokketting-netwerk	NSE blokkettingnetwerk
 blokketting-netwerke	NSM blokkettingnetwerk
 blokketting-tegnologie	NSE blokkettingtegnologie
@@ -1256,6 +1274,7 @@ bloukaas-liefhebber	NSE bloukaasliefhebber
 bloukaas-liefhebbers	NSM bloukaasliefhebber
 bloustert-harder	NSE bloustertharder
 bloustert-harders	NSM bloustertharder
+Bluebell-laan	NEE Bluebelllaan
 bly-of-gly-debat	NSE bly-of-glydebat
 bly-of-gly-debatte	NSM bly-of-glydebat
 BMil	NSE B.Mil.
@@ -1349,6 +1368,8 @@ boom-nes	NSE boomnes
 boom-neste	NSM boomnes
 Boorhaanol-moskee	NEE Boorhaanolmoskee
 BOptom	NSE B.Optom.
+bo-reling	NSE boreling
+bo-relings	NSM boreling
 Bose-Eeinsteinkondensaat	NSE bose-einsteinkondensaat
 Bose-Eeinstein-kondensaat	NSE bose-einsteinkondensaat
 Bose-Einsteinkondensaat	NSE bose-einsteinkondensaat
@@ -1466,6 +1487,8 @@ bruindwerg-dubbelster	NSE bruindwergdubbelster
 bruindwerg-dubbelsterre	NSM bruindwergdubbelster
 bruinspikkel-klipkabeljou	NSE bruinspikkelklipkabeljou
 bruinspikkel-klipkabeljoue	NSM bruinspikkelklipkabeljou
+bry-klank	NSE bryklank
+bry-klanke	NSM bryklank
 Bryntirion-landgoed	NEE Bryntirionlandgoed
 BSc	NSE B.Sc.
 BSc(Ed)	NSE B.Sc.(Ed.)
@@ -1499,6 +1522,8 @@ buite-bybels	ASP buitebybels
 buite-Bybels	ASP buitebybels
 buite-bybelse	ASA buitebybels
 buite-Bybelse	ASA buitebybels
+buite-distrik	NSE buitedistrik
+buite-distrikte	NSM buitedistrik
 buite-liggaamlik	ASP buiteliggaamlik
 buite-liggaamlike	ASA buiteliggaamlik
 buite-oewer	NSE buiteoewer
@@ -1592,6 +1617,7 @@ Caprivi-strook	NEE Caprivistrook
 CAPTCHA	NSE captcha
 Carel_van_Aswegen-straat	NEE Carel_van_Aswegenstraat
 caries	NSE kariës
+Carina-newel	NEE Carinanewel
 Carl_Bosch-straat	NEE Carl_Boschstraat
 Carla_Keerweg	NEE Carlakeerweg
 Carla-keerweg	NEE Carlakeerweg
@@ -1715,8 +1741,12 @@ Choerriet	NEE Hoerriet
 Choerriete	NEM Hoerriet
 Choerrities	NEE Hoerrities	ASP Hoerrities
 Choerritiese	ASA Hoerrities
+cholera-agtig	ASP choleraägtig
+cholera-agtige	ASA choleraägtig
 cholera-epidemie	NSE choleraepidemie
 cholera-epidemies	NSM choleraepidemie
+cholera-geval	NSE cholerageval
+cholera-gevalle	NSM cholerageval
 chomskiaans	ASP chomskyaans
 chomskiaanse	ASA chomskyaans
 Chongqing	NEE Tsjoengking
@@ -2062,6 +2092,9 @@ data-element	NSE dataelement
 data-elemente	NSM dataelement
 data-gedrewe	ASA datagedrewe	ASP datagedrewe
 data-gehalteversekering	NSE datagehalteversekering
+data-georiënteer	ASP datageoriënteer
+data-georiënteerd	ASP datageoriënteerd
+data-georiënteerde	ASA datageoriënteer(d)
 data-hantering	NSE datahantering
 data-modellering	NSE datamodellering
 data-ontginning	NSE dataontginning
@@ -2116,6 +2149,7 @@ de_Kock-straat	NEE De_Kockstraat
 De_Kock-straat	NEE De_Kockstraat
 De_Kok	NEE de_Kok
 De_Koker	NEE de_Koker
+De_Korte	NEE de_Korte
 De_la_Rey	NEE de_la_Rey
 de_la_Reystraat	NEE De_la_Reystraat
 De_Lange	NEE de_Lange
@@ -2213,6 +2247,7 @@ des_Presstraat	NEE Des_Presstraat
 des_Pres-straat	NEE Des_Presstraat
 Des_Pres-straat	NEE Des_Presstraat
 Dese_en_gene	PO dese_en_gene
+Desember-sonkeerpunt	NSE Desembersonkeerpunt
 Desember-vakansie	NSE Desembervakansie
 Desiree_Keerweg	NEE Desireekeerweg
 Desiree-keerweg	NEE Desireekeerweg
@@ -2285,6 +2320,7 @@ dienste-ondernemings	NSM diensteonderneming
 diepsee-asemhalingstoerusting	NSE diepseeasemhalingstoerusting
 diepsee-diamantmynskepe	NSM diepseediamantmynskip
 diepsee-diamantmynskip	NSE diepseediamantmynskip
+diepsee-verkenning	NSE diepseeverkenning
 diepte-psigologie	NSE dieptepsigologie
 diepte-psigologies	ASP dieptepsigologies
 diepte-psigologiese	ASA dieptepsigologies
@@ -2312,7 +2348,6 @@ dingessies	NSMD dinges
 DIng-registrasie	NSE D.Ing.-registrasie
 Dirac-veld	NSE diracveld
 Dirac-vergelyking	NSE diracvergelyking
-Direhoek-sterrestelsel	NEE Direhoeksterrestelsel
 dirkdirk	NSE dirk-dirk
 dirkdirke	NSM dirk-dirk
 dirkdirkie	NSED dirk-dirk
@@ -2383,6 +2418,7 @@ doen-dit-self-handleiding	NSE doen-dit-selfhandleiding
 doen-dit-self-handleidings	NSM doen-dit-selfhandleiding
 dof-bruin	ASA dofbruin	ASP dofbruin
 dogma-geskiedenis	NSE dogmageskiedenis
+dokter-pasiënt-vertroulikheid	NSE dokter-pasiëntvertroulikheid
 Dokters_Sonder_Grense	NEE Dokters_sonder_Grense
 Dolce_far_niente	NSE dolce_far_niente
 Domba-dans	NSE Dombadans
@@ -2484,6 +2520,7 @@ drieënig	ASP drie-enig
 drieënige	ASA drie-enig
 drie-enjin-vliegtuie	NSM drie-enjinvliegtuig
 drie-enjin-vliegtuig	NSE drie-enjinvliegtuig
+Driehoek-sterrestelsel	NEE Driehoeksterrestelsel
 driekamer-parlement	NSE driekamerparlement
 drie-lae-struktuur	NSE drielaestruktuur
 drieling-baba	NSE drielingbaba
@@ -2730,6 +2767,8 @@ energieintensief	ASP energie-intensief
 energieintensiewe	ASA energie-intensief
 energie-metabolisme	NSE energiemetabolisme
 energie-omsetting	NSE energieomsetting
+energie-ontleder	NSE energieontleder
+energie-ontleders	NSM energieontleder
 energie-oordrag	NSE energieoordrag
 energie-oplossing	NSE energieoplossing
 energie-oplossings	NSM energieoplossing
@@ -2789,6 +2828,7 @@ Eskia_Mphahlele-rylaan	NEE Eskia_Mphahlelerylaan
 Eskom-bestuurder	NSE Eskombestuurder
 Eskom-bestuurders	NSM Eskombestuurder
 Eskom-krisis	NSE Eskomkrisis
+Eskom-personeel	NSE Eskompersoneel
 Eskom-raad	NSE Eskomraad
 Eskom-werker	NSE Eskomwerker
 Eskom-werkers	NSM Eskomwerker
@@ -2840,7 +2880,9 @@ Eve_Carolissen_Keerweg	NEE Eve_Carolissenkeerweg
 Eve_Carolissen-keerweg	NEE Eve_Carolissenkeerweg
 evolueer	VTHOG ewolueer
 evolusie	NSE ewolusie
+evolusiebioloë	NSM ewolusiebioloog
 evolusiebiologie	NSE ewolusiebiologie
+evolusiebioloog	NSE ewolusiebioloog
 evolusiefase	NSE ewolusiefase
 evolusiefases	NSM ewolusiefase
 evolusiegeskiedenis	NSE ewolusiegeskiedenis
@@ -2936,6 +2978,8 @@ Fedisa	NEE FEDISA
 FEDSAL	NEE Fedsal
 FEDSAS	NEE Fedsas
 FEDUSA	NEE Fedusa
+feeverhaal	NSE feëverhaal
+feeverhale	NSM feëverhaal
 Feigenbaum-konstante	NSE feigenbaumkonstante
 Feigenbaum-konstantes	NSM feigenbaumkonstante
 Feng_shui	NSE feng_shui
@@ -2966,6 +3010,7 @@ filodeeg-pastei	NSE filodeegpastei
 filodeeg-pasteie	NSM filodeegpastei
 filosofie-dosent	NSE filosofiedosent
 filosofie-dosente	NSM filosofiedosent
+filtrasie-doeltreffendheid	NSE filtrasiedoeltreffendheid
 Fin_de_siècle	NSE fin_de_siècle
 FINA	NEE Fina
 finansiëledienste-maatskappy	NSE finansiëledienstemaatskappy
@@ -2973,6 +3018,8 @@ finansiëledienste-maatskappye	NSM finansiëledienstemaatskappy
 finansiëledienste-sektor	NSE finansiëledienstesektor
 Finansies_en_Tegniek	NEE Finansies_&_Tegniek
 Finsch-diamantmyn	NEE Finschdiamantmyn
+Fisher's_Hill	NEE Fishers_Hill
+Fishershill	NEE Fishers_Hill
 fisika-departement	NSE fisikadepartement
 Fisika-departement	NSE fisikadepartement
 fisika-departemente	NSM fisikadepartement
@@ -3000,6 +3047,8 @@ foliouitgawes	NSM folio-uitgawe
 Folkert_de_Vries-straat	NEE Folkert_de_Vriesstraat
 Folkert_De_Vriesstraat	NEE Folkert_de_Vriesstraat
 Folkert_De_Vries-straat	NEE Folkert_de_Vriesstraat
+follikel-stimulerend	ASP follikelstimulerend
+follikel-stimulerende	ASA follikelstimulerend
 fong_kong	ASA fongkong	ASP fongkong
 Fong_kong	ASA fongkong	ASP fongkong
 fonkel	VTHOG vonkel
@@ -3289,6 +3338,8 @@ gevangenis-eenheid	NSE gevangeniseenheid
 gevarieër	VVHOG varieer
 gevestigde-orde-kandidaat	NSE gevestigdeordekandidaat
 gevestigde-orde-kandidate	NSM gevestigdeordekandidaat
+gewei-agtig	ASP geweiagtig
+gewei-agtige	ASA geweiagtig
 geworrie	VVHOG worry
 Ghaap-plato	NEE Ghaapplato
 ghoemahare-pienk	ASP ghoemaharepienk	ASA ghoemaharepienk
@@ -3315,6 +3366,9 @@ gliseriel-triërukaat	NSE gliserieltriërukaat
 gliserol-trioleaat	NSE gliseroltrioleaat
 gloeilamp-straatverligting	NSE gloeilampstraatverligting
 godsdiens-gedrewe	ASA godsdiensgedrewe	ASP godsdiensgedrewe
+godsdiens-geïnspireer	ASP godsdiensgeïnspireer
+godsdiens-geïnspireerd	ASP godsdiensgeïnspireerd
+godsdiens-geïnspireerde	ASA godsdiensgeïnspireer(d)
 Goegap-natuurreservaat	NEE Goegapnatuurreservaat
 Goeie_Hoop-straat	NEE Goeie_Hoopstraat
 goeienuus-storie	NSE goeienuusstorie
@@ -3343,6 +3397,7 @@ gooi-assegaai	NSE gooiassegaai
 gooi-assegaaie	NSM gooiassegaai
 goud-ghieliemientjie	NSE goudghieliemientjie
 goud-ghieliemientjies	NSM goudghieliemientjie
+goud-silwer-legering	NSE goud-silwerlegering
 Gough-eiland	NEE Gougheiland
 gourmet-eetplek	NSE gourmeteetplek
 gourmet-eetplekke	NSM gourmeteetplek
@@ -3407,7 +3462,11 @@ Graad_9-leerder	NSE graad_9-leerder
 Graad_9-leerders	NSM graad_9-leerder
 Graad_9-leerling	NSE graad_9-leerling
 Graad_9-leerlinge	NSM graad_9-leerling
+grafeem-na-foneem-reël	NSE grafeem-na-foneemreël
+grafeem-na-foneem-reëls	NSM grafeem-na-foneemreël
 graffiti-kuns	NSE graffitikuns
+graffiti-opskrif	NSE graffitiopskrif
+graffiti-opskrifte	NSM graffitiopskrif
 gram-kalorie	NSE gramkalorie
 gram-kalorieë	NSM gramkalorie
 gram-meter	NSE grammeter	NSM grammeter
@@ -3525,6 +3584,8 @@ Gujarati's	NEM Goedjarati
 Gujarats	ASP Goedjarats
 Gujaratse	ASA Goedjarats
 gulden	ASA gulde	NSE gulde
+gunsteling-afleweraar	NSE gunstelingafleweraar
+gunsteling-afleweraars	NSM gunstelingafleweraar
 gunsteling-besienswaardighede	NSM gunstelingbesienswaardigheid
 gunsteling-besienswaardigheid	NSE gunstelingbesienswaardigheid
 gunsteling-besighede	NSM gunstelingbesigheid
@@ -3533,6 +3594,8 @@ gunsteling-digter	NSE gunstelingdigter
 gunsteling-digters	NSM gunstelingdigter
 gunsteling-sanger	NSE gunstelingsanger
 gunsteling-sangers	NSM gunstelingsanger
+gunsteling-straatverkoper	NSE gunstelingstraatverkoper
+gunsteling-straatverkopers	NSM gunstelingstraatverkoper
 Gut_feeling	NSE gut_feeling
 gyselware-aanval	NSE gyselwareaanval
 gyselware-aanvalle	NSM gyselwareaanval
@@ -3711,6 +3774,8 @@ Herero-gemeenskappe	NSM Hererogemeenskap
 herfs-kommandowurm	NSE herfskommandowurm
 herfs-kommandowurms	NSM herfskommandowurm
 hertoe-eiening	NSE hertoeëiening
+hertsoggie	NSE hertzoggie
+hertsoggies	NSM hertzoggie
 Hertzogprys-bekroon	ASP Hertzogprysbekroon
 Hertzogprys-bekroonde	ASA Hertzogprysbekroon
 Hertzog-regering	NSE Hertzogregering
@@ -3749,6 +3814,8 @@ hipallage	NSE hipallagee
 hipallages	NSM hipallagee
 hiper-Afrikaans	ASP Hiperafrikaans	NEE Hiperafrikaans
 hiper-Afrikaanse	ASA Hiperafrikaans
+hiper-korrek	ASP hiperkorrek
+hiper-korrekte	ASA hiperkorrek	BS hiperkorrek
 hiper-moderniteit	NSE hipermoderniteit
 hipertiroïedisme	NSE hipertiroïdisme
 hip-hop	NSE hiphop
@@ -3786,6 +3853,8 @@ hoëgehalte-proteïnes	NSM hoëgehalteproteïne
 hoëgehalte-publikasie	NSE hoëgehaltepublikasie
 hoëgehalte-publikasies	NSM hoëgehaltepublikasie
 hoë-impak-botsing	NSE hoë-impakbotsing
+hoenderdy-kebab	NSE hoenderdykebab
+hoenderdy-kebabs	NSM hoenderdykebab
 hoendervleis-avonture	NSM hoendervleisavontuur
 hoendervleis-avontuur	NSE hoendervleisavontuur
 hoëoktaan-akteur	NSE hoëoktaanakteur
@@ -3815,6 +3884,7 @@ Hoërskool_DF_Malherbe	NEE Hoërskool_D.F._Malherbe
 Hoërskool_Eben_Donges	NEE Hoërskool_Eben_Dönges
 Hoërskool_JG_Meiring	NEE Hoërskool_J.G._Meiring
 Hoërskool_JW_Luckhoff	NEE Hoërskool_J.W._Luckhoff
+Hoërskool_Kempton_Park	NEE Hoërskool_Kemptonpark
 Hoërskool_Luckhoff	NEE Hoërskool_Lückhoff
 Hoërskool_Morester	NEE Hoërskool_Môrester
 Hoërskool_PJ_Olivier	NEE Hoërskool_P.J._Olivier
@@ -3878,12 +3948,16 @@ hoof-ondersoeker	NSE hoofondersoeker
 hoof-ondersoekers	NSM hoofondersoeker
 hoofstroom-ekonomie	NSE hoofstroomekonomie
 hoofstroom-media	NSM hoofstroommedia
+hoof-studierigting	NSE hoofstudierigting
+hoof-studierigtinge	NSM hoofstudierigting
+hoof-studierigtings	NSM hoofstudierigting
 hoof-veeartsenybeampte	NSE hoofveeartsenybeampte
 hoof-veeartsenybeamptes	NSM hoofveeartsenybeampte
 hoof-weervoorspeller	NSE hoofweervoorspeller
 hoof-weervoorspellers	NSM hoofweervoorspeller
 Hoog-Hollands	ASP Hooghollands	NEE Hooghollands
 Hoog-Hollandse	ASA Hooghollands
+Hoog-Maleis	NEE Hoogmaleis
 hoog-skolastiek	NSE hoogskolastiek
 hookah-payp	NSE hookahpyp
 hookah-paype	NSM hookahpyp
@@ -4225,7 +4299,8 @@ internskap-geleenthede	NSM internskapgeleentheid
 internskap-geleentheid	NSE internskapgeleentheid
 internskap-tydperk	NSE internskaptydperk
 internskap-tydperke	NSM internskaptydperk
-internuntiusse	NSM internunsius
+internunsius	NSE internuntius
+internunsiusse	NSM internuntius
 interpretasie-kwessie	NSE interpretasiekwessie
 interpretasie-kwessies	NSM interpretasiekwessie
 interstaat-snelweë	NSM interstaatsnelweg
@@ -4458,6 +4533,7 @@ jujitsu	NSE joejitsoe
 julietkappie	NSE juliëtkappie
 julietkappies	NSM juliëtkappie
 Julius_Nyerere-straat	NEE Julius_Nyererestraat
+Junie-sonkeerpunt	NSE Juniesonkeerpunt
 Jura-periode	NEE Juraperiode
 Jure_et_facto	BS jure_et_facto
 Jus_belli	NSE jus_belli
@@ -4485,6 +4561,7 @@ Kaap_St_Lucia	NEE Kaap_St._Lucia
 Kaapse_Instituut_vir_Landbou-opleiding	NEE Kaapse_Instituut_vir_Landbouopleiding
 Kaapse_Skiereiland_Universiteit_vir_Tegnologie	NEE Kaapse_Skiereiland-Universiteit_vir_Tegnologie
 Kaapsedraai	NEE Kaapse_Draai
+Kaaps-gebore	ASA Kaapsgebore	ASP Kaapsgebore
 Kaapstad-omgewing	NSE Kaapstadomgewing
 Kaap-Supergroep	NEE Kaapsupergroep
 Kaapvaal-kraton	NEE Kaapvaalkraton
@@ -4524,7 +4601,7 @@ kaffeïnegehalte	NSE kafeïnegehalte
 kaffeïne-inhoud	NSE kafeïne-inhoud
 kaffeïnevergiftiging	NSE kafeïnevergiftiging
 kaffeïnevry	ASP kafeïnevry	ASA kafeïnevry
-kaffeïnevrye	ASA kafeïnevrye
+kaffeïnevrye	ASA kafeïnevry
 Kaffrarië-museum	NEE Kaffrariëmuseum
 kakkies-laai	NSE kakkieslaai
 Kalafong-hospitaal	NEE Kalafonghospitaal
@@ -4544,6 +4621,9 @@ kaliumdikromaat	NSE kaliumdichromaat
 kalkulus	NSE calculus
 kalkulustegnieke	NSM calculustegnieke
 kalk-wit	ASA kalkwit	ASP kalkwit
+kaloriemeter	NSE kalorimeter
+kaloriemeters	NSM kalorimeter
+kaloriemetries	ASP kalorimetries
 Kamanassie-natuurreservaat	NEE Kamanassienatuurreservaat
 Kamanjab-dam	NEE Kamanjabdam
 Kamdeboo-berge	NEM Kamdebooberge
@@ -4647,11 +4727,21 @@ Kasakse	ASA Kazaks
 Kasakstan	NEE Kazakstan
 Kasjmirs	ASP Kasjmiers	NEE Kasjmiers
 Kasjmirse	ASA Kasjmiers
+kasteel-agtig	ASP kasteelagtig
+kasteel-agtige	ASA kasteelagtig
 kat-en-muis-spelery	NSE kat-en-muisspelery
 kat-en-muis-speletjie	NSE kat-en-muisspeletjie
 kat-en-muis-speletjies	NSM kat-en-muisspeletjie
 katgesig-klipkabeljou	NSE katgesigklipkabeljou
 katgesig-klipkabeljoue	NSM katgesigklipkabeljou
+Kathaar	NSE kataar
+kathaars	ASP kataars
+Kathaars	ASP kataars
+kathaarse	ASA kataars
+Kathaarse	ASA kataars
+Kathare	NSM kataar
+katharisme	NSE katarisme
+Katharisme	NSE katarisme
 kati	NSE katie
 kati's	NSM katie
 Katrivier-rebellie	NEE Katrivierrebellie
@@ -4732,7 +4822,7 @@ kerslig-ete	NSE kersligete
 kerslig-etes	NSM kersligete
 keto-dieet	NSE ketodieet
 keto-diëte	NSM ketodieet
-keto-kos	KVE ketokos
+keto-kos	NVE ketokos
 keto-produk	NSE ketoproduk
 keto-produkte	NSM ketoproduk
 keuse-taal	NSE keusetaal
@@ -4897,6 +4987,8 @@ klipgooi-afstand	NSE klipgooiafstand
 knaleffek-slot	NSE knaleffekslot
 knie-operasie	NSE knieoperasie
 knie-operasies	NSM knieoperasie
+knipoog-emoji	NSE knipoogemoji
+knipoog-emoji's	NSM knipoogemoji
 Knysna-olifant	NSE knysnaolifant
 Knysna-olifante	NSM knysnaolifant
 Knysna-strandmeer	NEE Knysnastrandmeer
@@ -5079,6 +5171,8 @@ kop-onderstebo	BS koponderstebo
 kop-teen-kop-botsing	NSE kop-teen-kopbotsing
 kop-teen-kop-botsinge	NSM kop-teen-kopbotsing
 kop-teen-kop-botsings	NSM kop-teen-kopbotsing
+koraalrif-ekostelsel	NSE koraalrifekostelsel
+koraalrif-ekostelsels	NSM koraalrifekostelsel
 Kordofan-kameelperd	NSE Kordofankameelperd
 Kordofan-kameelperde	NSM Kordofankameelperd
 koreograaf	NSE choreograaf
@@ -5152,6 +5246,8 @@ Krisp	NEE KRISP
 kristalmetamfetamien-gebruik	NSE kristalmetamfetamiengebruik
 kritiekeprestasie-aanwyser	NSE kritiekeprestasieaanwyser
 kritiekeprestasie-aanwysers	NSM kritiekeprestasieaanwyser
+kroketbal	NSE croquetbal
+kroketballe	NSM croquetbal
 Kronecker-delta	NSE kroneckerdelta
 Kruger-regering	NEE Krugerregering
 kruideniersware-depot	NSE kruidenierswaredepot
@@ -5247,6 +5343,8 @@ Laat-Latyn	NEE Laat_Latyn
 laat-maar-loop-beleid	NSE laat-maar-loopbeleid
 laat-maar-loop-houding	NSE laat-maar-loophouding
 laat-maar-loop-houdings	NSM laat-maar-loophouding
+laat-neëntiende-eeus	ASP laatneëntiende-eeus
+laat-neëntiende-eeuse	ASA laatneëntiende-eeus
 labio-dentaal	ASP labiodentaal	NSE labiodentaal
 labio-dentale	ASA labiodentaal	NSM labiodentaal
 laboratorium-geneeskunde	NSE laboratoriumgeneeskunde
@@ -5346,8 +5444,6 @@ langarm-harder	NSE langarmharder
 langarm-harders	NSM langarmharder
 langasem-vegter	NSE langasemvegter
 langasem-vegters	NSM langasemvegter
-langeraad	NSE langeraat
-langerade	NSM langeraat
 langgolf-kommunikasie	NSE langgolfkommunikasie
 langhaar-verfkwas	NSE langhaarverfkwas
 langhaar-verfkwaste	NSM langhaarverfkwas
@@ -5602,6 +5698,10 @@ lug-tot-lug-missiel	NSE lug-tot-lugmissiel
 lug-tot-lug-missiele	NSM lug-tot-lugmissiel
 lugvaart-owerhede	NSM lugvaartowerheid
 lugvaart-owerheid	NSE lugvaartowerheid
+Luiperd-dekorasie	NSE Luiperddekorasie
+Luiperd-dekorasies	NSM Luiperddekorasie
+luitenantvlieër	NSE luitenant-vlieër
+luitenantvlieërs	NSM luitenant-vlieër
 Luketz_Swartbooi-rylaan	NEE Luketz_Swartbooirylaan
 Lukourgos	NEE Lukoergos
 Luthuli-huis	NEE Luthulihuis
@@ -5613,6 +5713,7 @@ lystrosouriërs	NSM listrosouriër
 lystrosourus	NSE listrosourus
 lystrosourusse	NSM listrosourus
 MA	NSE M.A.
+Maart-dag-en-nag-ewening	NSE Maart-dag-en-nagewening
 maasstroom-analise	NSE maasstroomanalise
 maatskaplikewerk-administrasie	NSE maatskaplikewerkadministrasie
 maatskaplikewerk-bestuur	NSE maatskaplikewerkbestuur
@@ -5811,6 +5912,8 @@ Mashonas	NEM Masjona
 masikande-musiek	NSE masikandemusiek
 masikande-musikant	NSE masikandemusikant
 masikande-musikante	NSM masikandemusikant
+masjienerie	NSE masjinerie
+masjienerieë	NSM masjinerie
 masjienering	NSE masjinering
 maskanda-musiek	NSE maskandamusiek
 maskanda-musikant	NSE maskandamusikant
@@ -5945,6 +6048,8 @@ media-ondernemings	NSM mediaonderneming
 media-opleidingsprogram	NSE mediaopleidingsprogram
 media-opleidingsprogramme	NSM mediaopleidingsprogram
 mediese-parool-voorwaardes	NSM medieseparoolvoorwaardes
+medisynagtig	ASP medisyneagtig
+medisynagtige	ASA medisyneagtig
 medium-groot	ASA mediumgroot	ASP mediumgroot
 mediumtermyn-begroting	NSE mediumtermynbegroting
 mediumtermyn-begrotings	NSM mediumtermynbegroting
@@ -6185,6 +6290,9 @@ Mogadishu	NEE Mogadisjoe
 Mohlapitse-rivier	NEE Mohlapitserivier
 Molefe_Makinta-straat	NEE Molefe_Makintastraat
 Mombasa	NEE Mombassa
+moment-magnitude	NSE momentmagnitude
+moment-magnitudes	NSM momentmagnitude
+moment-magnitude-skaal	NSE momentmagnitudeskaal
 Monagask	NEE Monegask
 Monagaske	NEM Monegask
 Monagaskies	ASP Monegaskies
@@ -6197,7 +6305,7 @@ Montagu-grot	NEE Montagugrot
 Montagu-warmbron	NEE Montaguwarmbron
 Montagu-warmwaterbron	NEE Montaguwarmwaterbron
 Monte_Cristo-laan	NEE Monte_Cristolaan
-Montessori-metode	NSE Montessorimetode
+Montessori-metode	NSE montessorimetode
 Mopani-saal	NEE Mopanisaal
 Morpheus	NEE Morfeus
 mors-af	ASA morsaf	ASP morsaf	BS morsaf
@@ -6224,6 +6332,11 @@ moslem-oorheersing	NSE moslemoorheersing
 moslem-woning	NSE moslemwoning
 moslem-wonings	NSM moslemwoning
 Mosoel	NEE Mossoel
+mostertsaad	NSE mosterdsaad
+mostertsaadjie	NSED mosterdsaad
+mostertsaadjies	NSMD mosterdsaad
+motorfiets-ambulans	NSE motorfietsambulans
+motorfiets-ambulanse	NSM motorfietsambulans
 motorneuronsiekte-lyer	NSE motorneuronsiektelyer
 motorneuronsiekte-lyers	NSM motorneuronsiektelyer
 Mouillepunt-promenade	NEE Mouillepuntpromenade
@@ -6250,13 +6363,14 @@ MTech	NSE M.Tech.
 MTh	NSE M.Th.
 MTh-program	NSE M.Th.-program
 MTh-programme	NSM M.Th.-program
+mu'assel	NSE muassel
 muchammadaans	ASP moegammadaans
 muchammadaanse	ASA moegammadaans
 mufti	NSE moefti
 mufti's	NSM moefti
 Mugabe-regering	NSE Mugaberegering
 mugu	NSE moegoe
-mugu's	NSM moegoes
+mugu's	NSM moegoe
 Mukwe-distrik	NEE Mukwedistrik
 multi-dimensioneel	ASP multidimensioneel
 multi-dimensionele	ASA multidimensioneel
@@ -6279,6 +6393,8 @@ Musica-winkel	NSE Musicawinkel
 Musica-winkels	NSM Musicawinkel
 musiek-onderrig	NSE musiekonderrig
 Musiek-onderrig	NSE musiekonderrig
+musiekstander	NSE musiekstaander
+musiekstanders	NSM musiekstaander
 muskadel-wingerd	NSE muskadelwingerd
 muskadel-wingerde	NSM muskadelwingerd
 Mutatis_mutandis	BS mutatis_mutandis
@@ -6310,6 +6426,13 @@ Na_vore	BS na_vore
 Naaim_de_Vos-straat	NEE Naaim_de_Vosstraat
 Naaim_De_Vosstraat	NEE Naaim_de_Vosstraat
 Naaim_De_Vos-straat	NEE Naaim_de_Vosstraat
+NAAMSA	NEE Naamsa
+naartjie	NSE nartjie
+naartjiebome	NSM nartjieboom
+naartjieboom	NSE nartjieboom
+naartjies	NSM nartjie
+naartjieskil	NSE nartjieskil
+naartjieskille	NSM nartjieskil
 naelloop-atleet	NSE naelloopatleet
 naelloop-atlete	NSM naelloopatleet
 naeltjie-olie	NSE naeltjieolie
@@ -6323,6 +6446,8 @@ na-klassiek	ASP naklassiek
 ná-klassiek	ASP naklassiek
 na-klassieke	ASA naklassiek
 ná-klassieke	ASA naklassiek
+NAKOS	NEE Nakos
+NALEDI	NEE Naledi
 Naln	NEE NALN
 Nama-gemeenskap	NSE Namagemeenskap
 Nama-gemeenskappe	NSM Namagemeenskap
@@ -6332,7 +6457,9 @@ Nama-volksmoord	NEE Namavolksmoord
 Namibië-kleure	NSM Namibiëkleure
 Namibiese_Kollege_vir_Ope-_en_Afstandsonderrig	NEE Namibiese_Kollege_vir_Ope_en_Afstandsonderrig
 Namibiese_Medisyne_Beheerraad	NEE Namibiese_Medisynebeheerraad
+Namibiese_Vroue_Vereniging	NEE Namibiese_Vrouevereniging
 Namib-woestyn	NEE Namibwoestyn
+NAMPO	NEE Nampo
 Nana_Sita-straat	NEE Nana_Sitastraat
 na-oes	NSE naoes
 na-oes-hantering	NSE naoeshantering
@@ -6341,8 +6468,12 @@ na-oorlogs	ASP naoorlogs
 na-oorlogse	ASA naoorlogs
 na-operatief	ASP naoperatief
 na-operatiewe	ASA naoperatief
+NAPOSA	NEE Naposa
+NAPTOSA	NEE Naptosa
 narcis	NSE narsis
 narcisme	NSE narsisme
+narcissien	NSE narsissien
+narcissine	NSE narsissine
 narcissis	NSE narsissis
 narcissisme	NSE narsissisme
 narcissiste	NSM narsissis
@@ -6353,13 +6484,15 @@ narcisties	ASP narsisties	BS narsisties
 narcistiese	ASA narsisties
 narkose-verwant	ASP narkoseverwant
 narkose-verwante	ASA narkoseverwant
+NARUK	NEE Naruk
 NASA	NEE Nasa
 Nasgwu	NEE NASGWU
-nasionaal-sosialis	NSE nasionaalsosialis
-nasionaal-sosialisme	NSE nasionaalsosialisme
-nasionaal-sosialiste	NSM nasionaalsosialis
-nasionaal-sosialisties	ASP nasionaalsosialisties
-nasionaal-sosialistiese	ASA nasionaalsosialisties
+Nasi_goreng	NSE nasi_goreng
+nasionaalsosialis	NSE nasionaal-sosialis
+nasionaalsosialisme	NSE nasionaal-sosialisme
+nasionaalsosialiste	NSM nasionaal-sosialis
+nasionaalsosialisties	ASP nasionaal-sosialisties
+nasionaalsosialistiese	ASA nasionaal-sosialisties
 Naspers-direksie	NSE Naspersdireksie
 Naspers-joernalis	NSE Naspersjoernalis
 Naspers-joernaliste	NSM Naspersjoernalis
@@ -6373,10 +6506,15 @@ natuurwetenskappe-olimpiade	NSE natuurwetenskappeolimpiade
 natuurwetenskappe-olimpiades	NSM natuurwetenskappeolimpiade
 natuurwetenskappe-onderrig	NSE natuurwetenskappeonderrig
 natuurwetenskappe-onderwys	NSE natuurwetenskappeonderwys
+Naukluft-berg	NEE Naukluftberg
+naure	BS na-ure
 nauurs	ASP na-uurs
 nauurse	ASA na-uurs
+NAVO	NEE Navo
+NAVO-lidmaatskap	NSE Navo-lidmaatskap
 Navorsings-instituut_vir_Veeartsenykunde	NEE Navorsingsinstituut_vir_Veeartsenykunde
 Naxos	NEE Naksos
+Nazistaat	NSE Nazi-staat
 Ndebele-kuns	NSE Ndebelekuns
 Ne_plus_ultra	BS ne_plus_ultra
 Neanderdal-baba	NSE Neanderdalbaba
@@ -6398,7 +6536,14 @@ Neanderdal-mens	NEE Neanderdalmens
 Neanderdal-mense	NEM Neanderdalmens
 Neandertal-mens	NEE Neandertalmens
 Neandertal-mense	NEM Neandertalmens
+Neanderthal	NEE Neandertal
+Neanderthalmens	NEE Neandertalmens
+Neanderthal-mens	NEE Neandertalmens
+Neanderthalmense	NEM Neandertalmens
+Neanderthal-mense	NEM Neandertalmens
 Nec_plus_ultra	BS nec_plus_ultra
+NECSA	NEE Necsa
+NEDLAC	NEE Nedlac
 neë	NSE nege	THAB nege
 neëdaags	ASP negedaags
 neëdaagse	ASA negedaags
@@ -6446,7 +6591,8 @@ Negendelaan	NEE Negende_Laan
 negenoë	NSM negeoog
 negenoog	NSE negeoog
 Negentiendestraat	NEE Negentiende_Straat
-nekaf	ASA nek-af
+nek-af	ASA nekaf	BS nekaf
+nek-om	ASA nekom	BS nekom
 Nelson_Mandela_Stigting	NEE Nelson_Mandelastigting
 Nelson_Mandela-baai	NEE Nelson_Mandelabaai
 Nelson_Mandela-boulevard	NEE Nelson_Mandelaboulevard
@@ -6499,9 +6645,12 @@ Neo-Protestantse	ASA neoprotestants
 neo-realisme	NSE neorealisme
 neo-renaissance-gebou	NSE neorenaissancegebou
 neo-renaissance-geboue	NSM neorenaissancegebou
+NEPAD	NEE Nepad
 Nêrens	BS nêrens
-nerfaf	ASA nerf-af	BS nerf-af
+nerf-af	ASA nerfaf	BS nerfaf
 NERSA	NEE Nersa
+nervature	NSM nerwatuur
+nervatuur	NSE nerwatuur
 neso-silikaat	NSE nesosilikaat
 neso-silikate	NSM nesosilikaat
 netto-reaksie	NSE nettoreaksie
@@ -6511,6 +6660,8 @@ netto-resultate	NSM nettoresultaat
 Neudamkampus	NEE Neudammkampus
 Neudam-kampus	NEE Neudammkampus
 Neudamm-kampus	NEE Neudammkampus
+neuro-degeneratief	ASP neurodegeneratief
+neuro-degeneratiewe	ASA neurodegeneratief
 neuro-endokrien	ASP neuroëndokrien
 neuro-endokriene	ASA neuroëndokrien
 neuro-infektief	ASP neuroïnfektief
@@ -6521,8 +6672,12 @@ neuro-onkologiese	ASA neuroönkologies
 neuropatie-sindroom	NSE neuropatiesindroom
 neuro-psigiatries	ASP neuropsigiatries
 neuro-psigiatriese	ASA neuropsigiatries
+neurosjirurg	NSE neurochirurg
+neurosjirurge	NSM neurochirurg
+neurosjirurgie	NSE neurochirurgie
 neuro-wetenskap	NSE neurowetenskap
 neuro-wetenskappe	NSM neurowetenskap
+neussjirurgie	NSE neuschirurgie
 neutron-kern	NSE neutronkern
 neutron-kerne	NSM neutronkern
 neutron-kerns	NSM neutronkern
@@ -6534,6 +6689,10 @@ Nguni-sprekende	ASA Ngunisprekend	NSE Ngunisprekende
 Nguni-sprekendes	NSM Ngunisprekende
 Nguni-taalgroep	NSE Ngunitaalgroep
 Nico_Smith-weg	NEE Nico_Smithweg
+nicomachies	ASP nikomachies
+Nicomachies	ASP nikomachies
+nicomachiese	ASA nikomachies
+Nicomachiese	ASA nikomachies
 nie-aangrensend	ASP nieaangrensend
 nie-aangrensende	ASA nieaangrensend
 nie-aansteeklik	ASP nieaansteeklik
@@ -6546,6 +6705,8 @@ nie-aggressief	ASP nieaggressief
 nie-aggressiewe	ASA nieaggressief
 nie-akademies	ASP nieakademies
 nie-akademiese	ASA nieakademies
+nie-algemeen	ASP niealgemeen
+nie-algemene	ASA niealgemeen
 nie-alkoholies	ASP niealkoholies
 nie-alkoholiese	ASA niealkoholies
 nie-allergenies	ASP nieallergenies
@@ -6554,6 +6715,8 @@ nie-allopaties	ASP nieallopaties
 nie-allopatiese	ASA nieallopaties
 nie-amptelik	ASP nieamptelik
 nie-amptelike	ASA nieamptelik
+nie-attributief	ASP nieattributief
+nie-attributiewe	ASA nieattributief
 nie-bedreig	ASP niebedreig
 nie-bedreigd	ASP niebedreigd
 nie-bedreigde	ASA niebedreig
@@ -6562,6 +6725,10 @@ nie-bedwelmend	ASP niebedwelmend
 nie-bedwelmende	ASA niebedwelmend
 nie-begunstigde	NSE niebegunstigde
 nie-begunstigdes	NSM niebegunstigde
+nie-beskaaf	ASP niebeskaaf
+nie-beskaafd	ASP niebeskaafd
+nie-beskaafde	ASA niebeskaaf(d)
+nie-bestaan	NSE niebestaan
 nie-betalend	ASP niebetalend
 nie-betalende	ASA niebetalend
 nie-betaling	NSE niebetaling
@@ -6574,8 +6741,11 @@ nie-binêr	ASP niebinêr
 nie-binêre	ASA niebinêr
 nie-biologies	ASP niebiologies
 nie-biologiese	ASA niebiologies
-nie-blanke	NSE nieblanke
+nie-blank	ASP nieblank
+nie-blanke	NSE nieblanke	ASA nieblank
 nie-blankes	NSM nieblanke
+nie-broeiend	ASP niebroeiend
+nie-broeiende	ASA niebroeiend
 nie-bydraend	ASP niebydraend
 nie-bydraende	ASA niebydraend
 nie-bytend	ASP niebytend
@@ -6607,6 +6777,8 @@ nie-fatale	ASA niefataal
 nie-figuratief	ASP niefiguratief
 nie-figuratiewe	ASA niefiguratief
 nie-fiksie	NSE niefiksie
+nie-flekterend	ASP nieflekterend
+nie-flekterende	ASA nieflekterend
 nie-geaspireer	ASP niegeaspireer
 nie-geaspireerde	ASA niegeaspireer
 nie-gebruiker	NSE niegebruiker
@@ -6632,9 +6804,14 @@ nie-genasaleer	ASP niegenasaleer
 nie-genasaleerde	ASA niegenasaleer
 nie-geskeur	ASP niegeskeur
 nie-geskeurde	ASA niegeskeur
+nie-geslagtelik	ASP niegeslagtelik
+nie-geslagtelike	ASA niegeslagtelik
 nie-gestandaardiseer	ASP niegestandaardiseer
 nie-gestandaardiseerd	ASP niegestandaardiseerd
 nie-gestandaardiseerde	ASA niegestandaardiseer(d)
+nie-gestruktureer	ASP niegestruktureer
+nie-gestruktureerd	ASP niegestruktureerd
+nie-gestruktureerde	ASA niegestruktureer(d)
 nie-gesubsidieer	ASP niegesubsidieer
 nie-gesubsidieerde	ASA niegesubsidieer
 nie-gewelddadig	ASP niegewelddadig
@@ -6746,8 +6923,18 @@ nie-newtons	ASP nienewtons
 nie-Newtons	ASP nienewtons
 nie-newtonse	ASA nienewtons
 nie-Newtonse	ASA nienewtons
-nie-noodsaaklik	ASP nienoodsaaklik
+nie-nilpotent	ASP nienilpotent
+nie-nilpotente	ASA nienilpotent
+nie-noodsaaklik	ASP nienoodsaaklik	BS nienoodsaaklik
 nie-noodsaaklike	ASA nienoodsaaklik
+nie-noodwendig	ASP nienoodwendig	BS nienoodwendig
+nie-noodwendige	ASA nienoodwendig
+nie-nulelement	NSE nienulelement
+nie-nulelemente	NSM nienulelement
+nie-nulideaal	NSE nienulideaal
+nie-nulideale	NSM nienulideaal
+nie-onderhandelbaar	ASP nieonderhandelbaar
+nie-onderhandelbare	ASA nieonderhandelbaar
 nie-onderwerpsvorm	NSE nieonderwerpsvorm
 nie-onderwerpsvorme	NSM nieonderwerpsvorm
 nie-onderwerpsvorms	NSM nieonderwerpsvorm
@@ -6853,6 +7040,8 @@ nie-roestend	ASP nieroestend
 nie-roestende	ASA nieroestend
 nie-roker	NSE nieroker
 nie-rokers	NSM nieroker
+nie-roties	ASP nieroties
+nie-rotiese	ASA nieroties
 nie-samegestel	ASP niesamegestel
 nie-samegesteld	ASP niesamegesteld
 nie-samegestelde	ASA niesamegestel(d)
@@ -6878,10 +7067,14 @@ nie-spesifiek	ASP niespesifiek
 nie-spesifieke	ASA niespesifiek
 nie-staatlik	ASP niestaatlik
 nie-staatlike	ASA niestaatlik
+nie-staatsgeaffilieer	ASP niestaatsgeaffilieer
+nie-staatsgeaffilieerd	ASP niestaatsgeaffilieerd
+nie-staatsgeaffilieerde	ASA niestaatsgeaffilieer(d)
 nie-staatsparty	NSE niestaatsparty
 nie-staatspartye	NSM niestaatsparty
 nie-staker	NSE niestaker
 nie-stakers	NSM niestaker
+nie-standaard	NSE niestandaard
 nie-standhoudend	ASP niestandhoudend
 nie-standhoudende	ASA niestandhoudend
 nie-stasionêr	ASP niestasionêr
@@ -6896,6 +7089,8 @@ nie-stellêr	ASP niestellêr
 nie-stellêre	ASA niestellêr
 nie-steroïdaal	ASP niesteroïdaal
 nie-steroïdale	ASA niesteroïdaal
+nie-stoflik	ASP niestoflik
+nie-stoflike	ASA niestoflik
 nie-stoigiometries	ASP niestoigiometries
 nie-stoigiometriese	ASA niestoigiometries
 nie-strydend	ASP niestrydend
@@ -6906,6 +7101,8 @@ nie-strydigheid	NSE niestrydigheid
 nie-swart	ASA nieswart	ASP nieswart
 nie-swarte	NSE nieswarte
 nie-swartes	NSM nieswarte
+nie-taalkundig	ASP nietaalkundig
+nie-taalkundige	ASA nietaalkundig
 nie-tariefgebaseer	ASP nietariefgebaseer
 nie-tariefgebaseerd	ASP nietariefgebaseerd
 nie-tariefgebaseerde	ASA nietariefgebaseer
@@ -6989,8 +7186,10 @@ nie-ystermetale	NSM nieystermetaal
 Niger-Kongo-familie	NSE Niger-Kongofamilie
 Niger-Kongo-taal	NSE Niger-Kongotaal
 Niger-Kongo-tale	NSM Niger-Kongotaal
+NIKOK	NEE Nikok
 Nil_desperandum	RO nil_desperandum
-Nios	NEE NIOS
+NIMRO	NEE Nimro
+NIOS	NEE Nios
 Nisea	NEE Nicea
 Niseens	ASP Niceens
 Niseense	ASA Niceens
@@ -7007,8 +7206,10 @@ Noblesse_oblige	RO noblesse_oblige
 noh	NSE no
 noir-riller	NSE noirriller
 noir-rillers	NSM noirriller
+noir-toneel	NSE noirtoneel
 noir-verhaal	NSE noirverhaal
 noir-verhale	NSM noirverhaal
+NOKSA	NEE Noksa
 Nolens_volens	BS nolens_volens
 Nom_de_plume	NSE nom_de_plume
 nommerplaat-herkenning	NSE nommerplaatherkenning
@@ -7028,6 +7229,10 @@ non-konformisties	ASP nonkonformisties
 non-konformistiese	ASA nonkonformisties
 non-sektaries	ASP nonsektaries
 non-sektariese	ASA nonsektaries
+nonsens-antenna	NSE nonsensantenna
+nonsens-antennas	NSM nonsensantenna
+nonsens-antenne	NSE nonsensantenne
+nonsens-antennes	NSM nonsensantenne
 Noordgermaan	NEE Noord-Germaan
 Noordgermane	NEM Noord-Germaan
 Noordoos-deurgang	NEE Noordoosdeurgang
@@ -7044,12 +7249,22 @@ noord-westewind	NSE noordwestewind
 noord-westewinde	NSM noordwestewind
 Norfolk-eiland	NEE Norfolkeiland
 Noricum	NEE Norikum
+norm-bewus	ASP normbewus
+norm-bewuste	ASA normbewus
+North_Boundary_Weg	NEE North_Boundaryweg
+North_Boundary-weg	NEE North_Boundaryweg
 Northdale-hospitaal	NEE Northdalehospitaal
 Nota_bene	BS nota_bene
 Nota_Bene	BS nota_bene
 Notre_Dame-straat	NEE Notre_Damestraat
+Nouveau_riche	NSE nouveau_riche
+Nouveaux_riches	NSM nouveau_riche
 nuata	ASA nwata	ASP nwata	BS nwata	NSE nwata
 nuatas	NSM nwata
+NUMSA	NEE Numsa
+nunsius	NSE nuntius
+nunsiusse	NSM nuntius
+NUSAS	NEE Nusas
 Nust	NEE NUST
 Nu-Suid-Wallis	NEE Nieu-Suid-Wallis
 nuus-tuisblaaie	NSM nuustuisblad
@@ -7060,6 +7275,8 @@ Nuwe_Republiek	NEE Nieuwe_Republiek
 Nuwe_testament	NEE Nuwe_Testament
 nuwetegnologie-mineraal	NSE nuwetegnologiemineraal
 nuwetegnologie-minerale	NSM nuwetegnologiemineraal
+Nuwe-Wêrelds	ASP Nuwewêrelds
+Nuwe-Wêreldse	ASA Nuwewêrelds
 Nwaswitsontsorivier	NEE N'waswitsontsorivier
 Nwaswitsontso-rivier	NEE N'waswitsontsorivier
 N'waswitsontso-rivier	NEE N'waswitsontsorivier
@@ -7067,7 +7284,10 @@ Nyl-delta	NEE Nyldelta
 Nyl-Delta	NEE Nyldelta
 Nylstroom-inwoner	NSE Nylstroominwoner
 Nylstroom-inwoners	NSM Nylstroominwoner
+Nywerheids-Ontwikkelingskorporasie	NEE Nywerheidsontwikkelingskorporasie
+Nywerheids-Ontwikkelingskorporasie_van_Suid-Afrika	NEE Nywerheidsontwikkelingskorporasie_van_Suid-Afrika
 nywerheidsrevolusie	NSE nywerheidsrewolusie
+nywerheidsrevolusies	NSM nywerheidsrewolusie
 O.R._Tambo-straat	NEE O.R._Tambostraat
 O.R._Tambo-weg	NEE O.R._Tamboweg
 Obiit_sine_prole	RO obiit_sine_prole
@@ -7114,8 +7334,11 @@ olie-maatskappy	NSE oliemaatskappy
 olie-maatskappye	NSM oliemaatskappy
 olie-onttrekkingsproses	NSE olieonttrekkingsproses
 olifant-mishandeling	NSE olifantmishandeling
+olifantrob-spesie	NSE olifantrobspesie
+olifantrob-spesies	NSM olifantrobspesie
 olifant-tweeling	NSE olifanttweeling
 olifant-tweelinge	NSM olifanttweeling
+olm-familie	NSE olmfamilie
 Olof_Palme-straat	NEE Olof_Palmestraat
 Om_den_brode	BS om_den_brode
 Om_dusketyd	BS om_dusketyd
@@ -7175,6 +7398,7 @@ ontwerp-beginsels	NSM ontwerpbeginsels
 onverrigter_sake	BS onverrigtersake
 Onverrigter_sake	BS onverrigtersake
 Onverrigtersake	BS onverrigtersake
+oog-inflammasie	NSE ooginflammasie
 oopboek-opdrag	NSE oopboekopdrag
 oopboek-opdragte	NSM oopboekopdrag
 oopgrens-situasie	NSE oopgrenssituasie
@@ -7274,6 +7498,8 @@ Oscar-benoeminge	NSM Oscarbenoeming
 Oscar-benoemings	NSM Oscarbenoeming
 Oscar-nominasie	NSE Oscarnominasie
 Oscar-nominasies	NSM Oscarnominasie
+Ostro-Goot	NEE Ostrogoot
+Ostro-Gote	NEM Ostrogoot
 Oswald_Pirow-straat	NEE Oswald_Pirowstraat
 Otjiwarongo-distrik	NEE Otjiwarongodistrik
 Ou_Paarl-pad	NEE Ou_Paarlpad
@@ -7319,6 +7545,8 @@ oudgrieks	ASP Oud-Grieks	NEE Oud-Grieks
 Oudgrieks	ASP Oud-Grieks	NEE Oud-Grieks
 oudgriekse	ASA Oud-Grieks
 Oudgriekse	ASA Oud-Grieks
+oudio-weergawe	NSE oudioweergawe
+oudio-weergawes	NSM oudioweergawe
 oud-joernalis	NSE oudjoernalis
 oud-joernaliste	NSM oudjoernalis
 oud-kampioen	NSE oudkampioen
@@ -7471,6 +7699,11 @@ palato-alveolêr	ASP palatoalveolêr
 palato-alveolêre	ASA palatoalveolêr
 paleisrevolusie	NSE paleisrewolusie
 paleisrevolusies	NSM paleisrewolusie
+paleo-antropoloë	NSM paleoantropoloog
+paleo-antropologie	NSE paleoantropologie
+paleo-antropologies	ASP paleoantropologies
+paleo-antropologiese	ASA paleoantropologies
+paleo-antropoloog	NSE paleoantropoloog
 Paleogeen-tydperk	NEE Paleogeentydperk
 paleomagnetisme-navorsing	NSE paleomagnetismenavorsing
 Palmyra	NEE Palmira
@@ -7651,10 +7884,13 @@ plaaswag-groep	NSE plaaswaggroep
 plaaswag-groepe	NSM plaaswaggroep
 Planck-massa	NSE planckmassa
 Planck-massas	NSM planckmassa
+Planck-skaal	NSE planckskaal
 plantbioinformatika	NSE plantbio-informatika
 plasma-agtig	ASP plasmaägtig
 plasma-agtige	ASA plasmaägtig
 plastiek-eetgerei	NSE plastiekeetgerei
+platvorm	NSE platform
+platvorms	NSM platform
 pleiade	NSE plejade
 Pleiades	NEM Plejades
 pleiades	NSM plejade
@@ -7702,6 +7938,7 @@ polisie-aktiwiteit	NSE polisieaktiwiteit
 polisie-bevelvoerder	NSE polisiebevelvoerder
 polisie-bevelvoerders	NSM polisiebevelvoerder
 polisie-geweld	NSE polisiegeweld
+polisie-ondersoekdirektoraat	NSE polisieondersoekdirektoraat
 polisie-operasie	NSE polisieoperasie
 polisie-operasies	NSM polisieoperasie
 polisie-opleidingsakademie	NSE polisieopleidingsakademie
@@ -7819,6 +8056,7 @@ Pres_Fouchélaan	NEE President_Fouchélaan
 Pres_Fouchérylaan	NEE President_Fouchérylaan
 Pres_Fouchéstraat	NEE President_Fouchéstraat
 President_Foucherylaan	NEE President_Fouchérylaan
+pre-standaardiseringsfase	NSE prestandaardiseringsfase
 prestasie-aanwyser	NSE prestasieaanwyser
 prestasie-aanwysers	NSM prestasieaanwyser
 prestasie-ooreenkoms	NSE prestasieooreenkoms
@@ -7826,11 +8064,17 @@ prestasie-ooreenkomste	NSM prestasieooreenkoms
 prestige-beeld	NSE prestigebeeld
 prestige-projek	NSE prestigeprojek
 prestige-projekte	NSM prestigeprojek
+prestige-vorm	NSE prestigevorm
+prestige-vorme	NSM prestigevorm
+prestige-vorms	NSM prestigevorm
 prestige-waarde	NSE prestigewaarde
 Pretoria-buurt	NSE Pretoriabuurt
 Pretoria-buurte	NSM Pretoriabuurt
 priesterkoning	NSE priester-koning
 priesterkonings	NSM priester-koning
+prikkelbare_derm_sindroom	NSE prikkelbaredermsindroom
+prikkelbare_derm-sindroom	NSE prikkelbaredermsindroom
+prikkelbarederm-sindroom	NSE prikkelbaredermsindroom
 Prima_facie	BS prima_facie
 prima-donna	NSE primadonna
 prima-donnas	NSM primadonna
@@ -7859,6 +8103,11 @@ procedé	NSE procédé
 procéde	NSE procédé
 procedés	NSM procédé
 procédes	NSM procédé
+produksie-aanlêe	NSM produksieaanleg
+produksie-aanleg	NSE produksieaanleg
+produksie-aanlegginge	NSM produksieaanleg
+produksie-aanleggings	NSM produksieaanleg
+produksie-aanlegte	NSM produksieaanleg
 produksie-omgewing	NSE produksieomgewing
 produksie-omgewings	NSM produksieomgewing
 produksie-ontwerp	NSE produksieontwerp
@@ -7991,6 +8240,7 @@ ras-etiket	NSE rasetiket
 ras-etikette	NSM rasetiket
 rasse-agenda	NSE rasseagenda
 rasse-antagonisme	NSE rasseantagonisme
+rasse-aspek	NSE rasseaspek
 rasse-harmonie	NSE rasseharmonie
 rasse-meerderwaardigheid	NSE rassemeerderwaardigheid
 rasse-onderskeid	NSE rasseonderskeid
@@ -8016,6 +8266,8 @@ Reginald_Walker-straat	NEE Reginald_Walkerstraat
 registrasie-aansoek	NSE registrasieaansoek
 registrasie-aansoeke	NSM registrasieaansoek
 registrasie-afdeling	NSE registrasieafdeling
+regspopulisties	ASP regs-populisties
+regspopulistiese	ASA regs-populisties
 regterpresident	NSE regter-president
 regterpresidente	NSM regter-president
 regters-presidente	NSM regter-president
@@ -8046,6 +8298,8 @@ relaisstel	NSE relêstel
 relaisstelle	NSM relêstel
 relaisstelsel	NSE relêstelsel
 relaisstelsels	NSM relêstelsel
+relatief-konstruksie	NSE relatiefkonstruksie
+relatief-konstruksies	NSM relatiefkonstruksie
 relatiwisties	ASP relativisties	BS relativisties
 relatiwistiese	ASA relativisties
 relief	NSE reliëf
@@ -8098,7 +8352,7 @@ restourantgroepe	NSM restaurantgroep
 restouranthouer	NSE restauranthouer
 restouranthouers	NSM restauranthouer
 restourantkettinggroep	NSE restaurantkettinggroep
-restourantkettinggroepe	NSM restaurantkettinggroepe
+restourantkettinggroepe	NSM restaurantkettinggroep
 restourantkombuis	NSE restaurantkombuis
 restourantkombuise	NSM restaurantkombuis
 restourantloos	ASP restaurantloos
@@ -8136,6 +8390,8 @@ reuse-plaas	NSE reuseplaas
 reuse-plase	NSM reuseplaas
 reuse-pretpark	NSE reusepretpark
 reuse-pretparke	NSM reusepretpark
+reuse-skilpaaie	NSM reuseskilpad
+reuse-skilpad	NSE reuseskilpad
 reuse-skuld	NSE reuseskuld
 reuse-stuk	NSE reusestuk
 reuse-stukke	NSM reusestuk
@@ -8202,6 +8458,7 @@ Rolex-horlosie	NSE Rolexhorlosie
 Rolex-horlosies	NSM Rolexhorlosie
 Rolex-oorlosie	NSE Rolexoorlosie
 Rolex-oorlosies	NSM Rolexoorlosie
+Rolland-Garros	NEE Roland_Garros
 rolprent-geskiedenis	NSE rolprentgeskiedenis
 rolprent-vervaardiger	NSE rolprentvervaardiger
 rolprent-vervaardigers	NSM rolprentvervaardiger
@@ -8223,6 +8480,8 @@ rooiessehout	NSE rooi-essehout
 Rooikruis	NEE Rooi_Kruis
 rooi-opslag	NSE rooiopslag
 rooiwyn-jus	NSE rooiwynjus
+roosbottel-infusie	NSE roosbottelinfusie
+roosbottel-infusies	NSM roosbottelinfusie
 Roosrevolusie	NEE Roosrewolusie
 Rorkesdrift	NEE Rorkesdrif
 Rose_Innes-straat	NEE Rose_Innesstraat
@@ -8319,6 +8578,7 @@ Sambesistreek	NEE Zambezistreek
 Sambesivallei	NEE Zambezivallei
 samewerkings-navorsingsprojek	NSE samewerkingsnavorsingsprojek
 samewerkings-navorsingsprojekte	NSM samewerkingsnavorsingsprojek
+San_Andreas-breuk	NEE San_Andreasbreuk
 San_Jose	NEE San_José
 San-bewoning	NSE Sanbewoning
 Sand_du_Plessis-teater	NEE Sand_du_Plessisteater
@@ -8349,6 +8609,7 @@ Sao_Tomé_en_Principe	NEE São_Tomé_en_Prinsipe
 São_Tomé_en_Principe	NEE São_Tomé_en_Prinsipe
 Sao_Tome_en_Prinsipe	NEE São_Tomé_en_Prinsipe
 Sao_Tomé_en_Prinsipe	NEE São_Tomé_en_Prinsipe
+SAPO	NEE Sapo
 sapphies	ASP sapfies
 Sapphies	ASP sapfies
 sapphiese	ASA sapfies
@@ -8391,6 +8652,8 @@ seekos-paellas	NSM seekospaella
 see-offisier	NSE seeoffisier
 see-offisiere	NSM seeoffisier
 see-offisiers	NSM seeoffisier
+see-olifant	NSE seeolifant
+see-olifante	NSM seeolifant
 see-omgewing	NSE seeomgewing
 see-omgewings	NSM seeomgewing
 seestroom-snelhede	NSM seestroomsnelheid
@@ -8438,6 +8701,7 @@ semi-gesuiwer	ASP semigesuiwer
 semi-gesuiwerde	ASA semigesuiwer
 semi-klassiek	ASP semiklassiek
 semi-klassieke	ASA semiklassiek
+semi-kreolisering	NSE semikreolisering
 semi-nomadies	ASP seminomadies
 semi-nomadiese	ASA seminomadies
 semi-offisieel	ASP semioffisieel	BS semioffisieel
@@ -8465,6 +8729,14 @@ Sendelingsdrift	NEE Sendelingsdrif
 Seneca	NEE Seneka
 senecaans	ASP senekaans
 senecaanse	ASA senekaans
+sentaurasteroïde	NSE sentourasteroïde
+sentaurasteroïdes	NSM sentourasteroïde
+sentaurasteroïed	NSE sentourasteroïed
+sentaurasteroïede	NSM sentourasteroïed
+sentaurplanetoïde	NSE sentourplanetoïde
+sentaurplanetoïdes	NSM sentourplanetoïde
+sentaurplanetoïed	NSE sentourplanetoïed
+sentaurplanetoïede	NSM sentourplanetoïed
 Sentech-toring	NEE Sentechtoring
 senuïmpuls	NSE senu-impuls
 senuïmpulse	NSM senu-impuls
@@ -8476,6 +8748,7 @@ senuwee-orrel	NSE senuweeorrel
 senuwee-orrels	NSM senuweeorrel
 sepie-liefhebber	NSE sepieliefhebber
 sepie-liefhebbers	NSM sepieliefhebber
+September-dag-en-nag-ewening	NSE September-dag-en-nagewening
 Serengeti-vlakte	NEE Serengetivlakte
 Serengeti-woestyn	NEE Serengetiwoestyn
 serge	NSE sersje
@@ -8563,6 +8836,8 @@ Siestog	BS sies_tog
 sifiede	NSE silfide
 sifiedes	NSM silfide
 sigmoïedoskopie	NSE sigmoïdoskopie
+sigomatiko-orbitaal	ASP sigomatikoörbitaal
+sigomatiko-orbitale	ASA sigomatikoörbitaal
 siklo-oksigenase	NSE sikloöksigenase
 silicium	NSE silisium
 silikon-absorptielyn	NSE silikonabsorptielyn
@@ -8576,6 +8851,8 @@ simfonie-orkes	NSE simfonieorkes
 simfonie-orkeste	NSM simfonieorkes
 SIM-kaart	NSE simkaart
 SIM-kaarte	NSM simkaart
+sinagoge-aanval	NSE sinagogeaanval
+sinagoge-aanvalle	NSM sinagogeaanval
 Sinai	NEE Sinai
 Sinai-skiereiland	NEE Sinaiskiereiland
 Sinaïskiereiland	NEE Sinaiskiereiland
@@ -8636,6 +8913,8 @@ skaapboerdery-dorpe	NSM skaapboerderydorp
 skaapboerdery-dorpie	NSED skaapboerderydorp
 skaapboerdery-dorpies	NSMD skaapboerderydorp
 skaapskeer-seisoen	NSE skaapskeerseisoen
+skadutjie	NSED skadu
+skadutjies	NSMD skadu
 skalie-olie	NSE skalieolie
 skeikunde-onderwys	NSE skeikundeonderwys
 skenker-penis	NSE skenkerpenis
@@ -8727,6 +9006,7 @@ solo-liedere	NSM sololied
 solo-liedjie	NSED sololied
 solo-liedjies	NSMD sololied
 Solomon_Mahlangu-rylaan	NEE Solomon_Mahlangurylaan
+somer-sonkeerpunt	NSE somersonkeerpunt
 somervakansie-blyplek	NSE somervakansieblyplek
 somervakansie-blyplekke	NSM somervakansieblyplek
 Somme-vallei	NEE Sommevallei
@@ -8930,6 +9210,9 @@ standerd-sessers	NSM standerdsesser
 standerd-sessie	NSED standerdses
 standerd-sessies	NSMD standerdses
 Stanza_Bopape-straat	NEE Stanza_Bopapestraat
+stasierestourant	NSE stasierestaurant
+stasierestourante	NSM stasierestaurant
+stasierestourants	NSM stasierestaurant
 Statebond-aangeleenthede	NSM Statebondaangeleentheid
 Statebond-aangeleentheid	NSE Statebondaangeleentheid
 Statebond-jeugkampioenskap	NSE Statebondjeugkampioenskap
@@ -8941,9 +9224,14 @@ Statebondspele-kampioen	NSE Statebondspelekampioen
 Statebondspele-kampioene	NSM Statebondspelekampioen
 Status_confessionis	NSE status_confessionis
 Status_quo	NSE status_quo
+status-bewus	ASP statusbewus
+status-bewuste	ASA statusbewus
+status-bewuster	AV statusbewus
 steek-assegaai	NSE steekassegaai
 steek-assegaaie	NSM steekassegaai
 Steen_des_aanstoots	NSE steen_des_aanstoots
+Steentydperk-spesie	NSE Steentydperkspesie
+Steentydperk-spesies	NSM Steentydperkspesie
 Stefan-Boltzmann-konstante	NSE Stefan-Boltzmannkonstante
 Stefan-Boltzmann-wet	NEE Stefan-Boltzmannwet
 stegiometrie	NSE stoigiometrie
@@ -9004,6 +9292,8 @@ studente-ontspanningsentra	NSM studenteontspanningsentrum
 studente-ontspanningsentrum	NSE studenteontspanningsentrum
 studente-ontspanningsentrums	NSM studenteontspanningsentrum
 studente-opleiding	NSE studenteopleiding
+studente-opstel	NSE studenteopstel
+studente-opstelle	NSM studenteopstel
 studente-organisasie	NSE studenteorganisasie
 studente-organisasies	NSM studenteorganisasie
 studente-politiek	NSE studentepolitiek
@@ -9011,6 +9301,8 @@ studenteunie	NSE studente-unie
 studenteunies	NSM studente-unie
 studie-agtergrond	NSE studieagtergrond
 studie-agtergronde	NSM studieagtergrond
+studie-objek	NSE studieobjek
+studie-objekte	NSM studieobjek
 studie-ontwerp	NSE studieontwerp
 studie-ontwerpe	NSM studieontwerp
 Stuuks	NEE Styx
@@ -9047,6 +9339,7 @@ Suidnederlands	ASP Suid-Nederlands	NEE Suid-Nederlands
 Suidnederlandse	ASA Suid-Nederlands
 suid-oostelik	ASP suidoostelik
 suid-oostelike	ASA suidoostelik
+Suid-Shetland-eilande	NEM Suid-Shetlandeilande
 Suid-toring	NEE Suidtoring
 Suidwesafrika	NEE Suidwes-Afrika
 Suidwesafrikaans	ASP Suidwes-Afrikaans	NEE Suidwes-Afrikaans
@@ -9108,6 +9401,7 @@ taakspan-voorsitter	NSE taakspanvoorsitter
 taakspan-voorsitters	NSM taakspanvoorsitter
 taal-enklave	NSE taalenklave
 taal-enklaves	NSM taalenklave
+taalevolusie	NSE taalewolusie
 taalfoendi	NSE taalfoendie
 taalfoendi's	NSM taalfoendie
 taalfundi	NSE taalfoendie
@@ -9301,6 +9595,7 @@ Ten_hoogste	BS ten_hoogste
 Ten_huidige_dae	BS ten_huidige_dae
 Ten_huise_van	SVS ten_huise_van
 Ten_kwade	BS ten_kwade
+Ten_laaste	BS ten_laaste
 Ten_laste	BS ten_laste
 Ten_nouste	BS ten_nouste
 Ten_nutte_van	SVS ten_nutte_van
@@ -9367,6 +9662,9 @@ terra-cottabeker	NSE terracottabeker
 terra-cottabekers	NSM terracottabeker
 terra-cottateël	NSE terracottateël
 terra-cottateëls	NSM terracottateël
+terreur-bedreiging	NSE terreurbedreiging
+terreur-bedreiginge	NSM terreurbedreiging
+terreur-bedreigings	NSM terreurbedreiging
 terreur-beskuldigde	NSE terreurbeskuldigde
 terreur-beskuldigdes	NSM terreurbeskuldigde
 terugvoer-meganisme	NSE terugvoermeganisme
@@ -9454,6 +9752,10 @@ tik-tak	NSE tiktak	VTHOG tiktak
 tin-mynbou	NSE tinmynbou
 tipsytert	NSE tipsietert
 tipsyterte	NSM tipsietert
+tiroïde-stimulerend	ASP tiroïdestimulerend
+tiroïde-stimulerende	ASA tiroïdestimulerend
+tiroïed-stimulerend	ASP tiroïedstimulerend
+tiroïed-stimulerende	ASA tiroïedstimulerend
 Tirol	NEE Tirool
 tissue	NSE tiesjoe
 tissues	NSM tiesjoe
@@ -9702,6 +10004,7 @@ Turing-toets	NSE turingtoets
 Turing-toetse	NSM turingtoets
 Turkana-meer	NEE Turkanameer
 Turks-_en_Caicos-eilande	NEM Turks-_en_Caicoseilande
+Turner-sindroom	NSE turnersindroom
 Turnhalle-beraad	NEE Turnhalleberaad
 Tutankamen	NEE Toetankamen
 Tut-Ank-Amen	NEE Toetankamen
@@ -9964,6 +10267,7 @@ Van_Lennep-straat	NEE Van_Lennepstraat
 Van_liewerlee	BS van_liewerlee
 Van_Lill	NEE van_Lill
 Van_Loggerenberg	NEE van_Loggerenberg
+Van_nature	BS van_nature
 Van_Neel	NEE van_Neel
 Van_Nel	NEE van_Nel
 Van_Niekerk	NEE van_Niekerk
@@ -10105,6 +10409,8 @@ VF_plus	NEE VF+
 VF_Plus	NEE VF+
 Via_dolorosa	NSE via_dolorosa
 Via_Dolorosa	NSE via_dolorosa
+vibrio-bakterie	NSE vibriobakterie
+vibrio-bakterieë	NSM vibriobakterie
 vibro-massering	NSE vibromassering
 Vice_versa	BS vice_versa
 Victor_ludorum	NSE victor_ludorum
@@ -10121,6 +10427,8 @@ video-selfies	NSM videoselfie
 video-verfilmde	ASA videoverfilm
 vierdag-werkweek	NSE vierdagwerkweek
 Vierdelaan	NEE Vierde_Laan
+vier-dimensioneel	ASP vierdimensioneel
+vier-dimensionele	ASA vierdimensioneel
 vierletter-woord	NSE vierletterwoord
 vierletter-woorde	NSM vierletterwoord
 vier-penniestuk	NSE vierpenniestuk
@@ -10327,6 +10635,8 @@ Vredefort-koepel	NEE Vredefortkoepel
 Vredefort-krater	NEE Vredefortkrater
 vrede-offer	NSE vredeoffer
 vrede-offers	NSM vredeoffer
+vreemdetaal-invloed	NSE vreemdetaalinvloed
+vreemdetaal-invloede	NSM vreemdetaalinvloed
 vreemd-kwark	NSE vreemdkwark
 vreemd-kwarke	NSM vreemdkwark
 vroeëkinderjare-onderwys	NSE vroeëkinderjareonderwys
@@ -10335,6 +10645,8 @@ vroeg-christelik	ASP vroegchristelik
 vroeg-christelike	ASA vroegchristelik
 vroeg-klassiek	ASP vroegklassiek
 vroeg-klassieke	ASA vroegklassiek
+vroeg-koloniaal	ASP vroegkoloniaal
+vroeg-koloniale	ASA vroegkoloniaal
 vroegoggend-opstaan	NSE vroegoggendopstaan
 vroeg-skolasties	ASP vroegskolasties
 vroeg-skolastiese	ASA vroegskolasties
@@ -10436,6 +10748,7 @@ Waterval-Boven	NEE Waterval_Boven
 Waterval-Onder	NEE Waterval_Onder
 wattuur	NSM watt-uur	NSE watt-uur
 Waveren-weg	NEE Waverenweg
+Webb-teleskoop	NEE Webbteleskoop
 webtuiste-adres	NSE webtuisteadres
 webtuiste-adresse	NSM webtuisteadres
 weduweemoeder	NSE weduwee-moeder
@@ -10456,6 +10769,7 @@ Wel_te_ruste	W wel_te_ruste
 Wenen	NEE Wene
 Wêreld_Ekonomiese_Forum	NEE Wêreld-_Ekonomiese_Forum
 Wêreld_Meteorologiese_Organisasie	NEE Wêreld-_Meteorologiese_Organisasie
+Wêreld-Antidwelmagentskap	NEE Wêreldantidwelmagentskap
 Wêreldbeker-kwalifikasie	NSE Wêreldbekerkwalifikasie
 Wêreldbeker-ondervinding	NSE Wêreldbekerondervinding
 Wêreldbeker-toernooi	NEE Wêreldbekertoernooi
@@ -10538,6 +10852,7 @@ winkelsentrum-argitektuur	NSE winkelsentrumargitektuur
 wins-en-verlies-rekening	NSE wins-en-verliesrekening
 wins-en-verlies-rekeninge	NSM wins-en-verliesrekening
 wins-en-verlies-rekenings	NSM wins-en-verliesrekening
+winter-sonkeerpunt	NSE wintersonkeerpunt
 wintersport-geesdriftige	NSE wintersportgeesdriftige
 wintersport-geesdriftiges	NSM wintersportgeesdriftige
 wintervakansie-tydperk	NSE wintervakansietydperk
@@ -10590,6 +10905,8 @@ Wurtembergse	ASA Württembergs
 Würtembergse	ASA Württembergs
 Wyd_en_syd	BS wyd_en_syd
 Wynne_Weg	NEE Wynneweg
+wyse-adjunk	NSE wyseadjunk
+wyse-adjunkte	NSM wyseadjunk
 Xanthippe	NEE Xantippe
 xanthippe	NSE xantippe
 xanthippes	NSM xantippe

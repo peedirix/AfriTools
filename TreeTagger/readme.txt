@@ -9,11 +9,9 @@ You should the combined base and normalization lexicons in the lexicon directory
 
 The tag set used is a slightly simplified form of Pilon (2005). A description will be added in a separated file.
 
-A reference to cite this work will be added.
-
 References:
 
-Peter Dirix (2023). "The need for a larger Afrikaans treebank." In: Ian Bekker and Theresa Biberauer (eds.), "Ex Africa semper aliquid novi: Linguistic shorts in honour of Andries Coetzee on his 50th birthday", Stellenbosch Papers in Linguistics Plus (2023, to appear).
+Peter Dirix (2023). "The need for a larger Afrikaans treebank." In: Ian Bekker and Theresa Biberauer (eds.), "Ex Africa semper aliquid novi: Linguistic shorts in honour of Andries Coetzee on his 50th birthday - Part I", Stellenbosch Papers in Linguistics Plus, 67, pp. 1-2, 2023, Stellenbosch University, Stellenbosch, ISSN 2224-3380.
 Suléne Pilon (2005). "Outomatiese Afrikaanse woordsoortetikettering." Master's thesis, North-West University, Potchefstroom.
 Helmut Schmid (1994), "Probabilistic Part-of-Speech Tagging Using Decision Trees." In: Proceedings of International Conference on New Methods in Language Processing, Manchester, UK.
 

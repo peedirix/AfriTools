@@ -234,6 +234,8 @@ Afrikagebaseerd	Afrika-gebaseerd
 Afrikagebaseerde	Afrika-gebaseerde
 Afrikagebied	Afrika-gebied
 Afrikagebiede	Afrika-gebiede
+Afrikagemeenskap	Afrika-gemeenskap
+Afrikagemeenskappe	Afrika-gemeenskappe
 Afrikagewoontereg	Afrika-gewoontereg
 Afrikagodsdiens	Afrika-godsdiens
 Afrikagodsdienste	Afrika-godsdienste
@@ -277,6 +279,9 @@ Afrikanergeledere	Afrikaner-geledere
 Afrikanermonument	Afrikaner-monument
 Afrikanermonumente	Afrikaner-monumente
 Afrikanernasionalisme	Afrikaner-nasionalisme
+Afrikanernedersetting	Afrikaner-nedersetting
+Afrikanernedersettinge	Afrikaner-nedersettinge
+Afrikanernedersettings	Afrikaner-nedersettings
 Afrikanerorganisasie	Afrikaner-organisasie
 Afrikanerorganisasies	Afrikaner-organisasies
 Afrikanerselfbeskikking	Afrikaner-selfbeskikking
@@ -343,6 +348,8 @@ aftreeoord	aftree-oord
 aftreeoorde	aftree-oorde
 aftrekkieslys	aftrek-kieslys
 aftrekkieslyste	aftrek-kieslyste
+afunksioneel	a-funksioneel
+afunksionele	a-funksionele
 Agaïes	Achaïes
 Agaïese	Achaïese
 Agaje	Achaje
@@ -389,6 +396,8 @@ AK-47	AK47
 AK-47-aanvalsgeweer	AK47-aanvalsgeweer
 AK-47-aanvalsgewere	AK47-aanvalsgewere
 AK-47's	AK47's
+Akademiastudent	Akademia-student
+Akademiastudente	Akademia-studente
 akkerwanie	akkerwani
 akkommodasiebesprekingswebblaaie	akkommodasie-besprekingswebblaaie
 akkommodasiebesprekingswebblad	akkommodasie-besprekingswebblad
@@ -485,6 +494,8 @@ alveolêr	alweolêr
 alveolêre	alweolêre
 alveool	alweool
 Alwyn_Taljaardlaan	Alwyn_Taljaard-laan
+alzheimerlyer	Alzheimer-lyer
+alzheimerlyers	Alzheimer-lyers
 Amabokhobokho	Amabokoboko
 amaHlubi	Amahlubi
 amalaita	amaleita
@@ -595,6 +606,8 @@ antichristelike	anti-christelike
 antichristelike	anti-Christelike
 antidemokraties	anti-demokraties
 antidemokratiese	anti-demokratiese
+antidiureties	anti-diureties
+antidiuretiese	anti-diuretiese
 Antifaondersteuner	Antifa-ondersteuner
 Antifaondersteuners	Antifa-ondersteuners
 antignostisisme	anti-gnostisisme
@@ -652,6 +665,8 @@ antisemitisme	anti-semitisme
 antisemitisme	anti-Semitisme
 antisiklonaal	anti-siklonaal
 antisiklonale	anti-siklonale
+antispasmodies	anti-spasmodies
+antispasmodiese	anti-spasmodiese
 antistolmiddel	anti-stolmiddel
 antistolmiddele	anti-stolmiddele
 antistolmiddels	anti-stolmiddels
@@ -691,6 +706,7 @@ argeologieprofessore	argeologie-professore
 argeologieprofessors	argeologie-professors
 argivalia	archivalia
 argumentum_ad_hominem	Argumentum_ad_hominem
+argumentum_ex_silentio	Argumentum_ex_silentio
 arikraakbeentjie	arykraakbeentjie
 arikraakbeentjies	arykraakbeentjies
 Aristargos	Aristarchos
@@ -1246,6 +1262,8 @@ bloed-breinskans	bloedbreinskans
 bloed-breinskans	bloed-brein-skans
 bloeduit	bloed-uit
 Bloemfonteinkonvensie	Bloemfontein-konvensie
+blogopskrif	blog-opskrif
+blogopskrifte	blog-opskrifte
 blokkettingnetwerk	blokketting-netwerk
 blokkettingnetwerke	blokketting-netwerke
 blokkettingtegnologie	blokketting-tegnologie
@@ -1264,6 +1282,7 @@ bloukaasliefhebber	bloukaas-liefhebber
 bloukaasliefhebbers	bloukaas-liefhebbers
 bloustertharder	bloustert-harder
 bloustertharders	bloustert-harders
+Bluebelllaan	Bluebell-laan
 bly-of-glydebat	bly-of-gly-debat
 bly-of-glydebatte	bly-of-gly-debatte
 boaan	bo-aan
@@ -1353,6 +1372,8 @@ booleoperators	boole-operators
 boomnes	boom-nes
 boomneste	boom-neste
 Boorhaanolmoskee	Boorhaanol-moskee
+boreling	bo-reling
+borelings	bo-relings
 bose-einsteinkondensaat	Bose-Eeinsteinkondensaat
 bose-einsteinkondensaat	Bose-Eeinstein-kondensaat
 bose-einsteinkondensaat	Bose-Einsteinkondensaat
@@ -1454,6 +1475,8 @@ bruinspikkelklipkabeljoue	bruinspikkel-klipkabeljoue
 brusien	brucien
 brusiet	bruciet
 brusine	brucine
+bryklank	bry-klank
+bryklanke	bry-klanke
 Bryntirionlandgoed	Bryntirion-landgoed
 Buckinghampaleis	Buckingham-paleis
 buikholteorgaan	buikholte-orgaan
@@ -1464,6 +1487,8 @@ buitebybels	buite-bybels
 buitebybels	buite-Bybels
 buitebybelse	buite-bybelse
 buitebybelse	buite-Bybelse
+buitedistrik	buite-distrik
+buitedistrikte	buite-distrikte
 buiteliggaamlik	buite-liggaamlik
 buiteliggaamlike	buite-liggaamlike
 buiteoewer	buite-oewer
@@ -1534,6 +1559,7 @@ Caprivistrook	Caprivi-strook
 Caprivistrook	Kaprivistrook
 captcha	CAPTCHA
 Carel_van_Aswegenstraat	Carel_van_Aswegen-straat
+Carinanewel	Carina-newel
 Carl_Boschstraat	Carl_Bosch-straat
 Carlakeerweg	Carla_Keerweg
 Carlakeerweg	Carla-keerweg
@@ -1604,8 +1630,12 @@ chirurgyns	sjirurgyns
 chlorokienbehandeling	chlorokien-behandeling
 chlorokinebehandeling	chlorokine-behandeling
 cholera	kolera
+choleraägtig	cholera-agtig
+choleraägtige	cholera-agtige
 choleraepidemie	cholera-epidemie
 choleraepidemies	cholera-epidemies
+cholerageval	cholera-geval
+choleragevalle	cholera-gevalle
 choleries	koleries
 choleriese	koleriese
 cholesterol	kolesterol
@@ -1745,6 +1775,8 @@ crimen_injuria	Crimen_iniuria
 crimen_injuria	Crimen_injuria
 CRISPR	crispr
 Crocodilia	Crocodylia
+croquetbal	kroketbal
+croquetballe	kroketballe
 crouton	croûton
 croutons	croûtons
 csardas	czardas
@@ -1859,6 +1891,9 @@ dataelement	data-element
 dataelemente	data-elemente
 datagedrewe	data-gedrewe
 datagehalteversekering	data-gehalteversekering
+datageoriënteer	data-georiënteer
+datageoriënteerd	data-georiënteerd
+datageoriënteerde	data-georiënteerde
 datahantering	data-hantering
 datamodellering	data-modellering
 dataontginning	data-ontginning
@@ -1911,6 +1946,7 @@ De_Kockstraat	de_Kock-straat
 De_Kockstraat	De_Kock-straat
 de_Kok	De_Kok
 de_Koker	De_Koker
+de_Korte	De_Korte
 de_la_Rey	De_la_Rey
 De_la_Reystraat	de_la_Reystraat
 de_Lange	De_Lange
@@ -2008,6 +2044,7 @@ Des_Presstraat	des_Presstraat
 Des_Presstraat	des_Pres-straat
 Des_Presstraat	Des_Pres-straat
 dese_en_gene	Dese_en_gene
+Desembersonkeerpunt	Desember-sonkeerpunt
 Desembervakansie	Desember-vakansie
 Desireekeerweg	Desiree_Keerweg
 Desireekeerweg	Desiree-keerweg
@@ -2059,6 +2096,7 @@ diensteondernemings	dienste-ondernemings
 diepseeasemhalingstoerusting	diepsee-asemhalingstoerusting
 diepseediamantmynskepe	diepsee-diamantmynskepe
 diepseediamantmynskip	diepsee-diamantmynskip
+diepseeverkenning	diepsee-verkenning
 dieptepsigologie	diepte-psigologie
 dieptepsigologies	diepte-psigologies
 dieptepsigologiese	diepte-psigologiese
@@ -2095,7 +2133,6 @@ dingesie	dingessie
 dingesies	dingessies
 diracveld	Dirac-veld
 diracvergelyking	Dirac-vergelyking
-Direhoeksterrestelsel	Direhoek-sterrestelsel
 dirk-dirk	dirkdirk
 dirk-dirke	dirkdirke
 dirk-dirkie	dirkdirkie
@@ -2179,6 +2216,7 @@ doen-dit-selfhandleiding	doen-dit-self-handleiding
 doen-dit-selfhandleidings	doen-dit-self-handleidings
 dofbruin	dof-bruin
 dogmageskiedenis	dogma-geskiedenis
+dokter-pasiëntvertroulikheid	dokter-pasiënt-vertroulikheid
 Dokters_sonder_Grense	Dokters_Sonder_Grense
 doktoranda	doctoranda
 doktorandae	doctorandae
@@ -2280,6 +2318,7 @@ drie-enige	drieënige
 drie-enjinvliegtuie	drie-enjin-vliegtuie
 drie-enjinvliegtuig	drie-enjin-vliegtuig
 Drie-en-twintigste_Straat	23e_Straat
+Driehoeksterrestelsel	Driehoek-sterrestelsel
 driekamerparlement	driekamer-parlement
 drielaestruktuur	drie-lae-struktuur
 drielingbaba	drieling-baba
@@ -2508,6 +2547,8 @@ energie-intensief	energieintensief
 energie-intensiewe	energieintensiewe
 energiemetabolisme	energie-metabolisme
 energieomsetting	energie-omsetting
+energieontleder	energie-ontleder
+energieontleders	energie-ontleders
 energieoordrag	energie-oordrag
 energieoplossing	energie-oplossing
 energieoplossings	energie-oplossings
@@ -2573,6 +2614,7 @@ Eskia_Mphahlelerylaan	Eskia_Mphahlele-rylaan
 Eskombestuurder	Eskom-bestuurder
 Eskombestuurders	Eskom-bestuurders
 Eskomkrisis	Eskom-krisis
+Eskompersoneel	Eskom-personeel
 Eskomraad	Eskom-raad
 Eskomwerker	Eskom-werker
 Eskomwerkers	Eskom-werkers
@@ -2632,7 +2674,9 @@ ewingsarkome	Ewing-sarkome
 ewingsarkoom	Ewing-sarkoom
 ewolueer	evolueer
 ewolusie	evolusie
+ewolusiebioloë	evolusiebioloë
 ewolusiebiologie	evolusiebiologie
+ewolusiebioloog	evolusiebioloog
 ewolusiefase	evolusiefase
 ewolusiefases	evolusiefases
 ewolusiegeskiedenis	evolusiegeskiedenis
@@ -2728,6 +2772,8 @@ FEDISA	Fedisa
 Fedsal	FEDSAL
 Fedsas	FEDSAS
 Fedusa	FEDUSA
+feëverhaal	feeverhaal
+feëverhale	feeverhale
 feigenbaumkonstante	Feigenbaum-konstante
 feigenbaumkonstantes	Feigenbaum-konstantes
 feng_shui	Feng_shui
@@ -2758,6 +2804,7 @@ filodeegpastei	filodeeg-pastei
 filodeegpasteie	filodeeg-pasteie
 filosofiedosent	filosofie-dosent
 filosofiedosente	filosofie-dosente
+filtrasiedoeltreffendheid	filtrasie-doeltreffendheid
 fin_de_siècle	Fin_de_siècle
 Fina	FINA
 finansiëledienstemaatskappy	finansiëledienste-maatskappy
@@ -2765,6 +2812,8 @@ finansiëledienstemaatskappye	finansiëledienste-maatskappye
 finansiëledienstesektor	finansiëledienste-sektor
 Finansies_&_Tegniek	Finansies_en_Tegniek
 Finschdiamantmyn	Finsch-diamantmyn
+Fishers_Hill	Fisher's_Hill
+Fishers_Hill	Fishershill
 fisikadepartement	fisika-departement
 fisikadepartement	Fisika-departement
 fisikadepartemente	fisika-departemente
@@ -2797,6 +2846,8 @@ folio-uitgawes	foliouitgawes
 Folkert_de_Vriesstraat	Folkert_de_Vries-straat
 Folkert_de_Vriesstraat	Folkert_De_Vriesstraat
 Folkert_de_Vriesstraat	Folkert_De_Vries-straat
+follikelstimulerend	follikel-stimulerend
+follikelstimulerende	follikel-stimulerende
 fongkong	fong_kong
 fongkong	Fong_kong
 fooitog	fooi_tog
@@ -3082,6 +3133,8 @@ gevarieer	gevarieër
 gevestigdeordekandidaat	gevestigde-orde-kandidaat
 gevestigdeordekandidate	gevestigde-orde-kandidate
 gevonkel	gefonkel
+geweiagtig	gewei-agtig
+geweiagtige	gewei-agtige
 geworry	geworrie
 Ghaapplato	Ghaap-plato
 ghoemaharepienk	ghoemahare-pienk
@@ -3109,6 +3162,9 @@ gliserieltriërukaat	gliseriel-triërukaat
 gliseroltrioleaat	gliserol-trioleaat
 gloeilampstraatverligting	gloeilamp-straatverligting
 godsdiensgedrewe	godsdiens-gedrewe
+godsdiensgeïnspireer	godsdiens-geïnspireer
+godsdiensgeïnspireerd	godsdiens-geïnspireerd
+godsdiensgeïnspireerde	godsdiens-geïnspireerde
 Goedjarat	Gujarat
 Goedjarati	Gujarati
 Goedjarati's	Gujarati's
@@ -3143,6 +3199,7 @@ gooiassegaai	gooi-assegaai
 gooiassegaaie	gooi-assegaaie
 goudghieliemientjie	goud-ghieliemientjie
 goudghieliemientjies	goud-ghieliemientjies
+goud-silwerlegering	goud-silwer-legering
 Gougheiland	Gough-eiland
 gourmeteetplek	gourmet-eetplek
 gourmeteetplekke	gourmet-eetplekke
@@ -3207,7 +3264,11 @@ graad_9-leerder	Graad_9-leerder
 graad_9-leerders	Graad_9-leerders
 graad_9-leerling	Graad_9-leerling
 graad_9-leerlinge	Graad_9-leerlinge
+grafeem-na-foneemreël	grafeem-na-foneem-reël
+grafeem-na-foneemreëls	grafeem-na-foneem-reëls
 graffitikuns	graffiti-kuns
+graffitiopskrif	graffiti-opskrif
+graffitiopskrifte	graffiti-opskrifte
 gramkalorie	gram-kalorie
 gramkalorieë	gram-kalorieë
 grammeter	gram-meter
@@ -3311,6 +3372,8 @@ Guarani	Guaraní
 Guggenheimmuseum	Guggenheim-museum
 Gugulethu	Guguletu
 gulde	gulden
+gunstelingafleweraar	gunsteling-afleweraar
+gunstelingafleweraars	gunsteling-afleweraars
 gunstelingbesienswaardighede	gunsteling-besienswaardighede
 gunstelingbesienswaardigheid	gunsteling-besienswaardigheid
 gunstelingbesighede	gunsteling-besighede
@@ -3319,6 +3382,8 @@ gunstelingdigter	gunsteling-digter
 gunstelingdigters	gunsteling-digters
 gunstelingsanger	gunsteling-sanger
 gunstelingsangers	gunsteling-sangers
+gunstelingstraatverkoper	gunsteling-straatverkoper
+gunstelingstraatverkopers	gunsteling-straatverkopers
 gut_feeling	Gut_feeling
 Guyanees	Guianees
 Guyanese	Guianese
@@ -3500,6 +3565,8 @@ herkulestaak	herculestaak
 herkulies	herculies
 herkuliese	herculiese
 hertoeëiening	hertoe-eiening
+hertzoggie	hertsoggie
+hertzoggies	hertsoggies
 Hertzogprysbekroon	Hertzogprys-bekroon
 Hertzogprysbekroonde	Hertzogprys-bekroonde
 Hertzogregering	Hertzog-regering
@@ -3536,6 +3603,8 @@ hipallagee	hipallage
 hipallagees	hipallages
 Hiperafrikaans	hiper-Afrikaans
 Hiperafrikaanse	hiper-Afrikaanse
+hiperkorrek	hiper-korrek
+hiperkorrekte	hiper-korrekte
 hipermoderniteit	hiper-moderniteit
 hipertiroïdisme	hipertiroïedisme
 hiphop	hip-hop
@@ -3573,6 +3642,8 @@ hoëgehalteproteïnes	hoëgehalte-proteïnes
 hoëgehaltepublikasie	hoëgehalte-publikasie
 hoëgehaltepublikasies	hoëgehalte-publikasies
 hoë-impakbotsing	hoë-impak-botsing
+hoenderdykebab	hoenderdy-kebab
+hoenderdykebabs	hoenderdy-kebabs
 hoendervleisavonture	hoendervleis-avonture
 hoendervleisavontuur	hoendervleis-avontuur
 hoëoktaanakteur	hoëoktaan-akteur
@@ -3612,6 +3683,7 @@ Hoërskool_D.F._Malherbe	Hoërskool_DF_Malherbe
 Hoërskool_Eben_Dönges	Hoërskool_Eben_Donges
 Hoërskool_J.G._Meiring	Hoërskool_JG_Meiring
 Hoërskool_J.W._Luckhoff	Hoërskool_JW_Luckhoff
+Hoërskool_Kemptonpark	Hoërskool_Kempton_Park
 Hoërskool_Lückhoff	Hoërskool_Luckhoff
 Hoërskool_Môrester	Hoërskool_Morester
 Hoërskool_P.J._Olivier	Hoërskool_PJ_Olivier
@@ -3675,12 +3747,16 @@ hoofondersoeker	hoof-ondersoeker
 hoofondersoekers	hoof-ondersoekers
 hoofstroomekonomie	hoofstroom-ekonomie
 hoofstroommedia	hoofstroom-media
+hoofstudierigting	hoof-studierigting
+hoofstudierigtinge	hoof-studierigtinge
+hoofstudierigtings	hoof-studierigtings
 hoofveeartsenybeampte	hoof-veeartsenybeampte
 hoofveeartsenybeamptes	hoof-veeartsenybeamptes
 hoofweervoorspeller	hoof-weervoorspeller
 hoofweervoorspellers	hoof-weervoorspellers
 Hooghollands	Hoog-Hollands
 Hooghollandse	Hoog-Hollandse
+Hoogmaleis	Hoog-Maleis
 hoogskolastiek	hoog-skolastiek
 hookah	huqqa
 hookahpyp	hookah-payp
@@ -4012,7 +4088,8 @@ internskapgeleenthede	internskap-geleenthede
 internskapgeleentheid	internskap-geleentheid
 internskaptydperk	internskap-tydperk
 internskaptydperke	internskap-tydperke
-internunsiusse	internuntiusse
+internuntius	internunsius
+internuntiusse	internunsiusse
 interpretasiekwessie	interpretasie-kwessie
 interpretasiekwessies	interpretasie-kwessies
 interstaatsnelweë	interstaat-snelweë
@@ -4209,6 +4286,7 @@ jukkas	yuccas
 juliëtkappie	julietkappie
 juliëtkappies	julietkappies
 Julius_Nyererestraat	Julius_Nyerere-straat
+Juniesonkeerpunt	Junie-sonkeerpunt
 jura	iura
 Juraperiode	Jura-periode
 jure_et_facto	iure_et_facto
@@ -4270,6 +4348,7 @@ Kaap_Verdiese	Kaap-Verdiese
 Kaapse_Draai	Kaapsedraai
 Kaapse_Instituut_vir_Landbouopleiding	Kaapse_Instituut_vir_Landbou-opleiding
 Kaapse_Skiereiland-Universiteit_vir_Tegnologie	Kaapse_Skiereiland_Universiteit_vir_Tegnologie
+Kaapsgebore	Kaaps-gebore
 Kaapstadomgewing	Kaapstad-omgewing
 Kaapsupergroep	Kaap-Supergroep
 Kaapvaalkraton	Kaapvaal-kraton
@@ -4340,6 +4419,9 @@ kalipsosanger	kalipso-sanger
 kalipsosangers	kalipso-sangers
 kaliumdichromaat	kaliumdikromaat
 kalkwit	kalk-wit
+kalorimeter	kaloriemeter
+kalorimeters	kaloriemeters
+kalorimetries	kaloriemetries
 kalumet	calumet
 kalumette	calumette
 Kamanassieberge	Kammanassieberge
@@ -4480,10 +4562,20 @@ kasjet	cachet
 kasjette	cachette
 Kasjmiers	Kasjmirs
 Kasjmierse	Kasjmirse
+kasteelagtig	kasteel-agtig
+kasteelagtige	kasteel-agtige
 Kastilië	Castilië
 kasusse	casusse
 kasusvorm	casusvorm
 kasusvorme	casusvorme
+kataar	Kathaar
+kataars	kathaars
+kataars	Kathaars
+kataarse	kathaarse
+kataarse	Kathaarse
+katare	Kathare
+katarisme	katharisme
+katarisme	Katharisme
 kat-en-muisspelery	kat-en-muis-spelery
 kat-en-muisspeletjie	kat-en-muis-speletjie
 kat-en-muisspeletjies	kat-en-muis-speletjies
@@ -4721,6 +4813,8 @@ Klotho	Clotho
 knaleffekslot	knaleffek-slot
 knieoperasie	knie-operasie
 knieoperasies	knie-operasies
+knipoogemoji	knipoog-emoji
+knipoogemoji's	knipoog-emoji's
 knysnaolifant	Knysna-olifant
 knysnaolifante	Knysna-olifante
 Knysnastrandmeer	Knysna-strandmeer
@@ -4930,6 +5024,8 @@ kop-teen-kopbotsinge	kop-teen-kop-botsinge
 kop-teen-kopbotsings	kop-teen-kop-botsings
 kopula	copula
 kopulas	copulas
+koraalrifekostelsel	koraalrif-ekostelsel
+koraalrifekostelsels	koraalrif-ekostelsels
 Koran	Qoeraan
 Koran	Quraan
 Kordofankameelperd	Kordofan-kameelperd
@@ -5208,6 +5304,8 @@ Laat-Latynse	Laat_Latynse
 laat-maar-loopbeleid	laat-maar-loop-beleid
 laat-maar-loophouding	laat-maar-loop-houding
 laat-maar-loophoudings	laat-maar-loop-houdings
+laatneëntiende-eeus	laat-neëntiende-eeus
+laatneëntiende-eeuse	laat-neëntiende-eeuse
 labiodentaal	labio-dentaal
 labiodentale	labio-dentale
 laboratoriumgeneeskunde	laboratorium-geneeskunde
@@ -5312,8 +5410,6 @@ langarmharder	langarm-harder
 langarmharders	langarm-harders
 langasemvegter	langasem-vegter
 langasemvegters	langasem-vegters
-langeraat	langeraad
-langerate	langerade
 langgolfkommunikasie	langgolf-kommunikasie
 langhaarverfkwas	langhaar-verfkwas
 langhaarverfkwaste	langhaar-verfkwaste
@@ -5567,6 +5663,10 @@ lug-tot-lugmissiel	lug-tot-lug-missiel
 lug-tot-lugmissiele	lug-tot-lug-missiele
 lugvaartowerhede	lugvaart-owerhede
 lugvaartowerheid	lugvaart-owerheid
+Luiperddekorasie	Luiperd-dekorasie
+Luiperddekorasies	Luiperd-dekorasies
+luitenant-vlieër	luitenantvlieër
+luitenant-vlieërs	luitenantvlieërs
 Luketz_Swartbooirylaan	Luketz_Swartbooi-rylaan
 Lukoergos	Lukourgos
 Luthulihuis	Luthuli-huis
@@ -5614,6 +5714,7 @@ M.Th.	MTh
 M.Th.-program	MTh-program
 M.Th.-programme	MTh-programme
 Maagdeburg	Magdeburg
+Maart-dag-en-nagewening	Maart-dag-en-nag-ewening
 maasstroomanalise	maasstroom-analise
 maatskaplikewerkadministrasie	maatskaplikewerk-administrasie
 maatskaplikewerkbestuur	maatskaplikewerk-bestuur
@@ -5794,6 +5895,8 @@ Masedoniese	Macedoniese
 masikandemusiek	masikande-musiek
 masikandemusikant	masikande-musikant
 masikandemusikante	masikande-musikante
+masjinerie	masjienerie
+masjinerieë	masjienerieë
 masjinering	masjienering
 Masjona	Mashona
 Masjonaland	Mashonaland
@@ -5919,6 +6022,8 @@ mediaondernemings	media-ondernemings
 mediaopleidingsprogram	media-opleidingsprogram
 mediaopleidingsprogramme	media-opleidingsprogramme
 medieseparoolvoorwaardes	mediese-parool-voorwaardes
+medisyneagtig	medisynagtig
+medisyneagtige	medisynagtige
 mediumgroot	medium-groot
 mediumtermynbegroting	mediumtermyn-begroting
 mediumtermynbegrotings	mediumtermyn-begrotings
@@ -6175,6 +6280,9 @@ Mogadisjoe	Mogadishu
 Mohlapitserivier	Mohlapitse-rivier
 Molefe_Makintastraat	Molefe_Makinta-straat
 Mombassa	Mombasa
+momentmagnitude	moment-magnitude
+momentmagnitudes	moment-magnitudes
+momentmagnitudeskaal	moment-magnitude-skaal
 Monegask	Monagask
 Monegaske	Monagaske
 Monegaskies	Monagaskies
@@ -6187,7 +6295,7 @@ Montagugrot	Montagu-grot
 Montaguwarmbron	Montagu-warmbron
 Montaguwarmwaterbron	Montagu-warmwaterbron
 Monte_Cristolaan	Monte_Cristo-laan
-Montessorimetode	Montessori-metode
+montessorimetode	Montessori-metode
 Mopanisaal	Mopani-saal
 Morfeus	Morpheus
 morsaf	mors-af
@@ -6214,6 +6322,11 @@ moslemoorheersing	moslem-oorheersing
 moslemwoning	moslem-woning
 moslemwonings	moslem-wonings
 Mossoel	Mosoel
+mosterdsaad	mostertsaad
+mosterdsaadjie	mostertsaadjie
+mosterdsaadjies	mostertsaadjies
+motorfietsambulans	motorfiets-ambulans
+motorfietsambulanse	motorfiets-ambulanse
 motorneuronsiektelyer	motorneuronsiekte-lyer
 motorneuronsiektelyers	motorneuronsiekte-lyers
 Mouillepuntpromenade	Mouillepunt-promenade
@@ -6221,6 +6334,7 @@ Mount_Joylaan	Mount_Joy-laan
 mouophouer	mou-ophouer
 mouophouers	mou-ophouers
 Mpumalangaprovinsie	Mpumalanga-provinsie
+muassel	mu'assel
 Mugaberegering	Mugabe-regering
 Mukwedistrik	Mukwe-distrik
 multidimensioneel	multi-dimensioneel
@@ -6239,6 +6353,8 @@ Musicawinkel	Musica-winkel
 Musicawinkels	Musica-winkels
 musiekonderrig	musiek-onderrig
 musiekonderrig	Musiek-onderrig
+musiekstaander	musiekstander
+musiekstaanders	musiekstanders
 muskadelwingerd	muskadel-wingerd
 muskadelwingerde	muskadel-wingerde
 mutatis_mutandis	Mutatis_mutandis
@@ -6269,6 +6385,7 @@ na_vore	Na_vore
 Naaim_de_Vosstraat	Naaim_de_Vos-straat
 Naaim_de_Vosstraat	Naaim_De_Vosstraat
 Naaim_de_Vosstraat	Naaim_De_Vos-straat
+Naamsa	NAAMSA
 naelloopatleet	naelloop-atleet
 naelloopatlete	naelloop-atlete
 naeltjieolie	naeltjie-olie
@@ -6282,7 +6399,9 @@ naklassiek	na-klassiek
 naklassiek	ná-klassiek
 naklassieke	na-klassieke
 naklassieke	ná-klassieke
+Nakos	NAKOS
 Naksos	Naxos
+Naledi	NALEDI
 NALN	Naln
 Namagemeenskap	Nama-gemeenskap
 Namagemeenskappe	Nama-gemeenskappe
@@ -6292,7 +6411,9 @@ Namavolksmoord	Nama-volksmoord
 Namibiëkleure	Namibië-kleure
 Namibiese_Kollege_vir_Ope_en_Afstandsonderrig	Namibiese_Kollege_vir_Ope-_en_Afstandsonderrig
 Namibiese_Medisynebeheerraad	Namibiese_Medisyne_Beheerraad
+Namibiese_Vrouevereniging	Namibiese_Vroue_Vereniging
 Namibwoestyn	Namib-woestyn
+Nampo	NAMPO
 Nana_Sitastraat	Nana_Sita-straat
 naoes	na-oes
 naoeshantering	na-oes-hantering
@@ -6301,10 +6422,14 @@ naoorlogs	na-oorlogs
 naoorlogse	na-oorlogse
 naoperatief	na-operatief
 naoperatiewe	na-operatiewe
+Naposa	NAPOSA
+Naptosa	NAPTOSA
 narkoseverwant	narkose-verwant
 narkoseverwante	narkose-verwante
 narsis	narcis
 narsisme	narcisme
+narsissien	narcissien
+narsissine	narcissine
 narsissis	narcissis
 narsissisme	narcissisme
 narsissiste	narcissiste
@@ -6313,13 +6438,21 @@ narsissistiese	narcissistiese
 narsiste	narciste
 narsisties	narcisties
 narsistiese	narcistiese
+nartjie	naartjie
+nartjiebome	naartjiebome
+nartjieboom	naartjieboom
+nartjies	naartjies
+nartjieskil	naartjieskil
+nartjieskille	naartjieskille
+Naruk	NARUK
 Nasa	NASA
 NASGWU	Nasgwu
-nasionaalsosialis	nasionaal-sosialis
-nasionaalsosialisme	nasionaal-sosialisme
-nasionaalsosialiste	nasionaal-sosialiste
-nasionaalsosialisties	nasionaal-sosialisties
-nasionaalsosialistiese	nasionaal-sosialistiese
+nasi_goreng	Nasi_goreng
+nasionaal-sosialis	nasionaalsosialis
+nasionaal-sosialisme	nasionaalsosialisme
+nasionaal-sosialiste	nasionaalsosialiste
+nasionaal-sosialisties	nasionaalsosialisties
+nasionaal-sosialistiese	nasionaalsosialistiese
 Naspersdireksie	Naspers-direksie
 Naspersjoernalis	Naspers-joernalis
 Naspersjoernaliste	Naspers-joernaliste
@@ -6333,9 +6466,14 @@ natuurwetenskappeolimpiade	natuurwetenskappe-olimpiade
 natuurwetenskappeolimpiades	natuurwetenskappe-olimpiades
 natuurwetenskappeonderrig	natuurwetenskappe-onderrig
 natuurwetenskappeonderwys	natuurwetenskappe-onderwys
+Naukluftberg	Naukluft-berg
+na-ure	naure
 na-uurs	nauurs
 na-uurse	nauurse
+Navo	NAVO
+Navo-lidmaatskap	NAVO-lidmaatskap
 Navorsingsinstituut_vir_Veeartsenykunde	Navorsings-instituut_vir_Veeartsenykunde
+Nazi-staat	Nazistaat
 Ndebelekuns	Ndebele-kuns
 ne_plus_ultra	Ne_plus_ultra
 Neanderdalbaba	Neanderdal-baba
@@ -6355,9 +6493,16 @@ Neanderdalkind	Neanderdal-kind
 Neanderdalkinders	Neanderdal-kinders
 Neanderdalmens	Neanderdal-mens
 Neanderdalmense	Neanderdal-mense
+Neandertal	Neanderthal
 Neandertalmens	Neandertal-mens
+Neandertalmens	Neanderthalmens
+Neandertalmens	Neanderthal-mens
 Neandertalmense	Neandertal-mense
+Neandertalmense	Neanderthalmense
+Neandertalmense	Neanderthal-mense
 nec_plus_ultra	Nec_plus_ultra
+Necsa	NECSA
+Nedlac	NEDLAC
 Neëntiende_Straat	Neëntiendestraat
 nege	neë
 negedaags	neëdaags
@@ -6406,7 +6551,8 @@ negevoud	neëvoud
 negevoude	neëvoude
 negevoudig	neëvoudig
 negevoudige	neëvoudige
-nek-af	nekaf
+nekaf	nek-af
+nekom	nek-om
 Nelson_Mandelabaai	Nelson_Mandela-baai
 Nelson_Mandelaboulevard	Nelson_Mandela-boulevard
 Nelson_Mandelalaan	Nelson_Mandela-laan
@@ -6459,9 +6605,12 @@ neoprotestantse	Neo-Protestantse
 neorealisme	neo-realisme
 neorenaissancegebou	neo-renaissance-gebou
 neorenaissancegeboue	neo-renaissance-geboue
+Nepad	NEPAD
 nêrens	Nêrens
-nerf-af	nerfaf
+nerfaf	nerf-af
 Nersa	NERSA
+nerwature	nervature
+nerwatuur	nervatuur
 nesosilikaat	neso-silikaat
 nesosilikate	neso-silikate
 nettoreaksie	netto-reaksie
@@ -6471,6 +6620,11 @@ nettoresultate	netto-resultate
 Neudammkampus	Neudamkampus
 Neudammkampus	Neudam-kampus
 Neudammkampus	Neudamm-kampus
+neurochirurg	neurosjirurg
+neurochirurge	neurosjirurge
+neurochirurgie	neurosjirurgie
+neurodegeneratief	neuro-degeneratief
+neurodegeneratiewe	neuro-degeneratiewe
 neuroëndokrien	neuro-endokrien
 neuroëndokriene	neuro-endokriene
 neuroïnfektief	neuro-infektief
@@ -6483,6 +6637,7 @@ neuropsigiatries	neuro-psigiatries
 neuropsigiatriese	neuro-psigiatriese
 neurowetenskap	neuro-wetenskap
 neurowetenskappe	neuro-wetenskappe
+neuschirurgie	neussjirurgie
 neutronkern	neutron-kern
 neutronkerne	neutron-kerne
 neutronkerns	neutron-kerns
@@ -6509,6 +6664,8 @@ nieaggressief	nie-aggressief
 nieaggressiewe	nie-aggressiewe
 nieakademies	nie-akademies
 nieakademiese	nie-akademiese
+niealgemeen	nie-algemeen
+niealgemene	nie-algemene
 niealkoholies	nie-alkoholies
 niealkoholiese	nie-alkoholiese
 nieallergenies	nie-allergenies
@@ -6517,6 +6674,8 @@ nieallopaties	nie-allopaties
 nieallopatiese	nie-allopatiese
 nieamptelik	nie-amptelik
 nieamptelike	nie-amptelike
+nieattributief	nie-attributief
+nieattributiewe	nie-attributiewe
 niebedreig	nie-bedreig
 niebedreigd	nie-bedreigd
 niebedreigde	nie-bedreigde
@@ -6525,6 +6684,10 @@ niebedwelmend	nie-bedwelmend
 niebedwelmende	nie-bedwelmende
 niebegunstigde	nie-begunstigde
 niebegunstigdes	nie-begunstigdes
+niebeskaaf	nie-beskaaf
+niebeskaafd	nie-beskaafd
+niebeskaafde	nie-beskaafde
+niebestaan	nie-bestaan
 niebetalend	nie-betalend
 niebetalende	nie-betalende
 niebetaling	nie-betaling
@@ -6537,8 +6700,11 @@ niebinêr	nie-binêr
 niebinêre	nie-binêre
 niebiologies	nie-biologies
 niebiologiese	nie-biologiese
+nieblank	nie-blank
 nieblanke	nie-blanke
 nieblankes	nie-blankes
+niebroeiend	nie-broeiend
+niebroeiende	nie-broeiende
 niebydraend	nie-bydraend
 niebydraende	nie-bydraende
 niebytend	nie-bytend
@@ -6570,6 +6736,8 @@ niefatale	nie-fatale
 niefiguratief	nie-figuratief
 niefiguratiewe	nie-figuratiewe
 niefiksie	nie-fiksie
+nieflekterend	nie-flekterend
+nieflekterende	nie-flekterende
 niegeaspireer	nie-geaspireer
 niegeaspireerde	nie-geaspireerde
 niegebruiker	nie-gebruiker
@@ -6595,9 +6763,14 @@ niegenasaleer	nie-genasaleer
 niegenasaleerde	nie-genasaleerde
 niegeskeur	nie-geskeur
 niegeskeurde	nie-geskeurde
+niegeslagtelik	nie-geslagtelik
+niegeslagtelike	nie-geslagtelike
 niegestandaardiseer	nie-gestandaardiseer
 niegestandaardiseerd	nie-gestandaardiseerd
 niegestandaardiseerde	nie-gestandaardiseerde
+niegestruktureer	nie-gestruktureer
+niegestruktureerd	nie-gestruktureerd
+niegestruktureerde	nie-gestruktureerde
 niegesubsidieer	nie-gesubsidieer
 niegesubsidieerde	nie-gesubsidieerde
 niegewelddadig	nie-gewelddadig
@@ -6709,8 +6882,18 @@ nienewtons	nie-newtons
 nienewtons	nie-Newtons
 nienewtonse	nie-newtonse
 nienewtonse	nie-Newtonse
+nienilpotent	nie-nilpotent
+nienilpotente	nie-nilpotente
 nienoodsaaklik	nie-noodsaaklik
 nienoodsaaklike	nie-noodsaaklike
+nienoodwendig	nie-noodwendig
+nienoodwendige	nie-noodwendige
+nienulelement	nie-nulelement
+nienulelemente	nie-nulelemente
+nienulideaal	nie-nulideaal
+nienulideale	nie-nulideale
+nieonderhandelbaar	nie-onderhandelbaar
+nieonderhandelbare	nie-onderhandelbare
 nieonderwerpsvorm	nie-onderwerpsvorm
 nieonderwerpsvorme	nie-onderwerpsvorme
 nieonderwerpsvorms	nie-onderwerpsvorms
@@ -6816,6 +6999,8 @@ nieroestend	nie-roestend
 nieroestende	nie-roestende
 nieroker	nie-roker
 nierokers	nie-rokers
+nieroties	nie-roties
+nierotiese	nie-rotiese
 niesamegestel	nie-samegestel
 niesamegesteld	nie-samegesteld
 niesamegestelde	nie-samegestelde
@@ -6841,10 +7026,14 @@ niespesifiek	nie-spesifiek
 niespesifieke	nie-spesifieke
 niestaatlik	nie-staatlik
 niestaatlike	nie-staatlike
+niestaatsgeaffilieer	nie-staatsgeaffilieer
+niestaatsgeaffilieerd	nie-staatsgeaffilieerd
+niestaatsgeaffilieerde	nie-staatsgeaffilieerde
 niestaatsparty	nie-staatsparty
 niestaatspartye	nie-staatspartye
 niestaker	nie-staker
 niestakers	nie-stakers
+niestandaard	nie-standaard
 niestandhoudend	nie-standhoudend
 niestandhoudende	nie-standhoudende
 niestasionêr	nie-stasionêr
@@ -6855,6 +7044,8 @@ niestellêr	nie-stellêr
 niestellêre	nie-stellêre
 niesteroïdaal	nie-steroïdaal
 niesteroïdale	nie-steroïdale
+niestoflik	nie-stoflik
+niestoflike	nie-stoflike
 niestoigiometries	niestegiometries
 niestoigiometries	nie-stegiometries
 niestoigiometries	nie-stoigiometries
@@ -6869,6 +7060,8 @@ niestrydigheid	nie-strydigheid
 nieswart	nie-swart
 nieswarte	nie-swarte
 nieswartes	nie-swartes
+nietaalkundig	nie-taalkundig
+nietaalkundige	nie-taalkundige
 nietariefgebaseer	nie-tariefgebaseer
 nietariefgebaseerd	nie-tariefgebaseerd
 nietariefgebaseerde	nie-tariefgebaseerde
@@ -6954,8 +7147,14 @@ nieystermetale	nie-ystermetale
 Niger-Kongofamilie	Niger-Kongo-familie
 Niger-Kongotaal	Niger-Kongo-taal
 Niger-Kongotale	Niger-Kongo-tale
+Nikok	NIKOK
+nikomachies	nicomachies
+nikomachies	Nicomachies
+nikomachiese	nicomachiese
+nikomachiese	Nicomachiese
 nil_desperandum	Nil_desperandum
-NIOS	Nios
+Nimro	NIMRO
+Nios	NIOS
 nisrestaurant	nisrestourant
 nisrestaurante	nisrestourante
 nisrestaurants	nisrestourants
@@ -6968,8 +7167,10 @@ Nobelvredespryse	Nobel-vredespryse
 noblesse_oblige	Noblesse_oblige
 noirriller	noir-riller
 noirrillers	noir-rillers
+noirtoneel	noir-toneel
 noirverhaal	noir-verhaal
 noirverhale	noir-verhale
+Noksa	NOKSA
 nolens_volens	Nolens_volens
 nom_de_plume	Nom_de_plume
 nommerplaatherkenning	nommerplaat-herkenning
@@ -6989,6 +7190,10 @@ nonkonformisties	non-konformisties
 nonkonformistiese	non-konformistiese
 nonsektaries	non-sektaries
 nonsektariese	non-sektariese
+nonsensantenna	nonsens-antenna
+nonsensantennas	nonsens-antennas
+nonsensantenne	nonsens-antenne
+nonsensantennes	nonsens-antennes
 Noord-Germaan	Noordgermaan
 Noord-Germane	Noordgermane
 Noordoosdeurgang	Noordoos-deurgang
@@ -7005,10 +7210,20 @@ noordwestewind	noord-westewind
 noordwestewinde	noord-westewinde
 Norfolkeiland	Norfolk-eiland
 Norikum	Noricum
+normbewus	norm-bewus
+normbewuste	norm-bewuste
+North_Boundaryweg	North_Boundary_Weg
+North_Boundaryweg	North_Boundary-weg
 Northdalehospitaal	Northdale-hospitaal
 nota_bene	Nota_bene
 nota_bene	Nota_Bene
 Notre_Damestraat	Notre_Dame-straat
+nouveau_riche	Nouveau_riche
+nouveaux_riches	Nouveaux_riches
+Numsa	NUMSA
+nuntius	nunsius
+nuntiusse	nunsiusse
+Nusas	NUSAS
 NUST	Nust
 nuustuisblaaie	nuus-tuisblaaie
 nuustuisblad	nuus-tuisblad
@@ -7017,6 +7232,8 @@ nuutontdekte	nuut-ontdekte
 Nuwe_Testament	Nuwe_testament
 nuwetegnologiemineraal	nuwetegnologie-mineraal
 nuwetegnologieminerale	nuwetegnologie-minerale
+Nuwewêrelds	Nuwe-Wêrelds
+Nuwewêreldse	Nuwe-Wêreldse
 N'waswitsontsorivier	Nwaswitsontsorivier
 N'waswitsontsorivier	Nwaswitsontso-rivier
 N'waswitsontsorivier	N'waswitsontso-rivier
@@ -7027,7 +7244,10 @@ Nyldelta	Nyl-delta
 Nyldelta	Nyl-Delta
 Nylstroominwoner	Nylstroom-inwoner
 Nylstroominwoners	Nylstroom-inwoners
+Nywerheidsontwikkelingskorporasie	Nywerheids-Ontwikkelingskorporasie
+Nywerheidsontwikkelingskorporasie_van_Suid-Afrika	Nywerheids-Ontwikkelingskorporasie_van_Suid-Afrika
 nywerheidsrewolusie	nywerheidsrevolusie
+nywerheidsrewolusies	nywerheidsrevolusies
 O.R._Tambostraat	O.R._Tambo-straat
 O.R._Tambostraat	OR_Tambostraat
 O.R._Tambostraat	OR_Tambo-straat
@@ -7086,8 +7306,11 @@ oliemaatskappy	olie-maatskappy
 oliemaatskappye	olie-maatskappye
 olieonttrekkingsproses	olie-onttrekkingsproses
 olifantmishandeling	olifant-mishandeling
+olifantrobspesie	olifantrob-spesie
+olifantrobspesies	olifantrob-spesies
 olifanttweeling	olifant-tweeling
 olifanttweelinge	olifant-tweelinge
+olmfamilie	olm-familie
 Olof_Palmestraat	Olof_Palme-straat
 om_den_brode	Om_den_brode
 om_dusketyd	Om_dusketyd
@@ -7147,6 +7370,7 @@ ontwerpbeginsels	ontwerp-beginsels
 onverrigtersake	onverrigter_sake
 onverrigtersake	Onverrigter_sake
 onverrigtersake	Onverrigtersake
+ooginflammasie	oog-inflammasie
 oopboekopdrag	oopboek-opdrag
 oopboekopdragte	oopboek-opdragte
 oopgrenssituasie	oopgrens-situasie
@@ -7242,6 +7466,8 @@ Oscarbenoeminge	Oscar-benoeminge
 Oscarbenoemings	Oscar-benoemings
 Oscarnominasie	Oscar-nominasie
 Oscarnominasies	Oscar-nominasies
+Ostrogoot	Ostro-Goot
+Ostrogote	Ostro-Gote
 Oswald_Pirowstraat	Oswald_Pirow-straat
 Otjiwarongodistrik	Otjiwarongo-distrik
 Ou_Paarlpad	Ou_Paarl-pad
@@ -7290,6 +7516,8 @@ Oud-Grieks	oudgrieks
 Oud-Grieks	Oudgrieks
 Oud-Griekse	oudgriekse
 Oud-Griekse	Oudgriekse
+oudioweergawe	oudio-weergawe
+oudioweergawes	oudio-weergawes
 oudjoernalis	oud-joernalis
 oudjoernaliste	oud-joernaliste
 oudkampioen	oud-kampioen
@@ -7454,6 +7682,11 @@ palatoalveolêr	palato-alveolêr
 palatoalveolêre	palato-alveolêre
 paleisrewolusie	paleisrevolusie
 paleisrewolusies	paleisrevolusies
+paleoantropoloë	paleo-antropoloë
+paleoantropologie	paleo-antropologie
+paleoantropologies	paleo-antropologies
+paleoantropologiese	paleo-antropologiese
+paleoantropoloog	paleo-antropoloog
 Paleogeentydperk	Paleogeen-tydperk
 paleomagnetismenavorsing	paleomagnetisme-navorsing
 Palmira	Palmyra
@@ -7629,10 +7862,13 @@ plaaswaggroep	plaaswag-groep
 plaaswaggroepe	plaaswag-groepe
 planckmassa	Planck-massa
 planckmassas	Planck-massas
+planckskaal	Planck-skaal
 plantbio-informatika	plantbioinformatika
 plasmaägtig	plasma-agtig
 plasmaägtige	plasma-agtige
 plastiekeetgerei	plastiek-eetgerei
+platform	platvorm
+platforms	platvorms
 Pleistoseenperiode	Pleistoseen-periode
 plejade	pleiade
 plejades	pleiades
@@ -7680,6 +7916,7 @@ polisieaktiwiteit	polisie-aktiwiteit
 polisiebevelvoerder	polisie-bevelvoerder
 polisiebevelvoerders	polisie-bevelvoerders
 polisiegeweld	polisie-geweld
+polisieondersoekdirektoraat	polisie-ondersoekdirektoraat
 polisieoperasie	polisie-operasie
 polisieoperasies	polisie-operasies
 polisieopleidingsakademie	polisie-opleidingsakademie
@@ -7792,6 +8029,7 @@ President_Fouchélaan	Pres_Fouchélaan
 President_Fouchérylaan	Pres_Fouchérylaan
 President_Fouchérylaan	President_Foucherylaan
 President_Fouchéstraat	Pres_Fouchéstraat
+prestandaardiseringsfase	pre-standaardiseringsfase
 prestasieaanwyser	prestasie-aanwyser
 prestasieaanwysers	prestasie-aanwysers
 prestasieooreenkoms	prestasie-ooreenkoms
@@ -7799,6 +8037,9 @@ prestasieooreenkomste	prestasie-ooreenkomste
 prestigebeeld	prestige-beeld
 prestigeprojek	prestige-projek
 prestigeprojekte	prestige-projekte
+prestigevorm	prestige-vorm
+prestigevorme	prestige-vorme
+prestigevorms	prestige-vorms
 prestigewaarde	prestige-waarde
 preterita	praeterita
 preterito-presens	praeterito-praesens
@@ -7811,6 +8052,9 @@ Pretoriabuurte	Pretoria-buurte
 pretors	praetors
 priester-koning	priesterkoning
 priester-konings	priesterkonings
+prikkelbaredermsindroom	prikkelbare_derm_sindroom
+prikkelbaredermsindroom	prikkelbare_derm-sindroom
+prikkelbaredermsindroom	prikkelbarederm-sindroom
 prima_facie	Prima_facie
 primadonna	prima-donna
 primadonnas	prima-donnas
@@ -7838,6 +8082,11 @@ procédé	procedé
 procédé	procéde
 procédés	procedés
 procédés	procédes
+produksieaanlêe	produksie-aanlêe
+produksieaanleg	produksie-aanleg
+produksieaanlegginge	produksie-aanlegginge
+produksieaanleggings	produksie-aanleggings
+produksieaanlegte	produksie-aanlegte
 produksieomgewing	produksie-omgewing
 produksieomgewings	produksie-omgewings
 produksieontwerp	produksie-ontwerp
@@ -7947,6 +8196,7 @@ rasseaangeleenthede	ras-aangeleenthede
 rasseaangeleentheid	ras-aangeleentheid
 rasseagenda	rasse-agenda
 rasseantagonisme	rasse-antagonisme
+rasseaspek	rasse-aspek
 rasseharmonie	rasse-harmonie
 rassemeerderwaardigheid	rasse-meerderwaardigheid
 rasseonderskeid	rasse-onderskeid
@@ -7973,6 +8223,8 @@ Reginald_Walkerstraat	Reginald_Walker-straat
 registrasieaansoek	registrasie-aansoek
 registrasieaansoeke	registrasie-aansoeke
 registrasieafdeling	registrasie-afdeling
+regs-populisties	regspopulisties
+regs-populistiese	regspopulistiese
 regter-president	regterpresident
 regters-president	regterpresidente
 regters-president	regters-presidente
@@ -7991,6 +8243,8 @@ rekeningkundeonderwys	rekeningkunde-onderwys
 rekompressieterapie	rekompressie-terapie
 rekordmielieoes	rekord-mielie-oes
 rekordmielieoeste	rekord-mielie-oeste
+relatiefkonstruksie	relatief-konstruksie
+relatiefkonstruksies	relatief-konstruksies
 relativisties	relatiwisties
 relativistiese	relatiwistiese
 relê	relais
@@ -8092,6 +8346,8 @@ reuseplaas	reuse-plaas
 reuseplase	reuse-plase
 reusepretpark	reuse-pretpark
 reusepretparke	reuse-pretparke
+reuseskilpaaie	reuse-skilpaaie
+reuseskilpad	reuse-skilpad
 reuseskuld	reuse-skuld
 reusestuk	reuse-stuk
 reusestukke	reuse-stukke
@@ -8149,6 +8405,7 @@ roetinepatrollie	roetine-patrollie
 roetinepatrollies	roetine-patrollies
 roetinevoorsorg	roetine-voorsorg
 rokoko	rococo
+Roland_Garros	Rolland-Garros
 Rolexhorlosie	Rolex-horlosie
 Rolexhorlosies	Rolex-horlosies
 Rolexoorlosie	Rolex-oorlosie
@@ -8174,6 +8431,8 @@ rooi-else	rooielse
 rooi-essehout	rooiessehout
 rooiopslag	rooi-opslag
 rooiwynjus	rooiwyn-jus
+roosbottelinfusie	roosbottel-infusie
+roosbottelinfusies	roosbottel-infusies
 Roosrewolusie	Roosrevolusie
 Rorkesdrif	Rorkesdrift
 Rose_Innesstraat	Rose_Innes-straat
@@ -8276,6 +8535,7 @@ Sam_Nujomalaan	Sam_Nujoma-laan
 Sam_Nujomarylaan	Sam_Nujoma-rylaan
 samewerkingsnavorsingsprojek	samewerkings-navorsingsprojek
 samewerkingsnavorsingsprojekte	samewerkings-navorsingsprojekte
+San_Andreasbreuk	San_Andreas-breuk
 San_José	San_Jose
 Sanbewoning	San-bewoning
 Sand_du_Plessisteater	Sand_du_Plessis-teater
@@ -8309,6 +8569,7 @@ sapfies	Sapphies
 sapfiese	sapphiese
 sapfiese	Sapphiese
 Sapfo	Sappho
+Sapo	SAPO
 sauvignon_blanc	Sauvignon_blanc
 savanneolifant	savanne-olifant
 savanneolifante	savanne-olifante
@@ -8337,6 +8598,8 @@ Seelanders	Zeelanders
 seeoffisier	see-offisier
 seeoffisiere	see-offisiere
 seeoffisiers	see-offisiers
+seeolifant	see-olifant
+seeolifante	see-olifante
 seeomgewing	see-omgewing
 seeomgewings	see-omgewings
 seestroomsnelhede	seestroom-snelhede
@@ -8388,6 +8651,7 @@ semigesuiwer	semi-gesuiwer
 semigesuiwerde	semi-gesuiwerde
 semiklassiek	semi-klassiek
 semiklassieke	semi-klassieke
+semikreolisering	semi-kreolisering
 seminomadies	semi-nomadies
 seminomadiese	semi-nomadiese
 semioffisieel	semi-offisieel
@@ -8416,6 +8680,14 @@ Seneka	Seneca
 senekaans	senecaans
 senekaanse	senecaanse
 Sentechtoring	Sentech-toring
+sentourasteroïde	sentaurasteroïde
+sentourasteroïdes	sentaurasteroïdes
+sentourasteroïed	sentaurasteroïed
+sentourasteroïede	sentaurasteroïede
+sentourplanetoïde	sentaurplanetoïde
+sentourplanetoïdes	sentaurplanetoïdes
+sentourplanetoïed	sentaurplanetoïed
+sentourplanetoïede	sentaurplanetoïede
 senu-impuls	senuïmpuls
 senu-impulse	senuïmpulse
 senuoordraermolekule	senuoordraer-molekule
@@ -8426,6 +8698,7 @@ senuweeorrel	senuwee-orrel
 senuweeorrels	senuwee-orrels
 sepieliefhebber	sepie-liefhebber
 sepieliefhebbers	sepie-liefhebbers
+September-dag-en-nagewening	September-dag-en-nag-ewening
 serebella	cerebella
 serebellum	cerebellum
 serebellums	cerebellums
@@ -8487,6 +8760,8 @@ sies_tog	Sies_tog
 sies_tog	siestog
 sies_tog	Siestog
 sigmoïdoskopie	sigmoïedoskopie
+sigomatikoörbitaal	sigomatiko-orbitaal
+sigomatikoörbitale	sigomatiko-orbitale
 sikloöksigenase	siklo-oksigenase
 silfide	sifiede
 silfides	sifiedes
@@ -8502,6 +8777,8 @@ simfonieorkes	simfonie-orkes
 simfonieorkeste	simfonie-orkeste
 simkaart	SIM-kaart
 simkaarte	SIM-kaarte
+sinagogeaanval	sinagoge-aanval
+sinagogeaanvalle	sinagoge-aanvalle
 Sinai	Sinai
 Sinaiskiereiland	Sinai-skiereiland
 Sinaiskiereiland	Sinaïskiereiland
@@ -8615,6 +8892,8 @@ skaapboerderydorpe	skaapboerdery-dorpe
 skaapboerderydorpie	skaapboerdery-dorpie
 skaapboerderydorpies	skaapboerdery-dorpies
 skaapskeerseisoen	skaapskeer-seisoen
+skadu'tjie	skadutjie
+skadu'tjies	skadutjies
 skalieolie	skalie-olie
 skeikundeonderwys	skeikunde-onderwys
 skenkerpenis	skenker-penis
@@ -8716,6 +8995,7 @@ sololiedere	solo-liedere
 sololiedjie	solo-liedjie
 sololiedjies	solo-liedjies
 Solomon_Mahlangurylaan	Solomon_Mahlangu-rylaan
+somersonkeerpunt	somer-sonkeerpunt
 somervakansieblyplek	somervakansie-blyplek
 somervakansieblyplekke	somervakansie-blyplekke
 Sommevallei	Somme-vallei
@@ -8912,6 +9192,9 @@ standerdsessers	standerd-sessers
 standerdsessie	standerd-sessie
 standerdsessies	standerd-sessies
 Stanza_Bopapestraat	Stanza_Bopape-straat
+stasierestaurant	stasierestourant
+stasierestaurante	stasierestourante
+stasierestaurants	stasierestourants
 Statebondaangeleenthede	Statebond-aangeleenthede
 Statebondaangeleentheid	Statebond-aangeleentheid
 Statebondjeugkampioenskap	Statebond-jeugkampioenskap
@@ -8923,9 +9206,14 @@ Statebondspelekampioen	Statebondspele-kampioen
 Statebondspelekampioene	Statebondspele-kampioene
 status_confessionis	Status_confessionis
 status_quo	Status_quo
+statusbewus	status-bewus
+statusbewuste	status-bewuste
+statusbewuster	status-bewuster
 steekassegaai	steek-assegaai
 steekassegaaie	steek-assegaaie
 steen_des_aanstoots	Steen_des_aanstoots
+Steentydperkspesie	Steentydperk-spesie
+Steentydperkspesies	Steentydperk-spesies
 Stefan-Boltzmannkonstante	Stefan-Boltzmann-konstante
 Stefan-Boltzmannwet	Stefan-Boltzmann-wet
 stemopname	stem-opname
@@ -8986,6 +9274,8 @@ studenteontspanningsentra	studente-ontspanningsentra
 studenteontspanningsentrum	studente-ontspanningsentrum
 studenteontspanningsentrums	studente-ontspanningsentrums
 studenteopleiding	studente-opleiding
+studenteopstel	studente-opstel
+studenteopstelle	studente-opstelle
 studenteorganisasie	studente-organisasie
 studenteorganisasies	studente-organisasies
 studentepolitiek	studente-politiek
@@ -8993,6 +9283,8 @@ studente-unie	studenteunie
 studente-unies	studenteunies
 studieagtergrond	studie-agtergrond
 studieagtergronde	studie-agtergronde
+studieobjek	studie-objek
+studieobjekte	studie-objekte
 studieontwerp	studie-ontwerp
 studieontwerpe	studie-ontwerpe
 Styx	Stuuks
@@ -9028,6 +9320,7 @@ Suid-Nederlands	Suidnederlands
 Suid-Nederlandse	Suidnederlandse
 suidoostelik	suid-oostelik
 suidoostelike	suid-oostelike
+Suid-Shetlandeilande	Suid-Shetland-eilande
 Suid-Sjinese_See	Suid-Chinese_See
 Suidtoring	Suid-toring
 Suidwes-Afrika	Suidwesafrika
@@ -9087,6 +9380,7 @@ taakspanvoorsitter	taakspan-voorsitter
 taakspanvoorsitters	taakspan-voorsitters
 taalenklave	taal-enklave
 taalenklaves	taal-enklaves
+taalewolusie	taalevolusie
 taalfoendie	taalfoendi
 taalfoendie	taalfundi
 taalfoendies	taalfoendi's
@@ -9274,6 +9568,7 @@ ten_hoogste	Ten_hoogste
 ten_huidige_dae	Ten_huidige_dae
 ten_huise_van	Ten_huise_van
 ten_kwade	Ten_kwade
+ten_laaste	Ten_laaste
 ten_laste	Ten_laste
 ten_nouste	Ten_nouste
 ten_nutte_van	Ten_nutte_van
@@ -9350,6 +9645,9 @@ terracottabeker	terra-cottabeker
 terracottabekers	terra-cottabekers
 terracottateël	terra-cottateël
 terracottateëls	terra-cottateëls
+terreurbedreiging	terreur-bedreiging
+terreurbedreiginge	terreur-bedreiginge
+terreurbedreigings	terreur-bedreigings
 terreurbeskuldigde	terreur-beskuldigde
 terreurbeskuldigdes	terreur-beskuldigdes
 terugvoermeganisme	terugvoer-meganisme
@@ -9425,6 +9723,10 @@ tirannosouriër	tyrannosouriër
 tirannosouriërs	tyrannosouriërs
 tirannosourus	tyrannosourus
 tirannosourusse	tyrannosourusse
+tiroïdestimulerend	tiroïde-stimulerend
+tiroïdestimulerende	tiroïde-stimulerende
+tiroïedstimulerend	tiroïed-stimulerend
+tiroïedstimulerende	tiroïed-stimulerende
 Tirool	Tirol
 Tisbe	Thisbe
 titanearbeid	titane-arbeid
@@ -9710,6 +10012,7 @@ turingtoets	Turing-toets
 turingtoetse	Turing-toetse
 Turkanameer	Turkana-meer
 Turks-_en_Caicoseilande	Turks-_en_Caicos-eilande
+turnersindroom	Turner-sindroom
 Turnhalleberaad	Turnhalle-beraad
 tutti_frutti	Tutti_frutti
 Twaalfde_Laan	12e_Laan
@@ -9957,6 +10260,7 @@ Van_Lennepstraat	Van_Lennep-straat
 van_liewerlee	Van_liewerlee
 van_Lill	Van_Lill
 van_Loggerenberg	Van_Loggerenberg
+van_nature	Van_nature
 van_Neel	Van_Neel
 van_Nel	Van_Nel
 van_Niekerk	Van_Niekerk
@@ -10098,6 +10402,8 @@ VF+	VF_plus
 VF+	VF_Plus
 via_dolorosa	Via_dolorosa
 via_dolorosa	Via_Dolorosa
+vibriobakterie	vibrio-bakterie
+vibriobakterieë	vibrio-bakterieë
 vibromassering	vibro-massering
 vice_versa	Vice_versa
 victor_ludorum	Victor_ludorum
@@ -10114,6 +10420,8 @@ videoselfies	video-selfies
 videoverfilmde	video-verfilmde
 vierdagwerkweek	vierdag-werkweek
 Vierde_Laan	Vierdelaan
+vierdimensioneel	vier-dimensioneel
+vierdimensionele	vier-dimensionele
 vierletterwoord	vierletter-woord
 vierletterwoorde	vierletter-woorde
 vierpenniestuk	vier-penniestuk
@@ -10313,6 +10621,8 @@ Vredefortkoepel	Vredefort-koepel
 Vredefortkrater	Vredefort-krater
 vredeoffer	vrede-offer
 vredeoffers	vrede-offers
+vreemdetaalinvloed	vreemdetaal-invloed
+vreemdetaalinvloede	vreemdetaal-invloede
 vreemdkwark	vreemd-kwark
 vreemdkwarke	vreemd-kwarke
 vroeëkinderjareonderwys	vroeëkinderjare-onderwys
@@ -10321,6 +10631,8 @@ vroegchristelik	vroeg-christelik
 vroegchristelike	vroeg-christelike
 vroegklassiek	vroeg-klassiek
 vroegklassieke	vroeg-klassieke
+vroegkoloniaal	vroeg-koloniaal
+vroegkoloniale	vroeg-koloniale
 vroegoggendopstaan	vroegoggend-opstaan
 vroegskolasties	vroeg-skolasties
 vroegskolastiese	vroeg-skolastiese
@@ -10427,6 +10739,7 @@ Waterval_Boven	Waterval-Boven
 Waterval_Onder	Waterval-Onder
 watt-uur	wattuur
 Waverenweg	Waveren-weg
+Webbteleskoop	Webb-teleskoop
 webtuisteadres	webtuiste-adres
 webtuisteadresse	webtuiste-adresse
 weduwee-moeder	weduweemoeder
@@ -10447,6 +10760,7 @@ wel_te_ruste	Wel_te_ruste
 Wene	Wenen
 Wêreld-_Ekonomiese_Forum	Wêreld_Ekonomiese_Forum
 Wêreld-_Meteorologiese_Organisasie	Wêreld_Meteorologiese_Organisasie
+Wêreldantidwelmagentskap	Wêreld-Antidwelmagentskap
 Wêreldbekerkwalifikasie	Wêreldbeker-kwalifikasie
 Wêreldbekerondervinding	Wêreldbeker-ondervinding
 Wêreldbekertoernooi	Wêreldbeker-toernooi
@@ -10522,6 +10836,7 @@ winkelsentrumargitektuur	winkelsentrum-argitektuur
 wins-en-verliesrekening	wins-en-verlies-rekening
 wins-en-verliesrekeninge	wins-en-verlies-rekeninge
 wins-en-verliesrekenings	wins-en-verlies-rekenings
+wintersonkeerpunt	winter-sonkeerpunt
 wintersportgeesdriftige	wintersport-geesdriftige
 wintersportgeesdriftiges	wintersport-geesdriftiges
 wintervakansietydperk	wintervakansie-tydperk
@@ -10589,6 +10904,8 @@ Württembergse	Wurtembergse
 Württembergse	Würtembergse
 wyd_en_syd	Wyd_en_syd
 Wynneweg	Wynne_Weg
+wyseadjunk	wyse-adjunk
+wyseadjunkte	wyse-adjunkte
 xantippe	xanthippe
 Xantippe	Xanthippe
 xantippes	xanthippes
